@@ -12,7 +12,19 @@ var worker_default = {
     }
     if (env.ASSETS) {
       try {
-        const assetResponse = await env.ASSETS.fetch(request);
+        let assetRequest = request;
+        if (url.pathname === "/") {
+          assetRequest = new Request(new URL("/index.html", request.url), request);
+        }
+        let assetResponse = await env.ASSETS.fetch(assetRequest);
+        if (assetResponse.status === 404 && !url.pathname.startsWith("/api/")) {
+          assetRequest = new Request(new URL(`${url.pathname}.html`, request.url), request);
+          assetResponse = await env.ASSETS.fetch(assetRequest);
+          if (assetResponse.status === 404) {
+            assetRequest = new Request(new URL("/index.html", request.url), request);
+            assetResponse = await env.ASSETS.fetch(assetRequest);
+          }
+        }
         if (assetResponse.status !== 404) {
           return assetResponse;
         }
