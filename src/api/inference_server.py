@@ -6,9 +6,14 @@ intensity estimation, OBB eye localization, 0-6h short track, and 72h synoptic t
 
 import time
 import os
+import sys
+from pathlib import Path
+
+# Add project root directory to sys.path to allow `import src...`
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+
 import torch
 import numpy as np
-from pathlib import Path
 from typing import Dict, List, Optional
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
