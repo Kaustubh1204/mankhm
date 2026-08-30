@@ -27,6 +27,17 @@ class CloudStorageArchiver:
     """
 
     def __init__(self, local_base: Path = LOCAL_STORAGE_BASE):
+        # Auto-load .env if available
+        try:
+            from dotenv import load_dotenv
+            env_path = Path(__file__).resolve().parent.parent.parent / ".env"
+            if env_path.exists():
+                load_dotenv(env_path)
+            else:
+                load_dotenv()
+        except ImportError:
+            pass
+
         self.local_base = local_base
         self.local_base.mkdir(parents=True, exist_ok=True)
         self._init_s3_client()
@@ -34,18 +45,36 @@ class CloudStorageArchiver:
     def _init_s3_client(self):
         """Initializes boto3 S3 client for Cloudflare R2 or AWS S3 if credentials are provided."""
         self.s3_client = None
-        if R2_ACCESS_KEY_ID and R2_SECRET_ACCESS_KEY and R2_ACCOUNT_ID:
+        r2_account_id = os.getenv("R2_ACCOUNT_ID")
+        r2_access_key_id = os.getenv("R2_ACCESS_KEY_ID")
+        r2_secret_access_key = os.getenv("R2_SECRET_ACCESS_KEY")
+        r2_bucket_name = os.getenv("R2_BUCKET_NAME", "cyclone-intelligence-archive")
+
+        if r2_access_key_id and r2_secret_access_key and r2_account_id:
             try:
                 import boto3
-                endpoint_url = f"https://{R2_ACCOUNT_ID}.r2.cloudflarestorage.com"
+                import urllib3
+                import ssl
+                urllib3.disable_warnings()
+                
+                # Custom SSL context for Windows Python TLS 1.3 compatibility
+                ctx = ssl.create_default_context()
+                ctx.check_hostname = False
+                ctx.verify_mode = ssl.CERT_NONE
+
+                from botocore.config import Config
+                endpoint_url = f"https://{r2_account_id}.r2.cloudflarestorage.com"
                 self.s3_client = boto3.client(
                     "s3",
                     endpoint_url=endpoint_url,
-                    aws_access_key_id=R2_ACCESS_KEY_ID,
-                    aws_secret_access_key=R2_SECRET_ACCESS_KEY,
-                    region_name="auto"
+                    aws_access_key_id=r2_access_key_id,
+                    aws_secret_access_key=r2_secret_access_key,
+                    region_name="auto",
+                    config=Config(signature_version="s3v4", s3={"addressing_style": "path"}),
+                    verify=False
                 )
-                print(f"[CLOUD STORAGE] Connected to Cloudflare R2 Bucket: '{R2_BUCKET_NAME}'")
+                self.bucket_name = r2_bucket_name
+                print(f"[CLOUD STORAGE] Connected to Cloudflare R2 Bucket: '{self.bucket_name}'")
             except Exception as err:
                 print(f"[CLOUD STORAGE WARN] S3/R2 client init failed ({err}). Using local cloud archive fallback.")
         else:
@@ -101,12 +130,12 @@ class CloudStorageArchiver:
         if self.s3_client:
             try:
                 self.s3_client.put_object(
-                    Bucket=R2_BUCKET_NAME,
+                    Bucket=getattr(self, "bucket_name", "cyclone-intelligence-archive"),
                     Key=rel_path,
                     Body=json.dumps(archive_record),
                     ContentType="application/json"
                 )
-                print(f"[CLOUD STORAGE] Synced {rel_path} to Cloudflare R2")
+                print(f"[CLOUD STORAGE SUCCESS] Synced {rel_path} to Cloudflare R2 Bucket '{getattr(self, 'bucket_name', 'cyclone-intelligence-archive')}'")
             except Exception as err:
                 print(f"[CLOUD STORAGE WARN] Failed to sync {rel_path} to R2: {err}")
 
