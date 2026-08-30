@@ -1,0 +1,28 @@
+# Environment / secrets
+.env
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Raw downloaded NASA data
+data/raw/
+
+# Generated processed data
+data/processed/
+
+# Generated metadata
+data/metadata/
+
+# Ingestion state
+state/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
