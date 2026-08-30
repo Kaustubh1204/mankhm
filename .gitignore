@@ -1,5 +1,7 @@
+# Environment / secrets
+.env
 
-# Node
+# Node.js
 node_modules/
 npm-debug.log*
 yarn-debug.log*
@@ -20,10 +22,15 @@ __pycache__/
 .venv/
 venv/
 
+# Raw and processed data
+data/raw/
+data/processed/
+data/metadata/
+state/
+
 # OS / IDE
 .DS_Store
+Thumbs.db
 .vscode/
 .idea/
-
-# Coverage
 coverage/
