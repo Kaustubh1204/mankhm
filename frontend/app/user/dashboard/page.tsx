@@ -10,8 +10,6 @@ import StatusBadge from '@/components/dashboard/StatusBadge';
 import { useCyclones, useForecast } from '@/hooks/useCycloneData';
 import { Radio, Navigation, Cpu, Bell, Activity, ArrowRight, ShieldAlert, Bookmark } from 'lucide-react';
 
-import { StorageManager } from '@/components/dashboard/StorageManager';
-
 function UserDashboardOverview() {
   const { cyclones } = useCyclones();
   const { forecast } = useForecast('BOB_01_2026');
@@ -39,9 +37,6 @@ function UserDashboardOverview() {
           </div>
           <StatusBadge status="ONLINE" label="LIVE STREAM ACTIVE" />
         </div>
-
-        {/* Cloudflare R2 Storage Quota Manager */}
-        <StorageManager />
 
         {/* 4 Summary Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
