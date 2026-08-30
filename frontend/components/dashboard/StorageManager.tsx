@@ -63,7 +63,7 @@ export const StorageManager: React.FC = () => {
       <div className="flex items-center justify-between mb-4">
         <div>
           <h3 className="text-xl font-bold text-sky-400 flex items-center gap-2">
-            ☁️ Cloudflare R2 Storage Quota Manager (< 9.0 GB Cap)
+            ☁️ Cloudflare R2 Storage Quota Manager (&lt; 9.0 GB Cap)
           </h3>
           <p className="text-sm text-slate-400">Guarantees zero charges by capping storage under 9.0 GB free tier allowance</p>
         </div>

@@ -17,21 +17,20 @@ export const cycloneApi = {
       
       const realCyclone: CycloneSystem = {
         id: json.storm_id || 'BOB_01_2026',
-        name: `Cyclone ${json.storm_id}`,
-        category: json.intensity?.imd_category || 'Cyclonic Storm',
-        windSpeedKnots: json.intensity?.msw_knots || 45,
+        name: `Cyclone ${json.storm_id || 'BOB_01'}`,
+        classification: json.intensity?.imd_category || 'Cyclonic Storm',
+        categoryNumber: 2,
+        maxWindKmH: Math.round((json.intensity?.msw_knots || 45) * 1.852),
+        maxWindKt: json.intensity?.msw_knots || 45,
         centralPressureHpa: json.intensity?.central_pressure_hpa || 980,
-        eyeLat: json.detection_obb?.eye_center_lat || 16.5,
-        eyeLon: json.detection_obb?.eye_center_lon || 87.2,
-        vortexWidthKm: json.detection_obb?.vortex_width_km || 124.5,
-        vortexHeightKm: json.detection_obb?.vortex_height_km || 118.9,
-        trackWaypoints: (json.short_term_track_6h || []).map((pt: { hour: number; lat: number; lon: number }) => ({
-          hour: pt.hour,
-          lat: pt.lat,
-          lon: pt.lon,
-        })),
-        lastUpdatedUtc: new Date().toISOString(),
+        latitude: json.detection_obb?.eye_center_lat || 16.5,
+        longitude: json.detection_obb?.eye_center_lon || 87.2,
+        movementDirection: 'NE',
+        movementSpeedKmH: 18,
+        movementSpeedKt: 10,
+        lastObservation: new Date().toISOString(),
         status: 'ACTIVE',
+        region: 'Bay of Bengal',
       };
 
       return { success: true, data: [realCyclone], isMock: false };
