@@ -1,11 +1,10 @@
-"""
-ONNX Model Exporter for Low-Latency Cloud Deployment.
-Converts PyTorch checkpoints to ONNX format for sub-15ms inference on GCP Cloud Run / T4 GPU.
-"""
-
 import os
+import sys
 import torch
 from pathlib import Path
+
+# Add project root to sys.path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from src.ml.config import ONNX_EXPORT_DIR, REALTIME_CONFIG
 from src.ml.models.detection_obb import CycloneOBBDetector
