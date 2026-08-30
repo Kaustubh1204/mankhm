@@ -1,23 +1,15 @@
-/**
- * Cloudflare Worker Edge API & Proxy for Tropical Cyclone Intelligence.
- * Deploys 100% FREE on Cloudflare Workers (100,000 requests/day free allowance, 0 billing setup required).
- * Serves sub-5ms edge predictions, historical track caching, and CORS header management.
- */
-
-export default {
+// cloudflare/worker.js
+var worker_default = {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
     const corsHeaders = {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization"
     };
-
     if (request.method === "OPTIONS") {
       return new Response(null, { headers: corsHeaders });
     }
-
-    // Try serving static assets (Next.js HTML/JS/CSS) first if available
     if (env.ASSETS) {
       try {
         const assetResponse = await env.ASSETS.fetch(request);
@@ -25,11 +17,8 @@ export default {
           return assetResponse;
         }
       } catch {
-        // Fall through to API handlers below
       }
     }
-
-    // Dedicated API Health Check Endpoint
     if (url.pathname === "/health" || url.pathname === "/api/health") {
       return new Response(
         JSON.stringify({
@@ -40,19 +29,16 @@ export default {
           features: [
             "Sub-5ms Edge Cache",
             "ONNX AI Inference Proxy",
-            "Zero Credit Card / Zero Billing Required",
-          ],
+            "Zero Credit Card / Zero Billing Required"
+          ]
         }),
         { headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
     }
-
-    // Auth Endpoints
     if (url.pathname === "/api/auth/signin" || url.pathname === "/api/auth/signup") {
       const body = request.method === "POST" ? await request.json() : {};
       const email = body.email || "user@cyclonesense.ai";
       const isAdmin = email.toLowerCase().includes("admin");
-
       return new Response(
         JSON.stringify({
           success: true,
@@ -60,18 +46,17 @@ export default {
           user: {
             id: isAdmin ? "admin_master_01" : "user_active_01",
             name: email.split("@")[0] || "Meteorologist",
-            email: email,
+            email,
             organization: "National Cyclone Intelligence Command",
             role: isAdmin ? "ADMIN" : "USER",
-            createdAt: new Date().toISOString(),
-          },
+            createdAt: (/* @__PURE__ */ new Date()).toISOString()
+          }
         }),
         { headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
     }
     if (url.pathname === "/api/v1/predict/realtime") {
       const body = request.method === "POST" ? await request.json() : {};
-      
       const payload = {
         status: "SUCCESS",
         storm_id: body.storm_id || "BOB_01_2026",
@@ -84,43 +69,38 @@ export default {
           eye_center_lon: body.ref_lon || 87.2,
           vortex_width_km: 124.5,
           vortex_height_km: 118.9,
-          orientation_angle_deg: 4.5,
+          orientation_angle_deg: 4.5
         },
         intensity: {
-          msw_knots: 45.0,
+          msw_knots: 45,
           msw_kmh: 83.3,
-          central_pressure_hpa: 980.0,
-          imd_category: "Cyclonic Storm (34-47 kts)",
+          central_pressure_hpa: 980,
+          imd_category: "Cyclonic Storm (34-47 kts)"
         },
         short_term_track_6h: [
           { hour: 1, lat: (body.ref_lat || 16.5) + 0.05, lon: (body.ref_lon || 87.2) + 0.08 },
-          { hour: 2, lat: (body.ref_lat || 16.5) + 0.10, lon: (body.ref_lon || 87.2) + 0.16 },
+          { hour: 2, lat: (body.ref_lat || 16.5) + 0.1, lon: (body.ref_lon || 87.2) + 0.16 },
           { hour: 3, lat: (body.ref_lat || 16.5) + 0.15, lon: (body.ref_lon || 87.2) + 0.24 },
-          { hour: 4, lat: (body.ref_lat || 16.5) + 0.20, lon: (body.ref_lon || 87.2) + 0.32 },
-          { hour: 5, lat: (body.ref_lat || 16.5) + 0.25, lon: (body.ref_lon || 87.2) + 0.40 },
-          { hour: 6, lat: (body.ref_lat || 16.5) + 0.30, lon: (body.ref_lon || 87.2) + 0.48 },
-        ],
+          { hour: 4, lat: (body.ref_lat || 16.5) + 0.2, lon: (body.ref_lon || 87.2) + 0.32 },
+          { hour: 5, lat: (body.ref_lat || 16.5) + 0.25, lon: (body.ref_lon || 87.2) + 0.4 },
+          { hour: 6, lat: (body.ref_lat || 16.5) + 0.3, lon: (body.ref_lon || 87.2) + 0.48 }
+        ]
       };
-
       return new Response(JSON.stringify(payload), {
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
+        headers: { ...corsHeaders, "Content-Type": "application/json" }
       });
     }
-
-    // Batch 72-Hour Track Forecast Proxy
     if (url.pathname === "/api/v1/predict/batch") {
       const body = request.method === "POST" ? await request.json() : {};
-      
       const track_cone_72h = [];
       for (let i = 1; i <= 12; i++) {
         track_cone_72h.push({
           forecast_hour: i * 6,
           latitude: Number(((body.current_lat || 16.5) + i * 0.15).toFixed(4)),
           longitude: Number(((body.current_lon || 87.2) + i * 0.18).toFixed(4)),
-          cone_radius_km: 15.0 + i * 12.5,
+          cone_radius_km: 15 + i * 12.5
         });
       }
-
       return new Response(
         JSON.stringify({
           status: "SUCCESS",
@@ -130,30 +110,26 @@ export default {
           rapid_intensification: {
             ri_probability: 0.5439,
             ri_alert: true,
-            definition: "+30 knots wind increase in 24 hours",
+            definition: "+30 knots wind increase in 24 hours"
           },
-          track_72h_forecast_cone: track_cone_72h,
+          track_72h_forecast_cone: track_cone_72h
         }),
         { headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
     }
-
-    // Storage Usage Endpoint
     if (url.pathname === "/api/v1/storage/usage") {
       return new Response(
         JSON.stringify({
           status: "HEALTHY",
           total_bytes: 1450280120,
           used_gb: 1.35,
-          quota_limit_gb: 9.0,
-          percent_used: 15.0,
-          warning_threshold_exceeded: false,
+          quota_limit_gb: 9,
+          percent_used: 15,
+          warning_threshold_exceeded: false
         }),
         { headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
     }
-
-    // One-Click Storage Cleanup Endpoint
     if (url.pathname === "/api/v1/storage/one-click-cleanup" || url.pathname === "/api/v1/storage/cleanup") {
       const htmlContent = `
       <!DOCTYPE html>
@@ -171,7 +147,7 @@ export default {
       </head>
       <body>
           <div class="card">
-              <div class="icon">⚡</div>
+              <div class="icon">\u26A1</div>
               <div class="success">One-Click Storage Cleanup Successful!</div>
               <p>Archived satellite predictions older than 14 days have been purged from Cloudflare R2.</p>
               
@@ -188,13 +164,16 @@ export default {
       </html>
       `;
       return new Response(htmlContent, {
-        headers: { ...corsHeaders, "Content-Type": "text/html" },
+        headers: { ...corsHeaders, "Content-Type": "text/html" }
       });
     }
-
     return new Response(JSON.stringify({ error: "Route not found", path: url.pathname }), {
       status: 404,
-      headers: { ...corsHeaders, "Content-Type": "application/json" },
+      headers: { ...corsHeaders, "Content-Type": "application/json" }
     });
-  },
+  }
 };
+export {
+  worker_default as default
+};
+//# sourceMappingURL=worker.js.map
