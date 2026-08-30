@@ -1,0 +1,19 @@
+{
+  "dataset_key": "satellite:insat3ds",
+  "dataset_id": "3SIMG_L1B_STD",
+  "appended_at": "2026-08-30T12:02:18.136Z",
+  "records_count": 1,
+  "payload": {
+    "dynamic_mode": "HISTORICAL_METADATA_FALLBACK",
+    "fetch_ms": "1680.58",
+    "dataset_id": "3SIMG_L1B_STD",
+    "granules": [
+      {
+        "granule_id": "3SIMG_L1B_STD_20260829T120216",
+        "timestamp": "2026-08-29T12:02:16.455Z",
+        "status": "MOSDAC_ARCHIVE_INDEXED",
+        "download_url": "https://mosdac.gov.in/download/3SIMG_L1B_STD"
+      }
+    ]
+  }
+}

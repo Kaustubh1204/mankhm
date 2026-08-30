@@ -1,0 +1,505 @@
+{
+  "category": "atmospheric",
+  "dataset": "gpm_profile",
+  "year": 2025,
+  "month": "07",
+  "total_days": 31,
+  "data": [
+    {
+      "date": "2025-07-01",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-01T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.325948187407,
+          "wind_speed_ms": 16.273793278709835,
+          "atmospheric_pressure_hpa": 992.1857954276421,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-02",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-02T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.1993566101852,
+          "wind_speed_ms": 15.833142139350317,
+          "atmospheric_pressure_hpa": 989.0478508752255,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-03",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-03T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.84295236449566,
+          "wind_speed_ms": 14.264756604818958,
+          "atmospheric_pressure_hpa": 997.2208511550133,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2025-07-04",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-04T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.70899052567813,
+          "wind_speed_ms": 15.196705970763176,
+          "atmospheric_pressure_hpa": 988.3651354883605,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2025-07-05",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-05T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.57321107890226,
+          "wind_speed_ms": 20.40006561104202,
+          "atmospheric_pressure_hpa": 993.4091758207654,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-06",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-06T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.6140424338517,
+          "wind_speed_ms": 13.762905221433087,
+          "atmospheric_pressure_hpa": 996.3062856306775,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-07",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-07T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.9674065590479,
+          "wind_speed_ms": 12.877870702288066,
+          "atmospheric_pressure_hpa": 998.6493503014257,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-08",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-08T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.9023279726041,
+          "wind_speed_ms": 21.291987438826705,
+          "atmospheric_pressure_hpa": 993.0028627192543,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-09",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-09T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.0674549531255,
+          "wind_speed_ms": 12.534970247956782,
+          "atmospheric_pressure_hpa": 1004.5110161752722,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-10",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-10T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.689484294481,
+          "wind_speed_ms": 18.333854196519127,
+          "atmospheric_pressure_hpa": 1006.6496316828473,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-11",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-11T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.8019076250148,
+          "wind_speed_ms": 17.20115284305601,
+          "atmospheric_pressure_hpa": 1007.0405977298606,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-12",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-12T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.0899790157902,
+          "wind_speed_ms": 17.99352634583979,
+          "atmospheric_pressure_hpa": 990.5712383755305,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-13",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-13T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.5328303455172,
+          "wind_speed_ms": 18.188035224084913,
+          "atmospheric_pressure_hpa": 1000.4019605086913,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-14",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-14T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.6321926679323,
+          "wind_speed_ms": 12.523561690218044,
+          "atmospheric_pressure_hpa": 992.817408543516,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-15",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-15T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.07411130578237,
+          "wind_speed_ms": 18.01283254406144,
+          "atmospheric_pressure_hpa": 993.818259819157,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2025-07-16",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-16T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.1396387814945,
+          "wind_speed_ms": 14.031746319121314,
+          "atmospheric_pressure_hpa": 994.5740076599068,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-17",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-17T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.5472474700139,
+          "wind_speed_ms": 15.869562423652003,
+          "atmospheric_pressure_hpa": 1001.3678722842442,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-18",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-18T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.5292681015676,
+          "wind_speed_ms": 19.574708799690562,
+          "atmospheric_pressure_hpa": 997.0314655147391,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-19",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-19T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.6879769359847,
+          "wind_speed_ms": 19.648687745775693,
+          "atmospheric_pressure_hpa": 1002.857003731001,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-20",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-20T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.23379471850774,
+          "wind_speed_ms": 13.784702007718142,
+          "atmospheric_pressure_hpa": 1006.4311889976608,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2025-07-21",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-21T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.34828087113624,
+          "wind_speed_ms": 19.883738060039857,
+          "atmospheric_pressure_hpa": 1000.8692939944849,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-22",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-22T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.20135289915265,
+          "wind_speed_ms": 16.08600141272774,
+          "atmospheric_pressure_hpa": 998.6135090990375,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-23",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-23T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.40637843180986,
+          "wind_speed_ms": 16.48182342043647,
+          "atmospheric_pressure_hpa": 998.9254861675529,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-24",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-24T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.88040057090336,
+          "wind_speed_ms": 20.22149184316637,
+          "atmospheric_pressure_hpa": 991.8982881711067,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-25",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-25T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.37649609016546,
+          "wind_speed_ms": 14.564881237953706,
+          "atmospheric_pressure_hpa": 1001.8705303305511,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2025-07-26",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-26T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.82373871319413,
+          "wind_speed_ms": 16.670139355614182,
+          "atmospheric_pressure_hpa": 988.1615080383867,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-27",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-27T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.901119728604,
+          "wind_speed_ms": 14.399192471696283,
+          "atmospheric_pressure_hpa": 991.2331367800253,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-28",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-28T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.40160547026096,
+          "wind_speed_ms": 13.036798494504414,
+          "atmospheric_pressure_hpa": 988.4859375648361,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-29",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-29T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.11693290120496,
+          "wind_speed_ms": 17.595720380229054,
+          "atmospheric_pressure_hpa": 990.4655205762058,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2025-07-30",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-30T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.5524349285189,
+          "wind_speed_ms": 21.04135438668503,
+          "atmospheric_pressure_hpa": 1004.7318892170549,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2025-07-31",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2025-07-31T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.9504974689104,
+          "wind_speed_ms": 20.584817036205365,
+          "atmospheric_pressure_hpa": 1006.3846882311226,
+          "cyclone_present": false
+        }
+      }
+    }
+  ]
+}
