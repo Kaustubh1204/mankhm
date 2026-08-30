@@ -134,10 +134,10 @@ export default function AtmosphericScene({
 
     // Animation Loop
     let animId: number;
-    const clock = new THREE.Clock();
+    const startTime = performance.now();
 
     const animate = () => {
-      const elapsedTime = clock.getElapsedTime();
+      const elapsedTime = (performance.now() - startTime) / 1000;
 
       if (!prefersReducedMotion) {
         ribbonGroup.rotation.y = elapsedTime * 0.04;
