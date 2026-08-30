@@ -1,0 +1,90 @@
+{
+  "archived_at_utc": "2026-08-30T22:57:41.773016+00:00",
+  "storage_partition": "batch/year=2026/month=08/day=30/storm_TEST_CLOUD_ARCHIVE_BATCH_20260830_225741.json",
+  "data": {
+    "status": "SUCCESS",
+    "storm_id": "TEST_CLOUD_ARCHIVE_BATCH",
+    "lane": "BATCH_SYNOPTIC_LANE",
+    "cadence_hours": 6,
+    "latency_ms": 30.515,
+    "rapid_intensification": {
+      "ri_probability": 0.5439,
+      "ri_alert": true,
+      "definition": "+30 knots wind increase in 24 hours"
+    },
+    "track_72h_forecast_cone": [
+      {
+        "forecast_hour": 6,
+        "latitude": 16.5981,
+        "longitude": 87.2032,
+        "cone_radius_km": 15.0
+      },
+      {
+        "forecast_hour": 12,
+        "latitude": 16.5535,
+        "longitude": 87.3944,
+        "cone_radius_km": 27.5
+      },
+      {
+        "forecast_hour": 18,
+        "latitude": 16.6653,
+        "longitude": 87.0419,
+        "cone_radius_km": 40.0
+      },
+      {
+        "forecast_hour": 24,
+        "latitude": 16.5493,
+        "longitude": 87.2306,
+        "cone_radius_km": 52.5
+      },
+      {
+        "forecast_hour": 30,
+        "latitude": 16.473,
+        "longitude": 87.1315,
+        "cone_radius_km": 65.0
+      },
+      {
+        "forecast_hour": 36,
+        "latitude": 16.5905,
+        "longitude": 87.2584,
+        "cone_radius_km": 77.5
+      },
+      {
+        "forecast_hour": 42,
+        "latitude": 16.525,
+        "longitude": 87.2297,
+        "cone_radius_km": 90.0
+      },
+      {
+        "forecast_hour": 48,
+        "latitude": 16.5275,
+        "longitude": 87.2063,
+        "cone_radius_km": 102.5
+      },
+      {
+        "forecast_hour": 54,
+        "latitude": 16.5216,
+        "longitude": 87.2488,
+        "cone_radius_km": 115.0
+      },
+      {
+        "forecast_hour": 60,
+        "latitude": 16.5683,
+        "longitude": 87.168,
+        "cone_radius_km": 127.5
+      },
+      {
+        "forecast_hour": 66,
+        "latitude": 16.4035,
+        "longitude": 87.2278,
+        "cone_radius_km": 140.0
+      },
+      {
+        "forecast_hour": 72,
+        "latitude": 16.5137,
+        "longitude": 87.184,
+        "cone_radius_km": 152.5
+      }
+    ]
+  }
+}

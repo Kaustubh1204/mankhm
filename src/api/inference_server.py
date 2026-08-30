@@ -303,6 +303,69 @@ def get_gemini_ai_bulletin(req: RealtimePredictionRequest):
     }
 
 
+@app.get("/api/v1/storage/usage")
+def get_r2_storage_usage():
+    """
+    Returns live Cloudflare R2 storage usage metrics (guaranteed < 9.0 GB).
+    """
+    from src.storage.r2_quota_manager import r2_quota_manager
+    return r2_quota_manager.get_storage_usage()
+
+
+@app.post("/api/v1/storage/cleanup")
+def cleanup_r2_storage(days_to_keep: int = 14):
+    """
+    Executes storage cleanup, purging objects older than days_to_keep to maintain storage < 9.0 GB.
+    """
+    from src.storage.r2_quota_manager import r2_quota_manager
+    return r2_quota_manager.execute_one_click_cleanup(days_to_keep=days_to_keep)
+
+
+@app.get("/api/v1/storage/one-click-cleanup")
+def one_click_cleanup(token: str = "auto_purge_confirm"):
+    """
+    One-Click Cleanup Endpoint triggered directly from email notifications or dashboard button.
+    Purges data older than 14 days and returns instant HTML confirmation page.
+    """
+    from src.storage.r2_quota_manager import r2_quota_manager
+    from fastapi.responses import HTMLResponse
+
+    result = r2_quota_manager.execute_one_click_cleanup(days_to_keep=14)
+
+    html_content = f"""
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>R2 Storage One-Click Cleanup</title>
+        <style>
+            body {{ font-family: Arial, sans-serif; padding: 40px; background-color: #f8fafc; color: #1e293b; text-align: center; }}
+            .card {{ max-width: 500px; margin: 0 auto; background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }}
+            .icon {{ font-size: 48px; margin-bottom: 10px; }}
+            .success {{ color: #16a34a; font-weight: bold; font-size: 22px; }}
+            .metric {{ background: #f1f5f9; padding: 12px; border-radius: 6px; margin: 15px 0; font-size: 14px; }}
+            .btn {{ display: inline-block; padding: 10px 20px; background: #0284c7; color: white; text-decoration: none; border-radius: 6px; margin-top: 15px; }}
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="icon">✅</div>
+            <div class="success">One-Click Storage Cleanup Complete!</div>
+            <p>Cloudflare R2 storage has been successfully reclaimed.</p>
+            
+            <div class="metric">
+                <p><strong>Purged Objects:</strong> {result['purged_objects_count']} files</p>
+                <p><strong>Reclaimed Space:</strong> {result['reclaimed_mb']} MB ({result['reclaimed_gb']} GB)</p>
+                <p><strong>Current Storage Usage:</strong> {result['updated_storage']['used_gb']} GB / 9.0 GB Cap</p>
+            </div>
+
+            <a href="https://mankhm-cyclone-edge.repo-mankhm.workers.dev" class="btn">Return to Cyclone Dashboard</a>
+        </div>
+    </body>
+    </html>
+    """
+    return HTMLResponse(content=html_content)
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)

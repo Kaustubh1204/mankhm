@@ -35,27 +35,37 @@ jobs:
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
           R2_BUCKET_NAME: "cyclone-intelligence-archive"
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          NOTIFICATION_EMAIL_TO: "hs7307327@gmail.com"
         run: |
           echo "======================================================================"
           echo "🚀 AIRFLOW DAG TRIGGERED: SATELLITE INGESTION & AI INFERENCE"
           echo "======================================================================"
           python src/ml/real_dataset_loader.py
 
-      - name: 'DAG Task 3: Sync Local Cloud Archive to Cloudflare R2'
+      - name: 'DAG Task 3: Sync R2 Storage & Send Email Run Summary & Quota Alert'
         env:
           R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
           R2_BUCKET_NAME: "cyclone-intelligence-archive"
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          NOTIFICATION_EMAIL_TO: "hs7307327@gmail.com"
         run: |
           python -c "
-          import os, glob, dotenv
+          import dotenv
           dotenv.load_dotenv('.env')
-          from src.storage.cloud_storage import CloudStorageArchiver
-          archiver = CloudStorageArchiver()
-          print('[AIRFLOW R2 SYNC] Batch uploading archived prediction JSONs to Cloudflare R2...')
-          json_files = glob.glob('data/cloud_archive/**/*.json', recursive=True)
-          print(f'[AIRFLOW R2 SYNC] Found {len(json_files)} local files to verify/sync.')
+          from src.storage.r2_quota_manager import r2_quota_manager
+          from src.notifications.email_notifier import notify_r2_storage_warning, notify_job_execution
+
+          usage = r2_quota_manager.get_storage_usage()
+          print('[AIRFLOW R2 MONITOR]', usage)
+
+          if usage['warning_threshold_exceeded']:
+              print('[AIRFLOW R2 ALERT] Storage > 8.5 GB! Sending urgent email alert with One-Click Cleanup link.')
+              notify_r2_storage_warning(usage)
           "
 
       - name: Upload DAG Execution Artifacts

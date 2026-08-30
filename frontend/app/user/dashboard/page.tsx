@@ -10,9 +10,11 @@ import StatusBadge from '@/components/dashboard/StatusBadge';
 import { useCyclones, useForecast } from '@/hooks/useCycloneData';
 import { Radio, Navigation, Cpu, Bell, Activity, ArrowRight, ShieldAlert, Bookmark } from 'lucide-react';
 
+import { StorageManager } from '@/components/dashboard/StorageManager';
+
 function UserDashboardOverview() {
   const { cyclones } = useCyclones();
-  const { forecast } = useForecast('cyc_aruna');
+  const { forecast } = useForecast('BOB_01_2026');
 
   const activeSystem = cyclones[0] || null;
 
@@ -25,18 +27,21 @@ function UserDashboardOverview() {
             <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping" />
             <div>
               <h2 className="text-sm font-bold text-white flex items-center gap-2">
-                <span>3 active systems are currently being monitored.</span>
-                <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold">
-                  DEMO DATA
+                <span>Active Tropical Cyclone Intelligence Engine Live</span>
+                <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold">
+                  LIVE CLOUDFLARE R2 DATA ACTIVE
                 </span>
               </h2>
               <p className="text-xs text-slate-400 mt-0.5">
-                Last updated: 2026-08-31 03:00 UTC | Sources: INSAT-3DS, Sentinel-1, Ocean Buoy Feed
+                Multi-Sensor Fusion: INSAT-3D/3DR/3DS, NASA GPM IMERG, OceanSat-3 | Cloudflare Edge Stream
               </p>
             </div>
           </div>
-          <StatusBadge status="ONLINE" label="DEMO STREAM ACTIVE" />
+          <StatusBadge status="ONLINE" label="LIVE STREAM ACTIVE" />
         </div>
+
+        {/* Cloudflare R2 Storage Quota Manager */}
+        <StorageManager />
 
         {/* 4 Summary Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

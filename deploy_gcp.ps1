@@ -45,24 +45,25 @@ gcloud services enable run.googleapis.com artifactregistry.googleapis.com cloudb
 Write-Host "[2/4] Building & Pushing Python AI Container..." -ForegroundColor Green
 gcloud builds submit --tag "gcr.io/$ProjectId/cyclone-ai-inference:latest" . --project=$ProjectId
 
-# Step 3: Deploy Python AI Service
-Write-Host "[3/4] Deploying Python AI Service to Cloud Run..." -ForegroundColor Green
+# Step 3: Deploy Python AI Service to GCP Cloud Run (GCP Always Free Tier Compliant)
+Write-Host "[3/4] Deploying Python AI Service to Cloud Run (Always Free Tier)..." -ForegroundColor Green
 gcloud run deploy cyclone-ai-inference `
   --image "gcr.io/$ProjectId/cyclone-ai-inference:latest" `
   --platform managed `
   --region $Region `
   --allow-unauthenticated `
-  --memory 2Gi `
-  --cpu 2 `
+  --memory 1Gi `
+  --cpu 1 `
+  --concurrency 80 `
   --min-instances 0 `
-  --max-instances 5 `
+  --max-instances 2 `
   --project=$ProjectId
 
 $AiServiceUrl = (gcloud run services describe cyclone-ai-inference --platform managed --region $Region --format 'value(status.url)' --project=$ProjectId)
 Write-Host "[SUCCESS] Python AI Service Live at: $AiServiceUrl" -ForegroundColor Green
 
 # Step 4: Build & Deploy Node.js Service
-Write-Host "[4/4] Deploying Node.js MOSDAC Ingestor to Cloud Run..." -ForegroundColor Green
+Write-Host "[4/4] Deploying Node.js MOSDAC Ingestor to Cloud Run (Always Free Tier)..." -ForegroundColor Green
 gcloud builds submit --tag "gcr.io/$ProjectId/mosdac-ingester-server:latest" -f Dockerfile.node . --project=$ProjectId
 
 gcloud run deploy mosdac-ingester-server `
@@ -70,10 +71,11 @@ gcloud run deploy mosdac-ingester-server `
   --platform managed `
   --region $Region `
   --allow-unauthenticated `
-  --memory 1Gi `
+  --memory 512Mi `
   --cpu 1 `
+  --concurrency 80 `
   --min-instances 0 `
-  --max-instances 3 `
+  --max-instances 2 `
   --set-env-vars "AI_INFERENCE_URL=$AiServiceUrl" `
   --project=$ProjectId
 
