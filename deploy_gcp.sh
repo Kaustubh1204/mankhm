@@ -28,7 +28,7 @@ gcloud services enable run.googleapis.com artifactregistry.googleapis.com cloudb
 
 # Step 2: Build & Push Python AI Inference Server Container
 echo "[2/4] Building & Pushing Python AI Inference Container..."
-gcloud builds submit --tag "gcr.io/$PROJECT_ID/cyclone-ai-inference:latest" --dockerfile=Dockerfile . --project="$PROJECT_ID"
+gcloud builds submit --tag "gcr.io/$PROJECT_ID/cyclone-ai-inference:latest" . --project="$PROJECT_ID"
 
 # Step 3: Deploy Python AI Inference Server to GCP Cloud Run (Scale-to-Zero)
 echo "[3/4] Deploying Python AI Inference Service to Cloud Run..."
@@ -48,7 +48,7 @@ echo "[SUCCESS] Python AI Service Live at: $AI_SERVICE_URL"
 
 # Step 4: Build & Deploy Node.js MOSDAC Ingestor Server
 echo "[4/4] Building & Deploying Node.js MOSDAC Ingestor to Cloud Run..."
-gcloud builds submit --tag "gcr.io/$PROJECT_ID/mosdac-ingester-server:latest" --dockerfile=Dockerfile.node . --project="$PROJECT_ID"
+gcloud builds submit --tag "gcr.io/$PROJECT_ID/mosdac-ingester-server:latest" -f Dockerfile.node . --project="$PROJECT_ID"
 
 gcloud run deploy mosdac-ingester-server \
   --image "gcr.io/$PROJECT_ID/mosdac-ingester-server:latest" \

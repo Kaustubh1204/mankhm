@@ -6,6 +6,22 @@ param (
 
 $ErrorActionPreference = "Stop"
 
+# Ensure gcloud is in PATH
+if (-not (Get-Command gcloud -ErrorAction SilentlyContinue)) {
+    $GCloudPaths = @(
+        "C:\Users\hs730\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin",
+        "$env:LOCALAPPDATA\Google\Cloud SDK\google-cloud-sdk\bin",
+        "C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin",
+        "C:\Program Files\Google\Cloud SDK\google-cloud-sdk\bin"
+    )
+    foreach ($p in $GCloudPaths) {
+        if (Test-Path $p) {
+            $env:PATH = "$p;$env:PATH"
+            break
+        }
+    }
+}
+
 if ([string]::IsNullOrEmpty($ProjectId)) {
     $ProjectId = (gcloud config get-value project 2>$null)
 }
@@ -27,7 +43,7 @@ gcloud services enable run.googleapis.com artifactregistry.googleapis.com cloudb
 
 # Step 2: Build & Push Python Container
 Write-Host "[2/4] Building & Pushing Python AI Container..." -ForegroundColor Green
-gcloud builds submit --tag "gcr.io/$ProjectId/cyclone-ai-inference:latest" --dockerfile=Dockerfile . --project=$ProjectId
+gcloud builds submit --tag "gcr.io/$ProjectId/cyclone-ai-inference:latest" . --project=$ProjectId
 
 # Step 3: Deploy Python AI Service
 Write-Host "[3/4] Deploying Python AI Service to Cloud Run..." -ForegroundColor Green
@@ -47,7 +63,7 @@ Write-Host "[SUCCESS] Python AI Service Live at: $AiServiceUrl" -ForegroundColor
 
 # Step 4: Build & Deploy Node.js Service
 Write-Host "[4/4] Deploying Node.js MOSDAC Ingestor to Cloud Run..." -ForegroundColor Green
-gcloud builds submit --tag "gcr.io/$ProjectId/mosdac-ingester-server:latest" --dockerfile=Dockerfile.node . --project=$ProjectId
+gcloud builds submit --tag "gcr.io/$ProjectId/mosdac-ingester-server:latest" -f Dockerfile.node . --project=$ProjectId
 
 gcloud run deploy mosdac-ingester-server `
   --image "gcr.io/$ProjectId/mosdac-ingester-server:latest" `
