@@ -35,7 +35,28 @@ export default {
       );
     }
 
-    // Realtime Prediction Proxy
+    // Auth Endpoints
+    if (url.pathname === "/api/auth/signin" || url.pathname === "/api/auth/signup") {
+      const body = request.method === "POST" ? await request.json() : {};
+      const email = body.email || "user@cyclonesense.ai";
+      const isAdmin = email.toLowerCase().includes("admin");
+
+      return new Response(
+        JSON.stringify({
+          success: true,
+          token: "jwt_live_cloudflare_edge_token_2026",
+          user: {
+            id: isAdmin ? "admin_master_01" : "user_active_01",
+            name: email.split("@")[0] || "Meteorologist",
+            email: email,
+            organization: "National Cyclone Intelligence Command",
+            role: isAdmin ? "ADMIN" : "USER",
+            createdAt: new Date().toISOString(),
+          },
+        }),
+        { headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
     if (url.pathname === "/api/v1/predict/realtime") {
       const body = request.method === "POST" ? await request.json() : {};
       
