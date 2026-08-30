@@ -188,7 +188,7 @@ def predict_realtime_lane(req: RealtimePredictionRequest):
 
     inference_ms = round((time.perf_counter() - start_time) * 1000.0, 3)
 
-    return {
+    res = {
         "status": "SUCCESS",
         "storm_id": req.storm_id,
         "lane": "REALTIME_SPEED_LANE",
@@ -210,6 +210,16 @@ def predict_realtime_lane(req: RealtimePredictionRequest):
         },
         "short_term_track_6h": short_track,
     }
+
+    # Automatically archive prediction data to Cloud Storage
+    try:
+        from src.storage.cloud_storage import cloud_archiver
+        archive_path = cloud_archiver.archive_realtime_prediction(res)
+        res["cloud_storage_archive"] = archive_path
+    except Exception as err:
+        print(f"[CLOUD ARCHIVE WARN] Realtime archiving error: {err}")
+
+    return res
 
 
 @app.post("/api/v1/predict/batch")
@@ -252,7 +262,7 @@ def predict_batch_lane(req: BatchPredictionRequest):
 
     inference_ms = round((time.perf_counter() - start_time) * 1000.0, 3)
 
-    return {
+    res = {
         "status": "SUCCESS",
         "storm_id": req.storm_id,
         "lane": "BATCH_SYNOPTIC_LANE",
@@ -264,6 +274,32 @@ def predict_batch_lane(req: BatchPredictionRequest):
             "definition": "+30 knots wind increase in 24 hours",
         },
         "track_72h_forecast_cone": track_cone_72h,
+    }
+
+    # Automatically archive prediction data to Cloud Storage
+    try:
+        from src.storage.cloud_storage import cloud_archiver
+        archive_path = cloud_archiver.archive_batch_prediction(res)
+        res["cloud_storage_archive"] = archive_path
+    except Exception as err:
+        print(f"[CLOUD ARCHIVE WARN] Batch archiving error: {err}")
+
+    return res
+
+
+@app.post("/api/v1/xai/gemini-bulletin")
+def get_gemini_ai_bulletin(req: RealtimePredictionRequest):
+    """
+    Generates a Gemini AI Pro Meteorological Diagnostic Bulletin explaining predictions for IMD forecasters.
+    """
+    from src.ml.gemini_xai import generate_cyclone_meteorologist_report
+    pred_result = predict_realtime_lane(req)
+    bulletin_text = generate_cyclone_meteorologist_report(pred_result)
+
+    return {
+        "status": "SUCCESS",
+        "storm_id": req.storm_id,
+        "gemini_ai_bulletin": bulletin_text
     }
 
 
