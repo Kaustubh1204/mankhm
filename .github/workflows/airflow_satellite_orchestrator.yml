@@ -1,0 +1,76 @@
+name: Airflow Satellite ETL & AI Prediction Orchestrator
+
+# Airflow-style Scheduled Cron Orchestrator
+on:
+  schedule:
+    # Runs every 15 minutes (Realtime Speed Lane cadence)
+    - cron: '*/15 * * * *'
+  workflow_dispatch: # Allows manual 1-click trigger from GitHub UI
+
+jobs:
+  airflow-dag-orchestration:
+    name: Airflow DAG: Ingest MOSDAC -> Run AI Models -> Upload to Cloudflare R2
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python Environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python & Storage Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install uvicorn fastapi onnxruntime numpy python-dotenv boto3 requests
+
+      - name: 'DAG Task 1 & 2: Ingest Satellite Data & Execute AI Prediction Engine'
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_BUCKET_NAME: "cyclone-intelligence-archive"
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          NOTIFICATION_EMAIL_TO: "hs7307327@gmail.com"
+        run: |
+          echo "======================================================================"
+          echo "🚀 AIRFLOW DAG TRIGGERED: SATELLITE INGESTION & AI INFERENCE"
+          echo "======================================================================"
+          python src/ml/real_dataset_loader.py
+
+      - name: 'DAG Task 3: Sync R2 Storage & Send Email Run Summary & Quota Alert'
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_BUCKET_NAME: "cyclone-intelligence-archive"
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          NOTIFICATION_EMAIL_TO: "hs7307327@gmail.com"
+        run: |
+          python -c "
+          import dotenv
+          dotenv.load_dotenv('.env')
+          from src.storage.r2_quota_manager import r2_quota_manager
+          from src.notifications.email_notifier import notify_r2_storage_warning, notify_job_execution
+
+          usage = r2_quota_manager.get_storage_usage()
+          print('[AIRFLOW R2 MONITOR]', usage)
+
+          if usage['warning_threshold_exceeded']:
+              print('[AIRFLOW R2 ALERT] Storage > 8.5 GB! Sending urgent email alert with One-Click Cleanup link.')
+              notify_r2_storage_warning(usage)
+          "
+
+      - name: Upload DAG Execution Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: airflow-execution-logs
+          path: data/cloud_archive/
+          retention-days: 7

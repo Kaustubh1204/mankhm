@@ -1,0 +1,9 @@
+name = "cyclone-intelligence-app"
+main = "cloudflare/worker.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+AI_INFERENCE_URL = "https://huggingface.co/spaces/YOUR_USERNAME/mankhm-cyclone-ai"
+
+[assets]
+directory = "./frontend/out"

@@ -17,12 +17,15 @@ interface Ripple {
 }
 
 export default function CycloneCursor() {
-  const [enabled] = useState<boolean>(() => {
-    if (typeof window === 'undefined') return false;
+  const [mounted, setMounted] = useState(false);
+  const [enabled, setEnabled] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
     const isTouch = window.matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window;
     const isReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    return !isTouch && !isReduced;
-  });
+    setEnabled(!isTouch && !isReduced);
+  }, []);
 
   const cursorRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
@@ -166,7 +169,7 @@ export default function CycloneCursor() {
     };
   }, [scale]);
 
-  if (!enabled) return null;
+  if (!mounted || !enabled) return null;
 
   return (
     <div className="pointer-events-none fixed inset-0 z-[9999] overflow-hidden">

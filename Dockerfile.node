@@ -1,0 +1,23 @@
+# Production Dockerfile for Node.js MOSDAC Ingestor & Sub-4ms WebSocket Engine
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy package files and install production dependencies
+COPY server/package*.json ./server/
+RUN cd server && npm ci --only=production
+
+# Copy server code and data partitions
+COPY server/ ./server/
+COPY .env ./.env
+
+# Expose Express REST & WebSocket ports
+EXPOSE 8080
+
+# Environment Defaults
+ENV PORT=8080
+ENV NODE_ENV=production
+ENV AI_INFERENCE_URL=http://cyclone-ai-inference:8000
+
+# Start Node.js MOSDAC Server
+CMD ["node", "server/index.js"]

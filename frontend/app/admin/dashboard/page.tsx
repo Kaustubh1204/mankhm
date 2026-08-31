@@ -11,6 +11,8 @@ import { pipelineApi, PipelineStage } from '@/lib/api/pipelineApi';
 import { modelApi, MLModel } from '@/lib/api/modelApi';
 import { ShieldCheck, Activity, Layers, Cpu, Server } from 'lucide-react';
 
+import { StorageManager } from '@/components/dashboard/StorageManager';
+
 function AdminDashboardOverview() {
   const [telemetry, setTelemetry] = useState<TelemetrySource[]>([]);
   const [pipelines, setPipelines] = useState<PipelineStage[]>([]);
@@ -46,6 +48,9 @@ function AdminDashboardOverview() {
           </div>
           <StatusBadge status="ONLINE" label="PIPELINE NODE ACTIVE" />
         </div>
+
+        {/* Cloudflare R2 Storage Quota Manager (Admin Panel Exclusive) */}
+        <StorageManager />
 
         {/* Top Operational Metrics */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

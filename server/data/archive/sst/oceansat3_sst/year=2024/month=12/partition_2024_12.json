@@ -1,0 +1,505 @@
+{
+  "category": "sst",
+  "dataset": "oceansat3_sst",
+  "year": 2024,
+  "month": "12",
+  "total_days": 31,
+  "data": [
+    {
+      "date": "2024-12-01",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-01T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.36037647816624,
+          "wind_speed_ms": 18.744926147279102,
+          "atmospheric_pressure_hpa": 1005.1015570450932,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-02",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-02T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.6719688298084,
+          "wind_speed_ms": 16.4245603041875,
+          "atmospheric_pressure_hpa": 1003.1666737504825,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-03",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-03T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.66831888111386,
+          "wind_speed_ms": 15.005799270641102,
+          "atmospheric_pressure_hpa": 996.6410701282507,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-04",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-04T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.08543551031664,
+          "wind_speed_ms": 13.814795775505258,
+          "atmospheric_pressure_hpa": 998.4735792346733,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-05",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-05T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.21395063931425,
+          "wind_speed_ms": 20.12836244935209,
+          "atmospheric_pressure_hpa": 993.0058317253798,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2024-12-06",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-06T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.63709735198984,
+          "wind_speed_ms": 20.793194093693316,
+          "atmospheric_pressure_hpa": 1004.7301956695451,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-07",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-07T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.1655316080436,
+          "wind_speed_ms": 16.77441200133711,
+          "atmospheric_pressure_hpa": 989.2300464610422,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2024-12-08",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-08T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.8001883269727,
+          "wind_speed_ms": 13.260270142400248,
+          "atmospheric_pressure_hpa": 1004.9024938583307,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-09",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-09T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.37048655811475,
+          "wind_speed_ms": 19.609427783342547,
+          "atmospheric_pressure_hpa": 997.204502454782,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2024-12-10",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-10T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.62404676019213,
+          "wind_speed_ms": 12.831726358397235,
+          "atmospheric_pressure_hpa": 990.9159176924568,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-11",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-11T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.14142164675303,
+          "wind_speed_ms": 14.43765680258284,
+          "atmospheric_pressure_hpa": 989.6558457255938,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2024-12-12",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-12T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.04209052942997,
+          "wind_speed_ms": 21.514244299503964,
+          "atmospheric_pressure_hpa": 1003.1620682845142,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-13",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-13T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.4547893412354,
+          "wind_speed_ms": 14.075232442898102,
+          "atmospheric_pressure_hpa": 1002.0932250443442,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-14",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-14T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.1598558782393,
+          "wind_speed_ms": 16.045233058959912,
+          "atmospheric_pressure_hpa": 992.9655077050828,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-15",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-15T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.29582194541666,
+          "wind_speed_ms": 13.69436910287175,
+          "atmospheric_pressure_hpa": 996.5353509862342,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-16",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-16T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.5139916199583,
+          "wind_speed_ms": 18.074000991066235,
+          "atmospheric_pressure_hpa": 992.9529084027919,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-17",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-17T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.68765442212805,
+          "wind_speed_ms": 16.33518223774318,
+          "atmospheric_pressure_hpa": 988.0145191834358,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2024-12-18",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-18T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.18561261458234,
+          "wind_speed_ms": 20.69384316999877,
+          "atmospheric_pressure_hpa": 990.0329310561758,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-19",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-19T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.2493632078632,
+          "wind_speed_ms": 16.38783106996784,
+          "atmospheric_pressure_hpa": 1003.5167416570857,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-20",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-20T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.0350591728586,
+          "wind_speed_ms": 21.64656514543085,
+          "atmospheric_pressure_hpa": 994.5413700467234,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-21",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-21T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.95010680455624,
+          "wind_speed_ms": 17.41405759896331,
+          "atmospheric_pressure_hpa": 1005.9627525449852,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-22",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-22T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.6193782589321,
+          "wind_speed_ms": 19.82766988210618,
+          "atmospheric_pressure_hpa": 988.2280618693874,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-23",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-23T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.42797880859865,
+          "wind_speed_ms": 13.475049816703883,
+          "atmospheric_pressure_hpa": 994.5382972845839,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-24",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-24T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.2795444065833,
+          "wind_speed_ms": 21.407718513240255,
+          "atmospheric_pressure_hpa": 995.3284520109096,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-25",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-25T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.3141269463571,
+          "wind_speed_ms": 12.400268803437553,
+          "atmospheric_pressure_hpa": 1005.6894950981658,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-26",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-26T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.3344210805646,
+          "wind_speed_ms": 14.232145830796373,
+          "atmospheric_pressure_hpa": 1006.3395317317508,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-27",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-27T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.2440425417683,
+          "wind_speed_ms": 14.953226911206153,
+          "atmospheric_pressure_hpa": 993.7649584655054,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-28",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-28T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.87536027532434,
+          "wind_speed_ms": 14.226830874186124,
+          "atmospheric_pressure_hpa": 997.7339032564801,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-29",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-29T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.46115840523885,
+          "wind_speed_ms": 17.987147089830174,
+          "atmospheric_pressure_hpa": 1003.0570932065046,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-30",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-30T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.28677572573406,
+          "wind_speed_ms": 16.7989788461216,
+          "atmospheric_pressure_hpa": 994.4575878681546,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-12-31",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-12-31T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.5006796895585,
+          "wind_speed_ms": 15.606095910970254,
+          "atmospheric_pressure_hpa": 992.0459088357499,
+          "cyclone_present": false
+        }
+      }
+    }
+  ]
+}
