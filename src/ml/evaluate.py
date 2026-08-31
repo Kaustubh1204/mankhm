@@ -21,6 +21,8 @@ from src.ml.models.intensity_regressor import CycloneIntensityRegressor
 from src.ml.models.track_forecaster import RealtimeTrackForecaster, BatchSynopticTrackForecaster
 
 
+from src.ml.real_dataset_loader import RealSatelliteDataLoader
+
 def compute_performance_matrix(num_samples: int = 100) -> Dict[str, Any]:
     print("=" * 70)
     print("COMPUTING CYCLONE AI SYSTEM PERFORMANCE MATRIX & BENCHMARK")
@@ -28,6 +30,11 @@ def compute_performance_matrix(num_samples: int = 100) -> Dict[str, Any]:
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"[BENCHMARK] Device: {device}")
+
+    # Load actual real satellite dataset partitions from server/data/archive/
+    loader = RealSatelliteDataLoader()
+    real_insat_tensor, insat_meta = loader.load_insat_sequence(satellite="insat3d", seq_length=4)
+    print(f"[REAL SATELLITE DATASET] Loaded {len(insat_meta)} real partition frames | Tensor shape: {real_insat_tensor.shape}")
 
     # 1. Benchmark Detection (RT-DETRv2-OBB / YOLOv8-OBB)
     detector = CycloneOBBDetector(in_channels=len(REALTIME_CONFIG["input_channels"])).to(device)
@@ -44,8 +51,8 @@ def compute_performance_matrix(num_samples: int = 100) -> Dict[str, Any]:
     batch_track = BatchSynopticTrackForecaster(in_channels=len(BATCH_CONFIG["input_channels"])).to(device)
     batch_track.eval()
 
-    # Synthetic validation tensors simulating ground truth vs predictions
-    dummy_realtime = torch.randn(1, 4, 3, 256, 256, device=device)
+    # Real Satellite Tensors for evaluation
+    dummy_realtime = real_insat_tensor.to(device)
     dummy_batch = torch.randn(1, 12, 5, 256, 256, device=device)
 
     # -------------------------------------------------------------
