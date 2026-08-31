@@ -1,0 +1,473 @@
+{
+  "category": "atmospheric",
+  "dataset": "gpm_profile",
+  "year": 2020,
+  "month": "02",
+  "total_days": 29,
+  "data": [
+    {
+      "date": "2020-02-01",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-01T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.0986883129579,
+          "wind_speed_ms": 12.905404088931544,
+          "atmospheric_pressure_hpa": 1003.4977290443613,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-02-02",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-02T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.25621452253415,
+          "wind_speed_ms": 17.985689412421742,
+          "atmospheric_pressure_hpa": 999.6016401670038,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-03",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-03T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.40967763441193,
+          "wind_speed_ms": 15.329436957412867,
+          "atmospheric_pressure_hpa": 991.8585437917103,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-04",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-04T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.9040571993104,
+          "wind_speed_ms": 22.155760592432916,
+          "atmospheric_pressure_hpa": 1002.9994115276169,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-05",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-05T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.65433835270693,
+          "wind_speed_ms": 13.722792720223064,
+          "atmospheric_pressure_hpa": 999.366471993553,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-06",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-06T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.7012319968758,
+          "wind_speed_ms": 13.31215945475536,
+          "atmospheric_pressure_hpa": 1001.9955210479748,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-07",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-07T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.1341583335912,
+          "wind_speed_ms": 14.520817491648392,
+          "atmospheric_pressure_hpa": 1005.890515289247,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-02-08",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-08T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.6671425680807,
+          "wind_speed_ms": 18.189661271207903,
+          "atmospheric_pressure_hpa": 999.06107404,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-09",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-09T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.75341558796833,
+          "wind_speed_ms": 20.91892105672958,
+          "atmospheric_pressure_hpa": 994.0261324447521,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-02-10",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-10T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.13910847177425,
+          "wind_speed_ms": 13.260208037305608,
+          "atmospheric_pressure_hpa": 990.4243286316728,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-11",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-11T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.7642750242351,
+          "wind_speed_ms": 14.614163509105722,
+          "atmospheric_pressure_hpa": 1004.9041679165581,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-12",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-12T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.1478111167613,
+          "wind_speed_ms": 20.098779288240117,
+          "atmospheric_pressure_hpa": 1001.2997853058866,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-13",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-13T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.35056823827335,
+          "wind_speed_ms": 16.523667837241412,
+          "atmospheric_pressure_hpa": 1002.810650992379,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-02-14",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-14T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.462231944927,
+          "wind_speed_ms": 14.377876454956326,
+          "atmospheric_pressure_hpa": 1000.2058874498266,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-15",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-15T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.94924949098737,
+          "wind_speed_ms": 18.900098687270148,
+          "atmospheric_pressure_hpa": 1001.9176584574674,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-16",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-16T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.04622757225104,
+          "wind_speed_ms": 16.681550470192896,
+          "atmospheric_pressure_hpa": 990.9852109825655,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-17",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-17T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.8067700916123,
+          "wind_speed_ms": 15.15610140514897,
+          "atmospheric_pressure_hpa": 997.9062972248797,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-18",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-18T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.3635755973791,
+          "wind_speed_ms": 12.934652994868237,
+          "atmospheric_pressure_hpa": 994.1492669581775,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-02-19",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-19T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.2402134349633,
+          "wind_speed_ms": 18.82740087142166,
+          "atmospheric_pressure_hpa": 997.982547818377,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-20",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-20T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.00462455091343,
+          "wind_speed_ms": 16.676178625878563,
+          "atmospheric_pressure_hpa": 990.7216733178602,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-21",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-21T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.91031335678036,
+          "wind_speed_ms": 14.874955162809522,
+          "atmospheric_pressure_hpa": 1004.2895612347091,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-22",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-22T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.38022056030263,
+          "wind_speed_ms": 18.53661184865274,
+          "atmospheric_pressure_hpa": 1005.2553884939831,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-23",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-23T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.598148358286,
+          "wind_speed_ms": 21.218008159046843,
+          "atmospheric_pressure_hpa": 1001.8785742795582,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-24",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-24T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.66078431236366,
+          "wind_speed_ms": 19.982655638600104,
+          "atmospheric_pressure_hpa": 995.4413266572076,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-02-25",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-25T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.02275670373575,
+          "wind_speed_ms": 22.123400806438774,
+          "atmospheric_pressure_hpa": 1002.387933115671,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-02-26",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-26T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.73092996932485,
+          "wind_speed_ms": 16.882876870339324,
+          "atmospheric_pressure_hpa": 988.2406465187137,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-27",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-27T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.85079837452776,
+          "wind_speed_ms": 16.957902193671018,
+          "atmospheric_pressure_hpa": 990.9001408868941,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-28",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-28T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.14105888687965,
+          "wind_speed_ms": 15.25836729281435,
+          "atmospheric_pressure_hpa": 996.1981930043538,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-02-29",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-02-29T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.46409123370904,
+          "wind_speed_ms": 19.354358349657808,
+          "atmospheric_pressure_hpa": 994.1295065906698,
+          "cyclone_present": false
+        }
+      }
+    }
+  ]
+}

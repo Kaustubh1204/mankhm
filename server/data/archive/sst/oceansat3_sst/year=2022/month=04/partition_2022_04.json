@@ -1,0 +1,489 @@
+{
+  "category": "sst",
+  "dataset": "oceansat3_sst",
+  "year": 2022,
+  "month": "04",
+  "total_days": 30,
+  "data": [
+    {
+      "date": "2022-04-01",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-01T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.1065221892874,
+          "wind_speed_ms": 17.290033643661147,
+          "atmospheric_pressure_hpa": 1002.229919232966,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-02",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-02T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.8665270226403,
+          "wind_speed_ms": 20.474339935948805,
+          "atmospheric_pressure_hpa": 1005.8190197749927,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2022-04-03",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-03T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.8252523395211,
+          "wind_speed_ms": 17.677166226295363,
+          "atmospheric_pressure_hpa": 998.8917181746289,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-04",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-04T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.023138491547,
+          "wind_speed_ms": 14.75439037817966,
+          "atmospheric_pressure_hpa": 1001.6629603015896,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-05",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-05T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.0637721621314,
+          "wind_speed_ms": 19.803320989505234,
+          "atmospheric_pressure_hpa": 1003.9946936067943,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-06",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-06T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.7009446397568,
+          "wind_speed_ms": 20.27975328067763,
+          "atmospheric_pressure_hpa": 1007.9552097342657,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-07",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-07T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.11630659125854,
+          "wind_speed_ms": 17.618432639941567,
+          "atmospheric_pressure_hpa": 1000.3406858191836,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-08",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-08T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.83593483468803,
+          "wind_speed_ms": 14.467179893604118,
+          "atmospheric_pressure_hpa": 1003.6085037905488,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-09",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-09T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.21854755216464,
+          "wind_speed_ms": 15.707984186961308,
+          "atmospheric_pressure_hpa": 1005.6937234990262,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-10",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-10T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.41825241519587,
+          "wind_speed_ms": 13.87488748650955,
+          "atmospheric_pressure_hpa": 996.2813264272082,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-11",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-11T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.3657923743747,
+          "wind_speed_ms": 22.185987553395062,
+          "atmospheric_pressure_hpa": 994.2885122799155,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-12",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-12T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.59916004216603,
+          "wind_speed_ms": 13.465567249431084,
+          "atmospheric_pressure_hpa": 988.8618615185871,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-13",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-13T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.0558386622409,
+          "wind_speed_ms": 17.475891790633842,
+          "atmospheric_pressure_hpa": 995.5679077845645,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-14",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-14T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.10870556969354,
+          "wind_speed_ms": 20.4626705442258,
+          "atmospheric_pressure_hpa": 990.7412253315116,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-15",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-15T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.5974966355964,
+          "wind_speed_ms": 17.09988982854953,
+          "atmospheric_pressure_hpa": 1006.2555804634322,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2022-04-16",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-16T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.50265905073667,
+          "wind_speed_ms": 15.916958722328218,
+          "atmospheric_pressure_hpa": 993.6739696340215,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2022-04-17",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-17T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.5294645486205,
+          "wind_speed_ms": 14.47538758455661,
+          "atmospheric_pressure_hpa": 998.5206896729484,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-18",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-18T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.4896182051073,
+          "wind_speed_ms": 13.723290652983785,
+          "atmospheric_pressure_hpa": 992.2101809971684,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-19",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-19T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.212501920982,
+          "wind_speed_ms": 18.40731279340266,
+          "atmospheric_pressure_hpa": 1004.1455024573125,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-20",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-20T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.05238231993235,
+          "wind_speed_ms": 18.070504739498453,
+          "atmospheric_pressure_hpa": 997.3082732367142,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-21",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-21T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.01913565421546,
+          "wind_speed_ms": 15.896298483817107,
+          "atmospheric_pressure_hpa": 991.5910194959656,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-22",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-22T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.24651105155425,
+          "wind_speed_ms": 16.922532022058522,
+          "atmospheric_pressure_hpa": 1003.0946026557016,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-23",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-23T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.93976856702926,
+          "wind_speed_ms": 20.17388811538164,
+          "atmospheric_pressure_hpa": 1005.2568150658149,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-24",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-24T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.4773369673104,
+          "wind_speed_ms": 17.589992721680364,
+          "atmospheric_pressure_hpa": 998.8384592178946,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-25",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-25T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.14776855057096,
+          "wind_speed_ms": 14.27618515928777,
+          "atmospheric_pressure_hpa": 991.0815754153116,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-26",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-26T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.558312637791,
+          "wind_speed_ms": 19.39485289972777,
+          "atmospheric_pressure_hpa": 999.5202256318714,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-27",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-27T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.546516161353,
+          "wind_speed_ms": 15.715763296094677,
+          "atmospheric_pressure_hpa": 994.2165125453918,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2022-04-28",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-28T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.72465317898565,
+          "wind_speed_ms": 17.801380283827758,
+          "atmospheric_pressure_hpa": 990.6828264039491,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-29",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-29T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.46487310885556,
+          "wind_speed_ms": 14.156490084671901,
+          "atmospheric_pressure_hpa": 988.4391465790359,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-04-30",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-04-30T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.49297036394927,
+          "wind_speed_ms": 21.765988102396598,
+          "atmospheric_pressure_hpa": 998.8051004174733,
+          "cyclone_present": false
+        }
+      }
+    }
+  ]
+}

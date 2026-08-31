@@ -1,0 +1,489 @@
+{
+  "category": "sst",
+  "dataset": "oceansat3_sst",
+  "year": 2020,
+  "month": "06",
+  "total_days": 30,
+  "data": [
+    {
+      "date": "2020-06-01",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-01T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.9861627568066,
+          "wind_speed_ms": 22.239037374236474,
+          "atmospheric_pressure_hpa": 992.9767344290174,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-06-02",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-02T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.55480725134936,
+          "wind_speed_ms": 16.03047949170763,
+          "atmospheric_pressure_hpa": 990.8308778067488,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-03",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-03T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.53570321451224,
+          "wind_speed_ms": 21.685387308746165,
+          "atmospheric_pressure_hpa": 1007.5624869245187,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-04",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-04T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.87375945841603,
+          "wind_speed_ms": 20.58525547508372,
+          "atmospheric_pressure_hpa": 1004.7674344297699,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-05",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-05T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.3978102375583,
+          "wind_speed_ms": 19.075995765843118,
+          "atmospheric_pressure_hpa": 1002.7973478086848,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-06",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-06T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.519651925248,
+          "wind_speed_ms": 21.13145888240924,
+          "atmospheric_pressure_hpa": 990.2961629260659,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-07",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-07T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.90345881940254,
+          "wind_speed_ms": 18.065895450588556,
+          "atmospheric_pressure_hpa": 1000.1541962065603,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-08",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-08T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.2072651530652,
+          "wind_speed_ms": 12.624626284168205,
+          "atmospheric_pressure_hpa": 991.7807276301143,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-09",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-09T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.8999557585277,
+          "wind_speed_ms": 13.240963798770595,
+          "atmospheric_pressure_hpa": 1002.2524292700668,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-10",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-10T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.3528050080621,
+          "wind_speed_ms": 14.0051458691092,
+          "atmospheric_pressure_hpa": 1005.6756028602488,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-11",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-11T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.33528374119214,
+          "wind_speed_ms": 19.48692091744811,
+          "atmospheric_pressure_hpa": 995.0152569703173,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-12",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-12T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.149239846419,
+          "wind_speed_ms": 15.17405331811933,
+          "atmospheric_pressure_hpa": 993.8236371202505,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-13",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-13T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.9835160358489,
+          "wind_speed_ms": 21.240397870586584,
+          "atmospheric_pressure_hpa": 994.1152355409176,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-14",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-14T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.8893093402782,
+          "wind_speed_ms": 15.306041822976507,
+          "atmospheric_pressure_hpa": 1002.5197413100921,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-15",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-15T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.9160973174644,
+          "wind_speed_ms": 21.87518351230993,
+          "atmospheric_pressure_hpa": 999.3456775214232,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-06-16",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-16T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.29314064353866,
+          "wind_speed_ms": 20.487540408691565,
+          "atmospheric_pressure_hpa": 1004.1145914855342,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-06-17",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-17T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.6722423303913,
+          "wind_speed_ms": 15.628431970428213,
+          "atmospheric_pressure_hpa": 996.8558925635822,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-18",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-18T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.15653262753773,
+          "wind_speed_ms": 15.30366683155712,
+          "atmospheric_pressure_hpa": 1000.6153479109894,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-19",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-19T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.3569222085841,
+          "wind_speed_ms": 20.954710879021427,
+          "atmospheric_pressure_hpa": 991.5328103673953,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-20",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-20T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.69870318383124,
+          "wind_speed_ms": 15.390023376089994,
+          "atmospheric_pressure_hpa": 1001.6604354387285,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-06-21",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-21T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.12085863833914,
+          "wind_speed_ms": 16.80265652419139,
+          "atmospheric_pressure_hpa": 992.056587804625,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-22",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-22T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.8984682515927,
+          "wind_speed_ms": 12.498728355491977,
+          "atmospheric_pressure_hpa": 998.4694093923529,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-23",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-23T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.505733402675,
+          "wind_speed_ms": 14.670660515723123,
+          "atmospheric_pressure_hpa": 1003.2569700298449,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-24",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-24T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.841016738743,
+          "wind_speed_ms": 16.02065878228595,
+          "atmospheric_pressure_hpa": 990.8535288828843,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-25",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-25T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.1261399221848,
+          "wind_speed_ms": 14.525034994006788,
+          "atmospheric_pressure_hpa": 995.2975351565697,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-26",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-26T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.0385417688425,
+          "wind_speed_ms": 21.482737672703387,
+          "atmospheric_pressure_hpa": 1003.025059906941,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-27",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-27T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.282790543775,
+          "wind_speed_ms": 20.755919244647366,
+          "atmospheric_pressure_hpa": 990.464442651547,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-28",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-28T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.02406510485304,
+          "wind_speed_ms": 16.476102226123402,
+          "atmospheric_pressure_hpa": 1000.5430246372149,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-29",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-29T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.90379691559303,
+          "wind_speed_ms": 15.752967466525893,
+          "atmospheric_pressure_hpa": 994.6970819256775,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-06-30",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-06-30T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.03784011960835,
+          "wind_speed_ms": 18.836339156417942,
+          "atmospheric_pressure_hpa": 990.5549594071747,
+          "cyclone_present": false
+        }
+      }
+    }
+  ]
+}

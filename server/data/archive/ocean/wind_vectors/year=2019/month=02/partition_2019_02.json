@@ -1,0 +1,457 @@
+{
+  "category": "ocean",
+  "dataset": "wind_vectors",
+  "year": 2019,
+  "month": "02",
+  "total_days": 28,
+  "data": [
+    {
+      "date": "2019-02-01",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-01T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.19074629120115,
+          "wind_speed_ms": 15.84809669948493,
+          "atmospheric_pressure_hpa": 994.9431277395593,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-02",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-02T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.0196238626538,
+          "wind_speed_ms": 13.480984503211753,
+          "atmospheric_pressure_hpa": 992.2468218737177,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-03",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-03T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.0225762896035,
+          "wind_speed_ms": 13.443296643737707,
+          "atmospheric_pressure_hpa": 990.7852709237702,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-04",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-04T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.41815185545926,
+          "wind_speed_ms": 13.523574398671652,
+          "atmospheric_pressure_hpa": 989.102457822539,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-05",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-05T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.46125205672655,
+          "wind_speed_ms": 13.742282265772117,
+          "atmospheric_pressure_hpa": 988.2093276921021,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-06",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-06T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.4841978094501,
+          "wind_speed_ms": 16.635861198348984,
+          "atmospheric_pressure_hpa": 995.0464009753855,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2019-02-07",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-07T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.55838744297523,
+          "wind_speed_ms": 17.773362996757896,
+          "atmospheric_pressure_hpa": 1001.002152068553,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-08",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-08T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.9656462520546,
+          "wind_speed_ms": 18.372435647599033,
+          "atmospheric_pressure_hpa": 998.9169007252536,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-09",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-09T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.0068466699371,
+          "wind_speed_ms": 13.090048320595049,
+          "atmospheric_pressure_hpa": 1003.1848127964197,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-10",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-10T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.4598687733487,
+          "wind_speed_ms": 14.84897589549352,
+          "atmospheric_pressure_hpa": 988.4864111819634,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2019-02-11",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-11T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.8818697302928,
+          "wind_speed_ms": 20.981830629668636,
+          "atmospheric_pressure_hpa": 996.9931124607211,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-12",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-12T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.69471898607964,
+          "wind_speed_ms": 19.3628042758274,
+          "atmospheric_pressure_hpa": 994.0536559039768,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-13",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-13T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.638360759092,
+          "wind_speed_ms": 15.536733398361138,
+          "atmospheric_pressure_hpa": 1002.8595644672918,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-14",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-14T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.08148235004126,
+          "wind_speed_ms": 22.156116424761088,
+          "atmospheric_pressure_hpa": 1007.4866684497463,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-15",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-15T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.1005153982458,
+          "wind_speed_ms": 21.57747964235919,
+          "atmospheric_pressure_hpa": 1007.3403015166947,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2019-02-16",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-16T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.9357782452854,
+          "wind_speed_ms": 17.253793358608533,
+          "atmospheric_pressure_hpa": 998.1690854488548,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-17",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-17T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.76749872829214,
+          "wind_speed_ms": 15.028475025511222,
+          "atmospheric_pressure_hpa": 1005.9768325563978,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-18",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-18T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.44526857561897,
+          "wind_speed_ms": 18.143682361578563,
+          "atmospheric_pressure_hpa": 1003.2863114899186,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-19",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-19T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.57534811329424,
+          "wind_speed_ms": 12.70454028029397,
+          "atmospheric_pressure_hpa": 998.189051137641,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-20",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-20T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.1825499494438,
+          "wind_speed_ms": 18.91242769137833,
+          "atmospheric_pressure_hpa": 988.1468003741751,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-21",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-21T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.92633592551573,
+          "wind_speed_ms": 21.332269287627152,
+          "atmospheric_pressure_hpa": 988.027642611506,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-22",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-22T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.17143380602545,
+          "wind_speed_ms": 13.888894480833006,
+          "atmospheric_pressure_hpa": 1001.6905821974923,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-23",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-23T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.7697397356441,
+          "wind_speed_ms": 20.421241486811915,
+          "atmospheric_pressure_hpa": 1002.4416582557386,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2019-02-24",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-24T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.4123190343675,
+          "wind_speed_ms": 18.384471965975443,
+          "atmospheric_pressure_hpa": 1004.0584348707164,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-25",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-25T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.26411740685467,
+          "wind_speed_ms": 16.887818471834354,
+          "atmospheric_pressure_hpa": 993.7889978706472,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-26",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-26T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.1392033171685,
+          "wind_speed_ms": 16.086676571364272,
+          "atmospheric_pressure_hpa": 994.5935352791812,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-02-27",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-27T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.12486683568994,
+          "wind_speed_ms": 12.814411167358642,
+          "atmospheric_pressure_hpa": 997.5464547740902,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2019-02-28",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-02-28T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.61451239504885,
+          "wind_speed_ms": 22.115528121486363,
+          "atmospheric_pressure_hpa": 1000.5297260234053,
+          "cyclone_present": false
+        }
+      }
+    }
+  ]
+}

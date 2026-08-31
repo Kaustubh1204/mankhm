@@ -1,0 +1,505 @@
+{
+  "category": "atmospheric",
+  "dataset": "gpm_profile",
+  "year": 2016,
+  "month": "10",
+  "total_days": 31,
+  "data": [
+    {
+      "date": "2016-10-01",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-01T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.20330661253604,
+          "wind_speed_ms": 14.145665547406564,
+          "atmospheric_pressure_hpa": 992.4320215333723,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-02",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-02T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.3842750611213,
+          "wind_speed_ms": 18.79012890445595,
+          "atmospheric_pressure_hpa": 989.641974797821,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-03",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-03T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.38777009000376,
+          "wind_speed_ms": 13.490835633131809,
+          "atmospheric_pressure_hpa": 998.9713069485915,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-04",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-04T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.0196213085932,
+          "wind_speed_ms": 17.52361072865203,
+          "atmospheric_pressure_hpa": 995.3280040382022,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-05",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-05T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.88730361463666,
+          "wind_speed_ms": 12.491437848301114,
+          "atmospheric_pressure_hpa": 1003.1608176939126,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-06",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-06T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.82847927164886,
+          "wind_speed_ms": 12.5995147017676,
+          "atmospheric_pressure_hpa": 997.2540585652315,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-07",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-07T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.10301690561045,
+          "wind_speed_ms": 18.574130032437754,
+          "atmospheric_pressure_hpa": 998.596312008089,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-08",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-08T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.77092890048596,
+          "wind_speed_ms": 15.3631618547337,
+          "atmospheric_pressure_hpa": 999.1058917116206,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-09",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-09T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.10644558515565,
+          "wind_speed_ms": 21.54908071027758,
+          "atmospheric_pressure_hpa": 993.6918345712495,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-10",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-10T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.70828781885854,
+          "wind_speed_ms": 15.313934515255955,
+          "atmospheric_pressure_hpa": 1005.4533094561307,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-11",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-11T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.2930431700645,
+          "wind_speed_ms": 16.56230808099123,
+          "atmospheric_pressure_hpa": 1007.1536867449298,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-12",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-12T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.6854439312008,
+          "wind_speed_ms": 13.607100156898051,
+          "atmospheric_pressure_hpa": 1001.5348127364604,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-13",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-13T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.87530976075055,
+          "wind_speed_ms": 12.439737910230722,
+          "atmospheric_pressure_hpa": 991.1542616559616,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-14",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-14T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.0799929173098,
+          "wind_speed_ms": 19.60362754155229,
+          "atmospheric_pressure_hpa": 997.5528317750432,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2016-10-15",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-15T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.20637006522657,
+          "wind_speed_ms": 12.774859543018211,
+          "atmospheric_pressure_hpa": 1007.3809983035703,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2016-10-16",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-16T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.1590767576855,
+          "wind_speed_ms": 17.147546575752756,
+          "atmospheric_pressure_hpa": 995.1992446377094,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-17",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-17T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.2489726480561,
+          "wind_speed_ms": 20.15060288917951,
+          "atmospheric_pressure_hpa": 1005.5081436150786,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2016-10-18",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-18T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.26539991287854,
+          "wind_speed_ms": 17.222935060614446,
+          "atmospheric_pressure_hpa": 989.3230344862787,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-19",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-19T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.88344838069025,
+          "wind_speed_ms": 15.769902521052725,
+          "atmospheric_pressure_hpa": 997.27299091317,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-20",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-20T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.1861737786473,
+          "wind_speed_ms": 16.700315404904075,
+          "atmospheric_pressure_hpa": 997.4476838277278,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-21",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-21T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.4334913293648,
+          "wind_speed_ms": 15.754877467700599,
+          "atmospheric_pressure_hpa": 989.2758556770917,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-22",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-22T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.77303228643757,
+          "wind_speed_ms": 22.3162290138649,
+          "atmospheric_pressure_hpa": 990.6494348412243,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-23",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-23T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.13345019260976,
+          "wind_speed_ms": 21.67378835503463,
+          "atmospheric_pressure_hpa": 990.8388497279831,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-24",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-24T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.1692085814974,
+          "wind_speed_ms": 12.611867938267924,
+          "atmospheric_pressure_hpa": 993.9008655198647,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2016-10-25",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-25T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.5224079186219,
+          "wind_speed_ms": 14.565515635224507,
+          "atmospheric_pressure_hpa": 993.5249608009412,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-26",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-26T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.75081637729755,
+          "wind_speed_ms": 19.96431953910922,
+          "atmospheric_pressure_hpa": 1003.8818357592529,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2016-10-27",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-27T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.01682535769777,
+          "wind_speed_ms": 12.75931769878906,
+          "atmospheric_pressure_hpa": 990.0842561800096,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-28",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-28T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.96210952962684,
+          "wind_speed_ms": 16.2384064169442,
+          "atmospheric_pressure_hpa": 989.485772418693,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-29",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-29T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.9277955572106,
+          "wind_speed_ms": 21.066900638373532,
+          "atmospheric_pressure_hpa": 998.6875433707564,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-30",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-30T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.3139338815014,
+          "wind_speed_ms": 21.235365540996998,
+          "atmospheric_pressure_hpa": 1002.2132135690075,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-10-31",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-10-31T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.12158203213426,
+          "wind_speed_ms": 15.477444577971564,
+          "atmospheric_pressure_hpa": 1004.4650890380905,
+          "cyclone_present": false
+        }
+      }
+    }
+  ]
+}

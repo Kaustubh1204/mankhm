@@ -1,0 +1,505 @@
+{
+  "category": "cyclone",
+  "dataset": "ibtracs",
+  "year": 2019,
+  "month": "12",
+  "total_days": 31,
+  "data": [
+    {
+      "date": "2019-12-01",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-01T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.9243574270366,
+          "wind_speed_ms": 21.46528070156982,
+          "atmospheric_pressure_hpa": 1001.0733970178085,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-02",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-02T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.36275571689475,
+          "wind_speed_ms": 18.735245225895987,
+          "atmospheric_pressure_hpa": 988.6457691667686,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-03",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-03T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.91173209182693,
+          "wind_speed_ms": 22.083821963055904,
+          "atmospheric_pressure_hpa": 991.5173051178889,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-04",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-04T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.9006310880791,
+          "wind_speed_ms": 15.77586700597834,
+          "atmospheric_pressure_hpa": 1003.2081870892412,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-05",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-05T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.80502603812056,
+          "wind_speed_ms": 14.755341375441116,
+          "atmospheric_pressure_hpa": 999.6767552387531,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-06",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-06T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.8797402731804,
+          "wind_speed_ms": 21.884726390279788,
+          "atmospheric_pressure_hpa": 997.0584403227293,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2019-12-07",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-07T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.03322309086343,
+          "wind_speed_ms": 22.070240152058645,
+          "atmospheric_pressure_hpa": 995.4494668735207,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-08",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-08T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.4867028823985,
+          "wind_speed_ms": 16.80334198101159,
+          "atmospheric_pressure_hpa": 1001.1181958807043,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-09",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-09T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.06504309059903,
+          "wind_speed_ms": 18.909533812610242,
+          "atmospheric_pressure_hpa": 1003.3888609504294,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-10",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-10T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.8566105342411,
+          "wind_speed_ms": 21.70912326929089,
+          "atmospheric_pressure_hpa": 1007.6959988589358,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-11",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-11T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.4414245222427,
+          "wind_speed_ms": 15.18668295939273,
+          "atmospheric_pressure_hpa": 1004.1170024664198,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-12",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-12T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.96385357680015,
+          "wind_speed_ms": 18.54655172878345,
+          "atmospheric_pressure_hpa": 1007.044800088811,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-13",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-13T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.85156947079236,
+          "wind_speed_ms": 17.466588988456724,
+          "atmospheric_pressure_hpa": 1004.3852839780142,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-14",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-14T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.46313854969753,
+          "wind_speed_ms": 17.97725803545142,
+          "atmospheric_pressure_hpa": 1006.8256229296211,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2019-12-15",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-15T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.95277523129903,
+          "wind_speed_ms": 18.506792073185544,
+          "atmospheric_pressure_hpa": 1001.8695936279285,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-16",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-16T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.4565136957064,
+          "wind_speed_ms": 18.295498753161965,
+          "atmospheric_pressure_hpa": 992.156099079521,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-17",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-17T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.66965874677226,
+          "wind_speed_ms": 20.13727363618286,
+          "atmospheric_pressure_hpa": 998.8892967779847,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-18",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-18T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.17580285215934,
+          "wind_speed_ms": 13.017261142704768,
+          "atmospheric_pressure_hpa": 1000.6284230008557,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-19",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-19T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.42642393748497,
+          "wind_speed_ms": 13.676262376802917,
+          "atmospheric_pressure_hpa": 1007.2317014413815,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-20",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-20T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.2372516842137,
+          "wind_speed_ms": 18.99396779111661,
+          "atmospheric_pressure_hpa": 1004.5068275631098,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-21",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-21T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.43979128080906,
+          "wind_speed_ms": 14.733208055124036,
+          "atmospheric_pressure_hpa": 993.5431570417832,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-22",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-22T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.6616326212018,
+          "wind_speed_ms": 20.2520087645358,
+          "atmospheric_pressure_hpa": 991.851435116411,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-23",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-23T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.42903911853114,
+          "wind_speed_ms": 16.464400065767215,
+          "atmospheric_pressure_hpa": 999.5324323803089,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-24",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-24T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.36031351809936,
+          "wind_speed_ms": 17.667991809628425,
+          "atmospheric_pressure_hpa": 1000.6441996448046,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-25",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-25T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.5732195764743,
+          "wind_speed_ms": 15.697311957483846,
+          "atmospheric_pressure_hpa": 992.2779535680023,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-26",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-26T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.680232529087,
+          "wind_speed_ms": 15.894094419369576,
+          "atmospheric_pressure_hpa": 992.5348105013935,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-27",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-27T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.90065155373674,
+          "wind_speed_ms": 15.516093877724858,
+          "atmospheric_pressure_hpa": 999.1302562506719,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-28",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-28T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.7182446476744,
+          "wind_speed_ms": 21.73018238734746,
+          "atmospheric_pressure_hpa": 1000.0592247073098,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-29",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-29T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.34955083844864,
+          "wind_speed_ms": 15.944705063522687,
+          "atmospheric_pressure_hpa": 1003.5502239430539,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2019-12-30",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-30T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.62823839280645,
+          "wind_speed_ms": 17.67258607644016,
+          "atmospheric_pressure_hpa": 992.0929367610997,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-12-31",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-12-31T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.1480156472878,
+          "wind_speed_ms": 15.954551092852851,
+          "atmospheric_pressure_hpa": 998.9223509216458,
+          "cyclone_present": false
+        }
+      }
+    }
+  ]
+}

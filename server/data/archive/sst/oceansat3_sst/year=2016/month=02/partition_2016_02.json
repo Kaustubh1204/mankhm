@@ -1,0 +1,473 @@
+{
+  "category": "sst",
+  "dataset": "oceansat3_sst",
+  "year": 2016,
+  "month": "02",
+  "total_days": 29,
+  "data": [
+    {
+      "date": "2016-02-01",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-01T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.9651883220826,
+          "wind_speed_ms": 20.55301574592088,
+          "atmospheric_pressure_hpa": 991.4380576603611,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-02",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-02T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.97441096383193,
+          "wind_speed_ms": 14.355598347214956,
+          "atmospheric_pressure_hpa": 1001.8668988870329,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-03",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-03T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.3413420061173,
+          "wind_speed_ms": 20.77091656742664,
+          "atmospheric_pressure_hpa": 998.33057548624,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-04",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-04T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.16157593864614,
+          "wind_speed_ms": 20.524722389551556,
+          "atmospheric_pressure_hpa": 992.7946773689856,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-05",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-05T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.12355732080965,
+          "wind_speed_ms": 16.07299394160305,
+          "atmospheric_pressure_hpa": 996.5060360520945,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-06",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-06T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.7696435350717,
+          "wind_speed_ms": 18.00067719832951,
+          "atmospheric_pressure_hpa": 1000.6093319449591,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-07",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-07T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.1127773467425,
+          "wind_speed_ms": 17.706007382736836,
+          "atmospheric_pressure_hpa": 994.2682245725254,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-08",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-08T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.07013531854824,
+          "wind_speed_ms": 19.348581686913025,
+          "atmospheric_pressure_hpa": 992.9043256196024,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-09",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-09T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.5560435155127,
+          "wind_speed_ms": 15.861494950426149,
+          "atmospheric_pressure_hpa": 992.6264499523718,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-10",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-10T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.0099751219633,
+          "wind_speed_ms": 21.680751018501,
+          "atmospheric_pressure_hpa": 1004.5981586085348,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-11",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-11T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.2323996718115,
+          "wind_speed_ms": 14.19454192167132,
+          "atmospheric_pressure_hpa": 999.2748250550413,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-12",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-12T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.1820325737237,
+          "wind_speed_ms": 18.56025543790539,
+          "atmospheric_pressure_hpa": 995.182014270689,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-13",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-13T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.28059348160156,
+          "wind_speed_ms": 14.547501400512672,
+          "atmospheric_pressure_hpa": 990.8018549170254,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-14",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-14T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.9438436040623,
+          "wind_speed_ms": 22.371408514061407,
+          "atmospheric_pressure_hpa": 988.6306772392368,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-15",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-15T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.3118751644222,
+          "wind_speed_ms": 18.690508000243167,
+          "atmospheric_pressure_hpa": 1003.1385734707326,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-16",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-16T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.78616635548497,
+          "wind_speed_ms": 17.675578156341242,
+          "atmospheric_pressure_hpa": 1007.9085898657786,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2016-02-17",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-17T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.8024653266699,
+          "wind_speed_ms": 12.851325867424915,
+          "atmospheric_pressure_hpa": 990.8829295675971,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-18",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-18T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.27322983462886,
+          "wind_speed_ms": 14.042205882117221,
+          "atmospheric_pressure_hpa": 1004.4668030839882,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-19",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-19T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.1070165988895,
+          "wind_speed_ms": 21.52665557679082,
+          "atmospheric_pressure_hpa": 990.9772022188089,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-20",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-20T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.7489155149611,
+          "wind_speed_ms": 21.92825900944753,
+          "atmospheric_pressure_hpa": 990.9432174394825,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-21",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-21T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.96527567372215,
+          "wind_speed_ms": 14.910885260681903,
+          "atmospheric_pressure_hpa": 993.6433512513496,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-22",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-22T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.8115957238189,
+          "wind_speed_ms": 17.25038810296784,
+          "atmospheric_pressure_hpa": 997.9964445426117,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-23",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-23T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.49291655293246,
+          "wind_speed_ms": 21.233974276254536,
+          "atmospheric_pressure_hpa": 1003.0003047356892,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-24",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-24T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.01741161098107,
+          "wind_speed_ms": 16.905069126763042,
+          "atmospheric_pressure_hpa": 1007.2661221306447,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-25",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-25T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.422094551896,
+          "wind_speed_ms": 18.367267841907925,
+          "atmospheric_pressure_hpa": 991.2963756264323,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-26",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-26T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.1421751163513,
+          "wind_speed_ms": 17.371158457857135,
+          "atmospheric_pressure_hpa": 1000.5549768473616,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2016-02-27",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-27T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.580330765977,
+          "wind_speed_ms": 17.909322710795248,
+          "atmospheric_pressure_hpa": 1006.3135599256126,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-28",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-28T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.49024946787625,
+          "wind_speed_ms": 14.682216610313802,
+          "atmospheric_pressure_hpa": 989.6333004537258,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2016-02-29",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2016-02-29T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.6194137008071,
+          "wind_speed_ms": 15.777957638950687,
+          "atmospheric_pressure_hpa": 995.7098722170191,
+          "cyclone_present": false
+        }
+      }
+    }
+  ]
+}

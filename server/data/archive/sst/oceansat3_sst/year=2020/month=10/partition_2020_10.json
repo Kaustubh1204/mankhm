@@ -1,0 +1,505 @@
+{
+  "category": "sst",
+  "dataset": "oceansat3_sst",
+  "year": 2020,
+  "month": "10",
+  "total_days": 31,
+  "data": [
+    {
+      "date": "2020-10-01",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-01T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.70365632775093,
+          "wind_speed_ms": 15.823310306234369,
+          "atmospheric_pressure_hpa": 1004.4429366710551,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-10-02",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-02T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.6556010892168,
+          "wind_speed_ms": 14.157602424712419,
+          "atmospheric_pressure_hpa": 1000.5621570303155,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-03",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-03T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.6330809638976,
+          "wind_speed_ms": 21.301220927342555,
+          "atmospheric_pressure_hpa": 1003.9224101027911,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-04",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-04T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.6050984697658,
+          "wind_speed_ms": 14.293715825417578,
+          "atmospheric_pressure_hpa": 1003.3203655060537,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-05",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-05T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.4250871484977,
+          "wind_speed_ms": 19.443967120042597,
+          "atmospheric_pressure_hpa": 990.7711057692893,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-06",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-06T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.681030510307,
+          "wind_speed_ms": 21.00816629578,
+          "atmospheric_pressure_hpa": 1005.0714934277506,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-07",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-07T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.30628363747996,
+          "wind_speed_ms": 13.276688052235034,
+          "atmospheric_pressure_hpa": 1002.9736060373968,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-08",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-08T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.0526490429416,
+          "wind_speed_ms": 21.229822472772284,
+          "atmospheric_pressure_hpa": 998.4612404637777,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-09",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-09T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.63180075905956,
+          "wind_speed_ms": 13.631881327262183,
+          "atmospheric_pressure_hpa": 1005.3806843992869,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-10",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-10T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.7830685409894,
+          "wind_speed_ms": 19.88125962571292,
+          "atmospheric_pressure_hpa": 998.6150235084333,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-11T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.10153243138126,
+          "wind_speed_ms": 15.300519381216287,
+          "atmospheric_pressure_hpa": 996.7687399701972,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-12",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-12T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.39679918904864,
+          "wind_speed_ms": 16.49799459121673,
+          "atmospheric_pressure_hpa": 990.873235825305,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-13",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-13T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.79092190772496,
+          "wind_speed_ms": 19.818963348807646,
+          "atmospheric_pressure_hpa": 997.0951792230865,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-14T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.0919549250274,
+          "wind_speed_ms": 21.333101766964322,
+          "atmospheric_pressure_hpa": 1004.6758348458959,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-15",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-15T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.3207715228195,
+          "wind_speed_ms": 13.436538203513392,
+          "atmospheric_pressure_hpa": 993.3498953308781,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-10-16",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-16T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.6686700899311,
+          "wind_speed_ms": 18.15301668314764,
+          "atmospheric_pressure_hpa": 1005.3164679859907,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-17",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-17T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.3377152157191,
+          "wind_speed_ms": 18.89046099321418,
+          "atmospheric_pressure_hpa": 1003.2237271237507,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-10-18",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-18T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.72012719474293,
+          "wind_speed_ms": 19.738474242334583,
+          "atmospheric_pressure_hpa": 1005.6133856115226,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-19",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-19T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.4108237867289,
+          "wind_speed_ms": 21.979478791485874,
+          "atmospheric_pressure_hpa": 1001.5733978737812,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-20",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-20T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.30247802601315,
+          "wind_speed_ms": 13.139541068821204,
+          "atmospheric_pressure_hpa": 992.5641533055402,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-21",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-21T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.61240078038776,
+          "wind_speed_ms": 20.57552372490361,
+          "atmospheric_pressure_hpa": 992.1254288231856,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-10-22",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-22T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.5495390212048,
+          "wind_speed_ms": 13.4295518931184,
+          "atmospheric_pressure_hpa": 996.992677084275,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-10-23",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-23T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.1755524888279,
+          "wind_speed_ms": 15.188673809235066,
+          "atmospheric_pressure_hpa": 993.9772695024677,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-24",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-24T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.9095114470717,
+          "wind_speed_ms": 18.59937384687849,
+          "atmospheric_pressure_hpa": 990.1588339209665,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-25",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-25T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.9131463979499,
+          "wind_speed_ms": 21.838932822655643,
+          "atmospheric_pressure_hpa": 1006.8823678195953,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-10-26",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-26T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.78898350105635,
+          "wind_speed_ms": 12.883498209410165,
+          "atmospheric_pressure_hpa": 1004.6602247214839,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-27",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-27T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.98493540509253,
+          "wind_speed_ms": 18.625770930438815,
+          "atmospheric_pressure_hpa": 988.5309828984002,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-28",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-28T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.2847476797987,
+          "wind_speed_ms": 15.364908333996127,
+          "atmospheric_pressure_hpa": 1000.6473173637197,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-29",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-29T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.87960205701063,
+          "wind_speed_ms": 16.710165330322372,
+          "atmospheric_pressure_hpa": 1002.46955859253,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2020-10-30",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-30T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.93276809379466,
+          "wind_speed_ms": 18.24150899412139,
+          "atmospheric_pressure_hpa": 1006.653089343694,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2020-10-31",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2020-10-31T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.52433245135296,
+          "wind_speed_ms": 17.781633209156347,
+          "atmospheric_pressure_hpa": 992.5236658560411,
+          "cyclone_present": false
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,489 @@
+{
+  "category": "ocean",
+  "dataset": "wind_vectors",
+  "year": 2023,
+  "month": "11",
+  "total_days": 30,
+  "data": [
+    {
+      "date": "2023-11-01",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-01T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.08599726442463,
+          "wind_speed_ms": 18.942280141084776,
+          "atmospheric_pressure_hpa": 1000.8007049438471,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-02",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-02T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.70200097155646,
+          "wind_speed_ms": 16.96063359198538,
+          "atmospheric_pressure_hpa": 998.4346689422543,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-03",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-03T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.7112206207716,
+          "wind_speed_ms": 17.427709104332582,
+          "atmospheric_pressure_hpa": 995.1802056005748,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-04",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-04T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.1978324599972,
+          "wind_speed_ms": 13.224143114522231,
+          "atmospheric_pressure_hpa": 1000.0697148707873,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-05",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-05T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.5049223336709,
+          "wind_speed_ms": 15.331632657420018,
+          "atmospheric_pressure_hpa": 1006.5494454762572,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-06",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-06T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.16429877745736,
+          "wind_speed_ms": 20.241606874574867,
+          "atmospheric_pressure_hpa": 997.1817980632304,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-07",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-07T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.2473063359946,
+          "wind_speed_ms": 21.97322151918711,
+          "atmospheric_pressure_hpa": 992.7143894529477,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-08",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-08T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.96140058678264,
+          "wind_speed_ms": 18.340185970131166,
+          "atmospheric_pressure_hpa": 1004.1653365546396,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-09T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.4075622895265,
+          "wind_speed_ms": 17.90153738092603,
+          "atmospheric_pressure_hpa": 1002.0620362717095,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2023-11-10",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-10T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.33698972950566,
+          "wind_speed_ms": 19.775563921770992,
+          "atmospheric_pressure_hpa": 998.5968308627796,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-11",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-11T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.1200653856569,
+          "wind_speed_ms": 16.98132993747525,
+          "atmospheric_pressure_hpa": 1006.2136981604714,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-12",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-12T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.12736781402504,
+          "wind_speed_ms": 15.1345921668571,
+          "atmospheric_pressure_hpa": 1004.3520199448076,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-13",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-13T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.5785284201206,
+          "wind_speed_ms": 19.986307863178354,
+          "atmospheric_pressure_hpa": 1005.6716886389278,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2023-11-14",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-14T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.69770902144995,
+          "wind_speed_ms": 22.179296567156847,
+          "atmospheric_pressure_hpa": 994.3391352235802,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-15",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-15T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.0882431462707,
+          "wind_speed_ms": 18.88144802215997,
+          "atmospheric_pressure_hpa": 1000.2868397626922,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-16",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-16T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.8633084820256,
+          "wind_speed_ms": 22.010815648102465,
+          "atmospheric_pressure_hpa": 998.0875205899473,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-17",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-17T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.5767912805705,
+          "wind_speed_ms": 17.56562156257061,
+          "atmospheric_pressure_hpa": 997.7078418894408,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-18",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-18T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.5071496988268,
+          "wind_speed_ms": 18.38392768077857,
+          "atmospheric_pressure_hpa": 994.8335951066102,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-19",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-19T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.45280731024997,
+          "wind_speed_ms": 15.461603419241357,
+          "atmospheric_pressure_hpa": 997.9095307682944,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-20",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-20T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.37961221096924,
+          "wind_speed_ms": 13.026965574712825,
+          "atmospheric_pressure_hpa": 998.3332782524835,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-21",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-21T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.1539529989661,
+          "wind_speed_ms": 14.698927680304568,
+          "atmospheric_pressure_hpa": 1005.612261629714,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-22",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-22T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.24111322178356,
+          "wind_speed_ms": 18.865300204690463,
+          "atmospheric_pressure_hpa": 1006.5056697872924,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-23",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-23T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.0194099874742,
+          "wind_speed_ms": 12.991144089163651,
+          "atmospheric_pressure_hpa": 999.1516721144739,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-24",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-24T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.4470934711594,
+          "wind_speed_ms": 13.176775310303135,
+          "atmospheric_pressure_hpa": 988.8479332140682,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-25",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-25T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.46278677844447,
+          "wind_speed_ms": 14.51143252671256,
+          "atmospheric_pressure_hpa": 1001.612923645527,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-26",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-26T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.55223175756095,
+          "wind_speed_ms": 16.651413222658128,
+          "atmospheric_pressure_hpa": 1003.433077566578,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-27",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-27T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.28838474503266,
+          "wind_speed_ms": 16.99104445881555,
+          "atmospheric_pressure_hpa": 997.3409249484704,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-28",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-28T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.3151802384303,
+          "wind_speed_ms": 20.0592163531457,
+          "atmospheric_pressure_hpa": 990.022431479917,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2023-11-29",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-29T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.9234698040652,
+          "wind_speed_ms": 15.400867361697662,
+          "atmospheric_pressure_hpa": 988.81344489692,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2023-11-30T12:00:00Z",
+        "category": "ocean",
+        "dataset": "wind_vectors",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.47299515735807,
+          "wind_speed_ms": 12.478063851806564,
+          "atmospheric_pressure_hpa": 995.3747804167417,
+          "cyclone_present": false
+        }
+      }
+    }
+  ]
+}

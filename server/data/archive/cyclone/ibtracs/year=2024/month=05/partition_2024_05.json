@@ -1,0 +1,505 @@
+{
+  "category": "cyclone",
+  "dataset": "ibtracs",
+  "year": 2024,
+  "month": "05",
+  "total_days": 31,
+  "data": [
+    {
+      "date": "2024-05-01",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-01T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.20837590293957,
+          "wind_speed_ms": 22.104787630330332,
+          "atmospheric_pressure_hpa": 1004.7993830625344,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-02",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-02T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.44261239553657,
+          "wind_speed_ms": 21.277928574657956,
+          "atmospheric_pressure_hpa": 1002.8258084662433,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-03",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-03T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.3972566500538,
+          "wind_speed_ms": 17.021472646984307,
+          "atmospheric_pressure_hpa": 988.3093631052898,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-04",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-04T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.9197827928255,
+          "wind_speed_ms": 19.883073616265467,
+          "atmospheric_pressure_hpa": 990.5510371494973,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-05",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-05T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.3593022745595,
+          "wind_speed_ms": 20.77559845067958,
+          "atmospheric_pressure_hpa": 1001.2737126270007,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-06",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-06T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.3261126622557,
+          "wind_speed_ms": 14.151931649118113,
+          "atmospheric_pressure_hpa": 994.0981462692324,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-07",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-07T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.2620775028327,
+          "wind_speed_ms": 15.317911138547085,
+          "atmospheric_pressure_hpa": 1003.5015962653223,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-08",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-08T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.4421652833461,
+          "wind_speed_ms": 13.069050839701376,
+          "atmospheric_pressure_hpa": 994.7564344849587,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-09",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-09T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.1707376872746,
+          "wind_speed_ms": 20.072564991064226,
+          "atmospheric_pressure_hpa": 997.6910940062471,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2024-05-10",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-10T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.01497185506173,
+          "wind_speed_ms": 20.88019970985244,
+          "atmospheric_pressure_hpa": 996.93862892267,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2024-05-11",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-11T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.5173327858857,
+          "wind_speed_ms": 20.361787553354528,
+          "atmospheric_pressure_hpa": 1001.0956367245736,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-12",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-12T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.17009086055805,
+          "wind_speed_ms": 21.553712597199386,
+          "atmospheric_pressure_hpa": 996.7820127191643,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-13",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-13T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.9618117528117,
+          "wind_speed_ms": 18.264760593873426,
+          "atmospheric_pressure_hpa": 1004.7341431467089,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-14",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-14T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.4038298404186,
+          "wind_speed_ms": 21.733280819014258,
+          "atmospheric_pressure_hpa": 1007.9070680657018,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-15",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-15T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.9666272344623,
+          "wind_speed_ms": 15.15245550748486,
+          "atmospheric_pressure_hpa": 988.1393759443438,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-16",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-16T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.8211726393087,
+          "wind_speed_ms": 13.093592882392967,
+          "atmospheric_pressure_hpa": 988.1503502192548,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-17",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-17T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.74082762401065,
+          "wind_speed_ms": 15.91062862085078,
+          "atmospheric_pressure_hpa": 988.4925155875341,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-18",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-18T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.664180859961,
+          "wind_speed_ms": 16.106223085028432,
+          "atmospheric_pressure_hpa": 994.7108407700662,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2024-05-19",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-19T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.2398965433979,
+          "wind_speed_ms": 18.01850764609283,
+          "atmospheric_pressure_hpa": 1006.1273433610129,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-20",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-20T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.5868428300705,
+          "wind_speed_ms": 16.43812252156443,
+          "atmospheric_pressure_hpa": 998.4349090943697,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-21",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-21T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.2147839213573,
+          "wind_speed_ms": 17.00832591557957,
+          "atmospheric_pressure_hpa": 1002.6410543760272,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2024-05-22",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-22T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.6124592045866,
+          "wind_speed_ms": 18.905181426034734,
+          "atmospheric_pressure_hpa": 1006.6794083319253,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-23",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-23T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.24791930284334,
+          "wind_speed_ms": 20.44474272579822,
+          "atmospheric_pressure_hpa": 1002.1220886465642,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-24",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-24T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.061155430826,
+          "wind_speed_ms": 13.428681321722339,
+          "atmospheric_pressure_hpa": 991.248822670438,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-25",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-25T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.8859226467776,
+          "wind_speed_ms": 22.1846903398731,
+          "atmospheric_pressure_hpa": 1004.706487102473,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-26",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-26T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.58185329720726,
+          "wind_speed_ms": 13.744170618214536,
+          "atmospheric_pressure_hpa": 1002.4701942936074,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-27",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-27T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.171762439555,
+          "wind_speed_ms": 15.972939364497565,
+          "atmospheric_pressure_hpa": 995.1322413445722,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-28",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-28T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.35127557628596,
+          "wind_speed_ms": 12.941024262142854,
+          "atmospheric_pressure_hpa": 994.2197887299104,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-29",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-29T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.1278285394153,
+          "wind_speed_ms": 18.75779361407333,
+          "atmospheric_pressure_hpa": 989.2825164370643,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-30",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-30T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.16932117603386,
+          "wind_speed_ms": 12.60682870375015,
+          "atmospheric_pressure_hpa": 998.672527208654,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2024-05-31",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2024-05-31T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.44104090924776,
+          "wind_speed_ms": 16.294685096948644,
+          "atmospheric_pressure_hpa": 1005.4277400891742,
+          "cyclone_present": false
+        }
+      }
+    }
+  ]
+}

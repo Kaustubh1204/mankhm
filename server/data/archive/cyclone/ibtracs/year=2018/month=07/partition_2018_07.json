@@ -1,0 +1,505 @@
+{
+  "category": "cyclone",
+  "dataset": "ibtracs",
+  "year": 2018,
+  "month": "07",
+  "total_days": 31,
+  "data": [
+    {
+      "date": "2018-07-01",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-01T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.55508111934995,
+          "wind_speed_ms": 13.081912479909025,
+          "atmospheric_pressure_hpa": 993.7900261317722,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-02",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-02T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.41683141700344,
+          "wind_speed_ms": 20.002326970380658,
+          "atmospheric_pressure_hpa": 991.4742975513026,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-03",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-03T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.6194392895093,
+          "wind_speed_ms": 17.827282902177082,
+          "atmospheric_pressure_hpa": 996.3104460135752,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-04",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-04T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.54600588370505,
+          "wind_speed_ms": 13.195053085715719,
+          "atmospheric_pressure_hpa": 994.2024657066672,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2018-07-05",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-05T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.16499599840085,
+          "wind_speed_ms": 15.63100018486109,
+          "atmospheric_pressure_hpa": 997.5308756626315,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-06",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-06T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.3562858514205,
+          "wind_speed_ms": 16.691142113002837,
+          "atmospheric_pressure_hpa": 1000.849622594434,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-07",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-07T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.49763587812,
+          "wind_speed_ms": 21.631594497971623,
+          "atmospheric_pressure_hpa": 994.8595750015392,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2018-07-08",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-08T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.7358218514032,
+          "wind_speed_ms": 20.900387945746914,
+          "atmospheric_pressure_hpa": 1002.4643149516991,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-09",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-09T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.7840827718921,
+          "wind_speed_ms": 16.747793877230272,
+          "atmospheric_pressure_hpa": 996.9688293226732,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-10",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-10T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.28925714066713,
+          "wind_speed_ms": 18.97752707679591,
+          "atmospheric_pressure_hpa": 1002.7556665744064,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-11",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-11T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.44936112370306,
+          "wind_speed_ms": 17.51629674651305,
+          "atmospheric_pressure_hpa": 997.8689772401234,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-12",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-12T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.3411342814858,
+          "wind_speed_ms": 15.727623671839844,
+          "atmospheric_pressure_hpa": 1003.1287017872779,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-13",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-13T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.18549462629943,
+          "wind_speed_ms": 21.47435776572675,
+          "atmospheric_pressure_hpa": 1001.1221690020059,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-14",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-14T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.9702880360464,
+          "wind_speed_ms": 20.845224475949202,
+          "atmospheric_pressure_hpa": 994.604775413169,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-15",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-15T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.5336128645859,
+          "wind_speed_ms": 18.221008408541667,
+          "atmospheric_pressure_hpa": 990.1695029066454,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-16",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-16T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.71061116568706,
+          "wind_speed_ms": 19.355173283569982,
+          "atmospheric_pressure_hpa": 1006.0659961225128,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-17",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-17T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.6244281327834,
+          "wind_speed_ms": 21.87264861250228,
+          "atmospheric_pressure_hpa": 1002.7950856648871,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2018-07-18",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-18T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.6621581940462,
+          "wind_speed_ms": 15.207895088858333,
+          "atmospheric_pressure_hpa": 988.3252337173162,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-19",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-19T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.2269559290676,
+          "wind_speed_ms": 15.006990219356815,
+          "atmospheric_pressure_hpa": 988.0750703071237,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-20",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-20T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.63375436219997,
+          "wind_speed_ms": 15.305220433722562,
+          "atmospheric_pressure_hpa": 1001.2021052752942,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-21",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-21T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.89600795281626,
+          "wind_speed_ms": 19.184837158806815,
+          "atmospheric_pressure_hpa": 1005.3999891426934,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-22",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-22T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.50642885965635,
+          "wind_speed_ms": 20.92791550365221,
+          "atmospheric_pressure_hpa": 994.3826119188777,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-23",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-23T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.2914573150246,
+          "wind_speed_ms": 17.745929270637564,
+          "atmospheric_pressure_hpa": 990.3737207057147,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-24",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-24T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.88565480055297,
+          "wind_speed_ms": 17.36596460388528,
+          "atmospheric_pressure_hpa": 992.2151626833601,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-25",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-25T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.03914345996395,
+          "wind_speed_ms": 21.381221316893093,
+          "atmospheric_pressure_hpa": 988.1484660787763,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-26",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-26T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.45728875319736,
+          "wind_speed_ms": 14.147719787970965,
+          "atmospheric_pressure_hpa": 995.1901813077914,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-27",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-27T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.92563114933756,
+          "wind_speed_ms": 20.830462588925464,
+          "atmospheric_pressure_hpa": 992.3037942322799,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-28",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-28T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.0030938902907,
+          "wind_speed_ms": 15.445146373007926,
+          "atmospheric_pressure_hpa": 999.1077929575895,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2018-07-29",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-29T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.5532007678854,
+          "wind_speed_ms": 21.48730338567848,
+          "atmospheric_pressure_hpa": 995.6027063615826,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-30",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-30T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.66338693631053,
+          "wind_speed_ms": 17.398376924125643,
+          "atmospheric_pressure_hpa": 1006.5556163203037,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-07-31",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-07-31T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.97336698904184,
+          "wind_speed_ms": 17.190945225841737,
+          "atmospheric_pressure_hpa": 998.6968295820046,
+          "cyclone_present": false
+        }
+      }
+    }
+  ]
+}

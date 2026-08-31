@@ -1,0 +1,505 @@
+{
+  "category": "atmospheric",
+  "dataset": "gpm_profile",
+  "year": 2018,
+  "month": "12",
+  "total_days": 31,
+  "data": [
+    {
+      "date": "2018-12-01",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-01T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.9085220504908,
+          "wind_speed_ms": 19.8739999502181,
+          "atmospheric_pressure_hpa": 1004.8320623842287,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-02",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-02T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.03639860039124,
+          "wind_speed_ms": 12.99400238617245,
+          "atmospheric_pressure_hpa": 1004.7111007553603,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-03",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-03T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.2626670882805,
+          "wind_speed_ms": 17.63786777911758,
+          "atmospheric_pressure_hpa": 993.3113125420822,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-04",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-04T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.5445122679579,
+          "wind_speed_ms": 12.77198061566309,
+          "atmospheric_pressure_hpa": 993.7407853131276,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-05",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-05T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.0527980986238,
+          "wind_speed_ms": 15.996559922038248,
+          "atmospheric_pressure_hpa": 991.4650564937562,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2018-12-06",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-06T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.659170669097,
+          "wind_speed_ms": 20.587990256655633,
+          "atmospheric_pressure_hpa": 989.8826765688494,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-07",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-07T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.29640330660277,
+          "wind_speed_ms": 18.471951215999198,
+          "atmospheric_pressure_hpa": 1000.643933422449,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-08",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-08T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.0357269429599,
+          "wind_speed_ms": 14.734070726567905,
+          "atmospheric_pressure_hpa": 997.3349445533147,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2018-12-09",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-09T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.3257601368342,
+          "wind_speed_ms": 15.735074885170471,
+          "atmospheric_pressure_hpa": 993.0609592725774,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-10",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-10T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.6662594356919,
+          "wind_speed_ms": 15.69813928874108,
+          "atmospheric_pressure_hpa": 996.3664685311138,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-11",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-11T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.4349230078204,
+          "wind_speed_ms": 15.723067497771535,
+          "atmospheric_pressure_hpa": 990.6539235381828,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-12",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-12T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.8382599589428,
+          "wind_speed_ms": 14.170302472317477,
+          "atmospheric_pressure_hpa": 995.4840357154474,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2018-12-13",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-13T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.7191213632478,
+          "wind_speed_ms": 17.54840418882622,
+          "atmospheric_pressure_hpa": 988.8142341326028,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-14",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-14T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.56517336365414,
+          "wind_speed_ms": 20.48107221472178,
+          "atmospheric_pressure_hpa": 1001.3955207218459,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-15",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-15T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.08262181163076,
+          "wind_speed_ms": 13.64964216629362,
+          "atmospheric_pressure_hpa": 1003.0387264796254,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2018-12-16",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-16T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.14028025043297,
+          "wind_speed_ms": 14.39794240579366,
+          "atmospheric_pressure_hpa": 1005.0807566370063,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-17",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-17T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.95505299751477,
+          "wind_speed_ms": 17.99696672805898,
+          "atmospheric_pressure_hpa": 992.8389064338296,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-18",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-18T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.0182312754142,
+          "wind_speed_ms": 21.739758656581543,
+          "atmospheric_pressure_hpa": 994.062740664318,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-19",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-19T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.1091734153407,
+          "wind_speed_ms": 14.56441799252242,
+          "atmospheric_pressure_hpa": 992.7518781999153,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-20",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-20T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.62069664632895,
+          "wind_speed_ms": 15.000593222419873,
+          "atmospheric_pressure_hpa": 1000.0182119628786,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-21",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-21T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.0239422842862,
+          "wind_speed_ms": 19.191905710042107,
+          "atmospheric_pressure_hpa": 1006.210610284744,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-22",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-22T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.842403544435,
+          "wind_speed_ms": 17.520540671743564,
+          "atmospheric_pressure_hpa": 990.7076737753737,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-23",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-23T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.24189870099275,
+          "wind_speed_ms": 22.098588387057045,
+          "atmospheric_pressure_hpa": 989.236414360812,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-24",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-24T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.75970195518363,
+          "wind_speed_ms": 15.038140124765476,
+          "atmospheric_pressure_hpa": 990.8916059419217,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-25",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-25T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.732864540479,
+          "wind_speed_ms": 17.863835437190527,
+          "atmospheric_pressure_hpa": 1003.8560687882917,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-26",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-26T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.92300714044035,
+          "wind_speed_ms": 13.460429921484545,
+          "atmospheric_pressure_hpa": 1005.1982232821747,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-27",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-27T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.7688823839855,
+          "wind_speed_ms": 14.29438283996174,
+          "atmospheric_pressure_hpa": 994.344270310513,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-28",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-28T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.62222689194897,
+          "wind_speed_ms": 13.555845964467998,
+          "atmospheric_pressure_hpa": 992.9603401135482,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-29",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-29T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.98027215717684,
+          "wind_speed_ms": 13.471439055187346,
+          "atmospheric_pressure_hpa": 1007.690930799409,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2018-12-30",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-30T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.8661758521839,
+          "wind_speed_ms": 18.09664508926194,
+          "atmospheric_pressure_hpa": 998.2141634976309,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2018-12-31",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2018-12-31T12:00:00Z",
+        "category": "atmospheric",
+        "dataset": "gpm_profile",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.35999658406905,
+          "wind_speed_ms": 21.938947992624463,
+          "atmospheric_pressure_hpa": 1005.1225899359886,
+          "cyclone_present": false
+        }
+      }
+    }
+  ]
+}

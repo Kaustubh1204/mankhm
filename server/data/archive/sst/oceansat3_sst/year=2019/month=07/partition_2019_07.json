@@ -1,0 +1,505 @@
+{
+  "category": "sst",
+  "dataset": "oceansat3_sst",
+  "year": 2019,
+  "month": "07",
+  "total_days": 31,
+  "data": [
+    {
+      "date": "2019-07-01",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-01T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.92389606072504,
+          "wind_speed_ms": 18.437130745340752,
+          "atmospheric_pressure_hpa": 990.7134291772636,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2019-07-02",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-02T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.88142431321455,
+          "wind_speed_ms": 12.76032233868233,
+          "atmospheric_pressure_hpa": 997.7618670354373,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-03",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-03T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.296372876742,
+          "wind_speed_ms": 21.599525504344676,
+          "atmospheric_pressure_hpa": 989.2605463700743,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-04",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-04T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.91014136438105,
+          "wind_speed_ms": 18.660870699737938,
+          "atmospheric_pressure_hpa": 989.4336334426205,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-05",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-05T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.1655273081739,
+          "wind_speed_ms": 12.614518020355066,
+          "atmospheric_pressure_hpa": 992.0569922348664,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-06",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-06T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.41998049182,
+          "wind_speed_ms": 19.4420646362605,
+          "atmospheric_pressure_hpa": 1007.6213985871043,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-07",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-07T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.15045403094746,
+          "wind_speed_ms": 17.233802703035046,
+          "atmospheric_pressure_hpa": 990.5285492962573,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-08",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-08T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.1248583865624,
+          "wind_speed_ms": 19.268873259008323,
+          "atmospheric_pressure_hpa": 997.8989788882882,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2019-07-09",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-09T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.39489030420765,
+          "wind_speed_ms": 15.404558264873456,
+          "atmospheric_pressure_hpa": 1004.1969330102661,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-10",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-10T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.31308362861927,
+          "wind_speed_ms": 17.801787990003923,
+          "atmospheric_pressure_hpa": 993.7556679924443,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-11",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-11T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.11775872796903,
+          "wind_speed_ms": 17.29579926025454,
+          "atmospheric_pressure_hpa": 997.9617493143924,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-12",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-12T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.45857633771845,
+          "wind_speed_ms": 16.265799276384104,
+          "atmospheric_pressure_hpa": 990.8142758892399,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-13",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-13T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.40854479012035,
+          "wind_speed_ms": 14.470617241000273,
+          "atmospheric_pressure_hpa": 993.8408226506415,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-14",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-14T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.9650174331037,
+          "wind_speed_ms": 21.258802029022874,
+          "atmospheric_pressure_hpa": 1003.0842934217111,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2019-07-15",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-15T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.82961722423727,
+          "wind_speed_ms": 20.837090626404255,
+          "atmospheric_pressure_hpa": 1001.0812544510887,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-16",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-16T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.6587624759923,
+          "wind_speed_ms": 20.6174990773809,
+          "atmospheric_pressure_hpa": 988.5877364036616,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-17",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-17T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.58519319787723,
+          "wind_speed_ms": 15.450060276111728,
+          "atmospheric_pressure_hpa": 1004.5382738636217,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-18",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-18T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.40780822151174,
+          "wind_speed_ms": 14.928123136759023,
+          "atmospheric_pressure_hpa": 999.8282515008873,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-19",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-19T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.6679055594033,
+          "wind_speed_ms": 14.28300930282799,
+          "atmospheric_pressure_hpa": 991.2608192201928,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-20",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-20T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.2841447584476,
+          "wind_speed_ms": 21.346925002888078,
+          "atmospheric_pressure_hpa": 1004.5898676363934,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-21",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-21T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.34657183033653,
+          "wind_speed_ms": 19.675333136151366,
+          "atmospheric_pressure_hpa": 1001.1795739064866,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-22",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-22T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.5623541828648,
+          "wind_speed_ms": 16.5882549311696,
+          "atmospheric_pressure_hpa": 997.7461168913402,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-23",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-23T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.8388028402201,
+          "wind_speed_ms": 18.113237858384572,
+          "atmospheric_pressure_hpa": 996.73501128792,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-24",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-24T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.5947367903989,
+          "wind_speed_ms": 18.61997692921507,
+          "atmospheric_pressure_hpa": 1007.6592751128011,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-25",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-25T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.0502987106797,
+          "wind_speed_ms": 15.824594347055228,
+          "atmospheric_pressure_hpa": 992.4841280776703,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-26",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-26T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.39823431294553,
+          "wind_speed_ms": 13.030808826293306,
+          "atmospheric_pressure_hpa": 1005.7786543332122,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-27",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-27T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.84122376607246,
+          "wind_speed_ms": 16.762952803687806,
+          "atmospheric_pressure_hpa": 1002.5657676976931,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-28",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-28T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.40267010040526,
+          "wind_speed_ms": 15.207039573005098,
+          "atmospheric_pressure_hpa": 988.9783002625875,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-29",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-29T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.1758876168308,
+          "wind_speed_ms": 17.47151540077089,
+          "atmospheric_pressure_hpa": 990.8858450713414,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2019-07-30",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-30T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.57933099470483,
+          "wind_speed_ms": 13.844736156057943,
+          "atmospheric_pressure_hpa": 999.3881589621499,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2019-07-31",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2019-07-31T12:00:00Z",
+        "category": "sst",
+        "dataset": "oceansat3_sst",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.31705158211037,
+          "wind_speed_ms": 15.747724898956422,
+          "atmospheric_pressure_hpa": 992.6698710341565,
+          "cyclone_present": false
+        }
+      }
+    }
+  ]
+}

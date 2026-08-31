@@ -1,0 +1,457 @@
+{
+  "category": "cyclone",
+  "dataset": "ibtracs",
+  "year": 2022,
+  "month": "02",
+  "total_days": 28,
+  "data": [
+    {
+      "date": "2022-02-01",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-01T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.05087943134424,
+          "wind_speed_ms": 20.524284050168404,
+          "atmospheric_pressure_hpa": 1004.0048527995239,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-02",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-02T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.34733504362714,
+          "wind_speed_ms": 16.45210512471152,
+          "atmospheric_pressure_hpa": 997.562861881572,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-03",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-03T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.72148705089546,
+          "wind_speed_ms": 14.272265751091036,
+          "atmospheric_pressure_hpa": 994.2346559325458,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-04",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-04T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.21973075720393,
+          "wind_speed_ms": 22.17656589783046,
+          "atmospheric_pressure_hpa": 988.6303209326614,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-05",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-05T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.2119382842622,
+          "wind_speed_ms": 15.43840041114813,
+          "atmospheric_pressure_hpa": 1002.8982140099374,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-06",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-06T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.4403040165056,
+          "wind_speed_ms": 22.019502452033173,
+          "atmospheric_pressure_hpa": 991.6277403995724,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2022-02-07",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-07T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.41456557877603,
+          "wind_speed_ms": 15.038765412702762,
+          "atmospheric_pressure_hpa": 997.9542033472503,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-08",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-08T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.9817710046339,
+          "wind_speed_ms": 14.860178267734192,
+          "atmospheric_pressure_hpa": 1007.5730178602037,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-09",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-09T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.5215345484275,
+          "wind_speed_ms": 18.871932260218962,
+          "atmospheric_pressure_hpa": 1000.9482474890738,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-10",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-10T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.0327785946512,
+          "wind_speed_ms": 19.996808269778917,
+          "atmospheric_pressure_hpa": 995.2613165849374,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-11",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-11T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.1616762692581,
+          "wind_speed_ms": 16.47206436133373,
+          "atmospheric_pressure_hpa": 1002.712934514748,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-12",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-12T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.8140606645782,
+          "wind_speed_ms": 14.386678809139466,
+          "atmospheric_pressure_hpa": 1005.95497585424,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-13",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-13T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.333060534796,
+          "wind_speed_ms": 21.50652000473054,
+          "atmospheric_pressure_hpa": 1007.0825833659081,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-14",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-14T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.566863637539,
+          "wind_speed_ms": 20.38396486065296,
+          "atmospheric_pressure_hpa": 988.2886944190518,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2022-02-15",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-15T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.50310679142865,
+          "wind_speed_ms": 21.26717058351033,
+          "atmospheric_pressure_hpa": 994.2047347322855,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-16",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-16T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.2294417892316,
+          "wind_speed_ms": 17.9668285321047,
+          "atmospheric_pressure_hpa": 1004.914876793617,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-17",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-17T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.0375005816211,
+          "wind_speed_ms": 20.63912485169808,
+          "atmospheric_pressure_hpa": 1001.6311921244557,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-18",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-18T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.57403039925885,
+          "wind_speed_ms": 19.726349831131202,
+          "atmospheric_pressure_hpa": 989.5847584708766,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-19",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-19T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.65201889434815,
+          "wind_speed_ms": 21.953311038656068,
+          "atmospheric_pressure_hpa": 988.2058409724322,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-20",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-20T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.36610093336554,
+          "wind_speed_ms": 19.905884671471433,
+          "atmospheric_pressure_hpa": 998.424023795091,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-21",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-21T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.27249204762234,
+          "wind_speed_ms": 15.912720071659352,
+          "atmospheric_pressure_hpa": 996.8143109433884,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-22",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-22T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.0116783110064,
+          "wind_speed_ms": 15.319709822189056,
+          "atmospheric_pressure_hpa": 1003.6357898959354,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-23",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-23T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.2100389720442,
+          "wind_speed_ms": 19.559299014546156,
+          "atmospheric_pressure_hpa": 994.9026046005291,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-24",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-24T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 298.76188041352145,
+          "wind_speed_ms": 12.493393330947121,
+          "atmospheric_pressure_hpa": 990.1728603310099,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-25",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-25T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.69214349330207,
+          "wind_speed_ms": 16.256519726136702,
+          "atmospheric_pressure_hpa": 991.6476190348186,
+          "cyclone_present": false
+        }
+      }
+    },
+    {
+      "date": "2022-02-26",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-26T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 297.1578000011617,
+          "wind_speed_ms": 17.955996786908127,
+          "atmospheric_pressure_hpa": 1000.9061389002999,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2022-02-27",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-27T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 296.8682576787164,
+          "wind_speed_ms": 16.5743403864164,
+          "atmospheric_pressure_hpa": 1006.201426423377,
+          "cyclone_present": true
+        }
+      }
+    },
+    {
+      "date": "2022-02-28",
+      "records_count": 1,
+      "payload": {
+        "timestamp": "2022-02-28T12:00:00Z",
+        "category": "cyclone",
+        "dataset": "ibtracs",
+        "status": "ARCHIVED_VALIDATED",
+        "metrics": {
+          "sea_surface_temp_k": 299.45850673325015,
+          "wind_speed_ms": 16.199688155141075,
+          "atmospheric_pressure_hpa": 1005.6665554642713,
+          "cyclone_present": false
+        }
+      }
+    }
+  ]
+}
