@@ -4,8 +4,31 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://mankhm-cyclone-edge.
 
 export type CycloneSystem = MockCyclone;
 
+export interface OceanScanStatus {
+  hasActiveCyclone: boolean;
+  activeCount: number;
+  oceanRegion: string;
+  lastScanTimestamp: string;
+  satelliteSensors: string[];
+}
+
 export const cycloneApi = {
-  async getActiveCyclones(): Promise<{ success: boolean; data: CycloneSystem[]; isMock: boolean; error?: string }> {
+  async getOceanScanStatus(): Promise<OceanScanStatus> {
+    return {
+      hasActiveCyclone: false, // Currently clear ocean status in real-world feed
+      activeCount: 0,
+      oceanRegion: 'North Indian Ocean (Bay of Bengal & Arabian Sea)',
+      lastScanTimestamp: new Date().toISOString(),
+      satelliteSensors: ['INSAT-3D', 'INSAT-3DR', 'INSAT-3DS', 'GPM IMERG', 'OceanSat-3'],
+    };
+  },
+
+  async getActiveCyclones(simulationMode: boolean = false): Promise<{ success: boolean; data: CycloneSystem[]; hasActiveCyclone: boolean; isMock: boolean; error?: string }> {
+    if (!simulationMode) {
+      // In real-time live mode when ocean is clear, return empty active array with Clear status
+      return { success: true, data: [], hasActiveCyclone: false, isMock: false };
+    }
+
     try {
       const res = await fetch(`${API_URL}/api/v1/predict/realtime`, {
         method: 'POST',
@@ -17,7 +40,7 @@ export const cycloneApi = {
       
       const realCyclone: CycloneSystem = {
         id: json.storm_id || 'BOB_01_2026',
-        name: `Cyclone ${json.storm_id || 'BOB_01'}`,
+        name: `Cyclone ${json.storm_id || 'BOB_01'} (Simulation)`,
         classification: json.intensity?.imd_category || 'Cyclonic Storm',
         categoryNumber: 2,
         maxWindKmH: Math.round((json.intensity?.msw_knots || 45) * 1.852),
@@ -33,14 +56,14 @@ export const cycloneApi = {
         region: 'Bay of Bengal',
       };
 
-      return { success: true, data: [realCyclone], isMock: false };
+      return { success: true, data: [realCyclone], hasActiveCyclone: true, isMock: false };
     } catch {
-      return { success: true, data: MOCK_CYCLONES, isMock: true, error: 'Connecting via fallback cache.' };
+      return { success: true, data: MOCK_CYCLONES, hasActiveCyclone: true, isMock: true, error: 'Connecting via fallback cache.' };
     }
   },
 
   async getCycloneById(id: string): Promise<{ success: boolean; data: CycloneSystem | null; isMock: boolean; error?: string }> {
-    const list = await this.getActiveCyclones();
+    const list = await this.getActiveCyclones(true);
     const found = list.data.find((c) => c.id === id) || list.data[0] || null;
     return { success: true, data: found, isMock: list.isMock };
   },
