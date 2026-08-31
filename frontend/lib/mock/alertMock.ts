@@ -1,63 +1,82 @@
-export interface MockAlert {
-  id: string;
-  severity: 'CRITICAL' | 'HIGH' | 'MODERATE' | 'INFO';
-  title: string;
-  description: string;
-  cycloneId?: string;
-  cycloneName?: string;
-  region: string;
-  timestamp: string;
-  source: string;
-  isRead: boolean;
-}
+import { CycloneAlert } from '@/types/cyclone';
 
-export type CycloneAlert = MockAlert;
-
-export const MOCK_ALERTS: MockAlert[] = [
+export const MOCK_ALERTS: CycloneAlert[] = [
   {
-    id: 'alt_001',
+    id: 'alt_01',
+    title: 'Critical: Rapid Intensification Detected',
+    description: 'Neural cloud-top pattern analysis indicates rapid central deepening (-6 hPa in 3h) for Cyclone Aruna. Wind speeds upgraded to 145 km/h.',
     severity: 'CRITICAL',
-    title: 'Extremely Heavy Rainfall & Storm Surge Warning',
-    description: 'Cyclone Aruna expected to produce storm surge of 3.5-4.5m along North Odisha coast. Coastal evacuations advised.',
+    category: 'INTENSIFICATION',
     cycloneId: 'cyc_aruna',
     cycloneName: 'Cyclone Aruna',
-    region: 'North Odisha & West Bengal Coast',
-    timestamp: '2026-08-31 03:00 UTC',
-    source: 'CycloneSense Neural Alert Engine',
+    region: 'Bay of Bengal / Odisha Coast',
+    timestamp: '08:10 UTC (DEMO)',
+    source: 'CycloneSense AI DeepCore Engine v1.0',
     isRead: false,
   },
   {
-    id: 'alt_002',
+    id: 'alt_02',
+    title: 'High: Coastal Surge Warning (4.5m) Issued',
+    description: 'Hydrodynamic surge simulation indicates astronomical high-tide amplification along Bhadrak and Balasore coastline within 36 hours.',
     severity: 'HIGH',
-    title: 'Gale Wind Hazard Advisory (75-85 kt)',
-    description: 'Sustained surface winds approaching 145 km/h near storm core. Ports advised to hoist signal IV.',
+    category: 'SURGE_WARNING',
     cycloneId: 'cyc_aruna',
     cycloneName: 'Cyclone Aruna',
-    region: 'Bay of Bengal Northwest Basin',
-    timestamp: '2026-08-31 02:15 UTC',
-    source: 'CycloneSense Wind Sensor Stream',
+    region: 'Northern Odisha',
+    timestamp: '07:30 UTC (DEMO)',
+    source: 'Coastal Hazard Model Ensemble',
     isRead: false,
   },
   {
-    id: 'alt_003',
+    id: 'alt_03',
+    title: 'High: Forecast Track Recurvature Updated',
+    description: 'Ensemble trajectory shifts track slightly eastward toward Bengal delta. 72h confidence band tightened to 87%.',
+    severity: 'HIGH',
+    category: 'TRACK_CHANGE',
+    cycloneId: 'cyc_aruna',
+    cycloneName: 'Cyclone Aruna',
+    region: 'Bay of Bengal',
+    timestamp: '06:00 UTC (DEMO)',
+    source: 'CycloneSense Trajectory Engine',
+    isRead: false,
+  },
+  {
+    id: 'alt_04',
+    title: 'Moderate: Squall Line Warning for Gujarat Coast',
+    description: 'Cyclone Vayun outer convective bands generating surface wind gusts of 50-65 km/h over coastal Saurashtra and Kutch.',
     severity: 'MODERATE',
-    title: 'Squally Weather Advisory for Arabian Sea',
-    description: 'Cyclone Vayun maintaining Severe Cyclonic Storm intensity. Fishermen advised not to venture into North Arabian Sea.',
+    category: 'GENERAL',
     cycloneId: 'cyc_vayun',
     cycloneName: 'Cyclone Vayun',
-    region: 'North Arabian Sea',
-    timestamp: '2026-08-31 01:30 UTC',
-    source: 'CycloneSense Buoy Data Feed',
+    region: 'Arabian Sea / Gujarat',
+    timestamp: '05:15 UTC (DEMO)',
+    source: 'Arabian Sea Mesoscale Model',
     isRead: true,
   },
   {
-    id: 'alt_004',
+    id: 'alt_05',
+    title: 'Moderate: New Satellite Sensor Scan Processed',
+    description: 'INSAT-3DS infrared channel 10.8µm scan processed with eye-wall symmetry score 8.4/10.',
+    severity: 'MODERATE',
+    category: 'SATELLITE',
+    cycloneId: 'cyc_aruna',
+    cycloneName: 'Cyclone Aruna',
+    region: 'Bay of Bengal',
+    timestamp: '04:00 UTC (DEMO)',
+    source: 'Orbital Telemetry Stream',
+    isRead: true,
+  },
+  {
+    id: 'alt_06',
+    title: 'Info: System Cyclogenesis Confirmed',
+    description: 'Convective cluster 92B classified as Tropical Cyclone Mira (01B) over southern Bay of Bengal.',
     severity: 'INFO',
-    title: 'Satellite Ingestion Update (INSAT-3DS)',
-    description: 'Automated 15-minute thermal infrared & microwave orbital scans successfully processed.',
-    region: 'Indian Ocean Basin',
-    timestamp: '2026-08-31 03:15 UTC',
-    source: 'INSAT-3DS Ingestion Node',
+    category: 'GENERAL',
+    cycloneId: 'cyc_mira',
+    cycloneName: 'Cyclone Mira',
+    region: 'South Bay of Bengal',
+    timestamp: '02:00 UTC (DEMO)',
+    source: 'Basin Classification Subsystem',
     isRead: true,
   },
 ];

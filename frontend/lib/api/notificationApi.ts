@@ -1,22 +1,24 @@
-import { MOCK_NOTIFICATIONS, MockNotification } from '../mock/notificationMock';
-
-const API_URL = process.env.NEXT_PUBLIC_API_URL || '';
-
-export type { MockNotification };
+import { CycloneNotification } from '@/types/cyclone';
+import { MOCK_NOTIFICATIONS } from '@/lib/mock/notificationMock';
 
 export const notificationApi = {
-  async getNotifications(): Promise<{ success: boolean; data: MockNotification[]; isMock: boolean; error?: string }> {
-    if (!API_URL) {
-      await new Promise((res) => setTimeout(res, 200));
-      return { success: true, data: MOCK_NOTIFICATIONS, isMock: true };
+  async getNotifications(): Promise<CycloneNotification[]> {
+    return Promise.resolve([...MOCK_NOTIFICATIONS]);
+  },
+
+  async markNotificationAsRead(id: string): Promise<CycloneNotification | null> {
+    const found = MOCK_NOTIFICATIONS.find((n) => n.id === id);
+    if (found) {
+      found.isRead = true;
+      return Promise.resolve({ ...found });
     }
-    try {
-      const res = await fetch(`${API_URL}/api/notifications`);
-      if (!res.ok) return { success: false, data: MOCK_NOTIFICATIONS, isMock: true };
-      const json = await res.json();
-      return { success: true, data: json.data, isMock: false };
-    } catch {
-      return { success: false, data: MOCK_NOTIFICATIONS, isMock: true };
-    }
+    return Promise.resolve(null);
+  },
+
+  async markAllNotificationsAsRead(): Promise<boolean> {
+    MOCK_NOTIFICATIONS.forEach((n) => {
+      n.isRead = true;
+    });
+    return Promise.resolve(true);
   },
 };

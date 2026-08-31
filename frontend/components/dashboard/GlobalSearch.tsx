@@ -5,8 +5,9 @@ import Link from 'next/link';
 import { Search, Radio, Bell, History, FileText, X } from 'lucide-react';
 import { MOCK_CYCLONES } from '@/lib/mock/cycloneMock';
 import { MOCK_ALERTS } from '@/lib/mock/alertMock';
-import { MOCK_HISTORY_RECORDS } from '@/lib/mock/historyMock';
+import { MOCK_HISTORICAL_CYCLONES } from '@/lib/mock/historyMock';
 import { MOCK_REPORTS } from '@/lib/mock/reportMock';
+import { HistoricalCyclone } from '@/types/cyclone';
 
 export default function GlobalSearch() {
   const [query, setQuery] = useState('');
@@ -27,7 +28,7 @@ export default function GlobalSearch() {
 
   const cycloneResults = q ? MOCK_CYCLONES.filter((c) => c.name.toLowerCase().includes(q) || c.classification.toLowerCase().includes(q)) : [];
   const alertResults = q ? MOCK_ALERTS.filter((a) => a.title.toLowerCase().includes(q) || a.region.toLowerCase().includes(q)) : [];
-  const historyResults = q ? MOCK_HISTORY_RECORDS.filter((h) => h.cycloneName.toLowerCase().includes(q) || h.region.toLowerCase().includes(q)) : [];
+  const historyResults = q ? MOCK_HISTORICAL_CYCLONES.filter((h: HistoricalCyclone) => h.cycloneName.toLowerCase().includes(q) || h.region.toLowerCase().includes(q)) : [];
   const reportResults = q ? MOCK_REPORTS.filter((r) => r.reportName.toLowerCase().includes(q)) : [];
 
   const totalResults = cycloneResults.length + alertResults.length + historyResults.length + reportResults.length;

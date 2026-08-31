@@ -65,11 +65,11 @@ export default function LeafletMap({
       map.removeLayer(layer);
     });
 
-    // 1. Add Tile Layer (CartoDB Dark or Esri World Imagery Satellite)
+    // 1. Add Tile Layer (OpenStreetMap with dark styling or Esri World Imagery Satellite)
     if (activeBaseMap === 'DARK') {
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 18,
-        subdomains: 'abcd',
+        className: 'map-tiles-dark',
       }).addTo(map);
     } else {
       L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {

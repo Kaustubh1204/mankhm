@@ -1,173 +1,423 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { cycloneApi, CycloneSystem } from '@/lib/api/cycloneApi';
-import { forecastApi, CycloneForecast } from '@/lib/api/forecastApi';
-import { riskApi, RiskRegion } from '@/lib/api/riskApi';
-import { alertApi, CycloneAlert } from '@/lib/api/alertApi';
-import { historyApi, HistoricalRecord } from '@/lib/api/historyApi';
-import { satelliteApi, SatelliteLayer } from '@/lib/api/satelliteApi';
-import { notificationApi, MockNotification } from '@/lib/api/notificationApi';
-import { reportApi, MockReport } from '@/lib/api/reportApi';
+import { useState, useEffect, useCallback } from 'react';
+import {
+  Cyclone,
+  CycloneForecast,
+  RiskRegion,
+  CycloneAlert,
+  HistoricalCyclone,
+  SatelliteLayer,
+  CycloneNotification,
+  CycloneReport,
+  UserProfileData,
+  UserSettings,
+} from '@/types/cyclone';
+import { cycloneApi } from '@/lib/api/cycloneApi';
+import { forecastApi } from '@/lib/api/forecastApi';
+import { riskApi } from '@/lib/api/riskApi';
+import { alertApi } from '@/lib/api/alertApi';
+import { historyApi } from '@/lib/api/historyApi';
+import { satelliteApi } from '@/lib/api/satelliteApi';
+import { notificationApi } from '@/lib/api/notificationApi';
+import { reportApi } from '@/lib/api/reportApi';
+import { userApi } from '@/lib/api/userApi';
 
 export function useCyclones() {
-  const [cyclones, setCyclones] = useState<CycloneSystem[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [isMock, setIsMock] = useState(true);
+  const [cyclones, setCyclones] = useState<Cyclone[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  useEffect(() => {
-    async function load() {
-      const res = await cycloneApi.getActiveCyclones();
-      setCyclones(res.data || []);
-      setIsMock(res.isMock);
-      setLoading(false);
+  const fetchCyclones = useCallback(async () => {
+    try {
+      const data = await cycloneApi.getCyclones();
+      setCyclones(data);
+    } catch (err) {
+      console.error('[useCyclones] Error fetching cyclones:', err);
+    } finally {
+      setIsLoading(false);
     }
-    load();
   }, []);
 
-  return { cyclones, loading, isMock };
+  useEffect(() => {
+    let isMounted = true;
+    async function load() {
+      try {
+        const data = await cycloneApi.getCyclones();
+        if (isMounted) {
+          setCyclones(data);
+          setIsLoading(false);
+        }
+      } catch {
+        if (isMounted) setIsLoading(false);
+      }
+    }
+    load();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  return { cyclones, isLoading, refetch: fetchCyclones, setCyclones };
+}
+
+export function useCurrentCyclone() {
+  const [cyclone, setCyclone] = useState<Cyclone | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    let isMounted = true;
+    async function load() {
+      const data = await cycloneApi.getCyclones();
+      if (isMounted) {
+        setCyclone(data[0] || null);
+        setIsLoading(false);
+      }
+    }
+    load();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  return { cyclone, isLoading, setCyclone };
 }
 
 export function useCyclone(id: string) {
-  const [cyclone, setCyclone] = useState<CycloneSystem | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [isMock, setIsMock] = useState(true);
+  const [cyclone, setCyclone] = useState<Cyclone | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  useEffect(() => {
-    async function load() {
-      const res = await cycloneApi.getCycloneById(id);
-      setCyclone(res.data);
-      setIsMock(res.isMock);
-      setLoading(false);
+  const fetchCyclone = useCallback(async () => {
+    try {
+      const data = await cycloneApi.getCycloneById(id);
+      setCyclone(data);
+    } catch (err) {
+      console.error(`[useCyclone] Error fetching cyclone ${id}:`, err);
+    } finally {
+      setIsLoading(false);
     }
-    if (id) load();
   }, [id]);
 
-  return { cyclone, loading, isMock };
+  useEffect(() => {
+    let isMounted = true;
+    async function load() {
+      try {
+        const data = await cycloneApi.getCycloneById(id);
+        if (isMounted) {
+          setCyclone(data);
+          setIsLoading(false);
+        }
+      } catch {
+        if (isMounted) setIsLoading(false);
+      }
+    }
+    load();
+    return () => {
+      isMounted = false;
+    };
+  }, [id]);
+
+  const toggleSave = async () => {
+    if (!id) return;
+    const updated = await cycloneApi.toggleSaveCyclone(id);
+    if (updated) setCyclone(updated);
+  };
+
+  return { cyclone, isLoading, refetch: fetchCyclone, toggleSave };
 }
 
-export function useForecast(id: string = 'cyc_aruna') {
+export function useForecast(cycloneId: string) {
   const [forecast, setForecast] = useState<CycloneForecast | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [isMock, setIsMock] = useState(true);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    async function load() {
-      const res = await forecastApi.getForecast(id);
-      setForecast(res.data);
-      setIsMock(res.isMock);
-      setLoading(false);
+    let isMounted = true;
+    async function fetchForecast() {
+      const data = await forecastApi.getForecastByCycloneId(cycloneId);
+      if (isMounted) {
+        setForecast(data);
+        setIsLoading(false);
+      }
     }
-    load();
-  }, [id]);
+    fetchForecast();
+    return () => {
+      isMounted = false;
+    };
+  }, [cycloneId]);
 
-  return { forecast, loading, isMock };
+  return { forecast, isLoading };
 }
 
-export function useRisk() {
+export function useRisk(cycloneId?: string) {
   const [riskRegions, setRiskRegions] = useState<RiskRegion[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [isMock, setIsMock] = useState(true);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    async function load() {
-      const res = await riskApi.getRiskRegions();
-      setRiskRegions(res.data || []);
-      setIsMock(res.isMock);
-      setLoading(false);
+    let isMounted = true;
+    async function fetchRisk() {
+      const data = cycloneId
+        ? await riskApi.getRiskRegionsByCycloneId(cycloneId)
+        : await riskApi.getRiskRegions();
+      if (isMounted) {
+        setRiskRegions(data);
+        setIsLoading(false);
+      }
     }
-    load();
-  }, []);
+    fetchRisk();
+    return () => {
+      isMounted = false;
+    };
+  }, [cycloneId]);
 
-  return { riskRegions, loading, isMock };
+  return { riskRegions, isLoading };
 }
 
-export function useAlerts() {
+export function useAlerts(cycloneId?: string) {
   const [alerts, setAlerts] = useState<CycloneAlert[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [isMock, setIsMock] = useState(true);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  const fetchAlerts = useCallback(async () => {
+    const data = cycloneId ? await alertApi.getAlertsByCycloneId(cycloneId) : await alertApi.getAlerts();
+    setAlerts(data);
+    setIsLoading(false);
+  }, [cycloneId]);
 
   useEffect(() => {
+    let isMounted = true;
     async function load() {
-      const res = await alertApi.getAlerts();
-      setAlerts(res.data || []);
-      setIsMock(res.isMock);
-      setLoading(false);
+      const data = cycloneId ? await alertApi.getAlertsByCycloneId(cycloneId) : await alertApi.getAlerts();
+      if (isMounted) {
+        setAlerts(data);
+        setIsLoading(false);
+      }
     }
     load();
+    return () => {
+      isMounted = false;
+    };
+  }, [cycloneId]);
+
+  const markAsRead = async (id: string) => {
+    await alertApi.markAlertAsRead(id);
+    setAlerts((prev) => prev.map((a) => (a.id === id ? { ...a, isRead: true } : a)));
+  };
+
+  const markAllAsRead = async () => {
+    await alertApi.markAllAlertsAsRead();
+    setAlerts((prev) => prev.map((a) => ({ ...a, isRead: true })));
+  };
+
+  return { alerts, isLoading, markAsRead, markAllAsRead, setAlerts, refetch: fetchAlerts };
+}
+
+export function useHistory() {
+  const [records, setRecords] = useState<HistoricalCyclone[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  const fetchHistory = useCallback(async (query = '', year = 'ALL', region = 'ALL') => {
+    const data = await historyApi.searchHistoricalCyclones(query, year, region);
+    setRecords(data);
+    setIsLoading(false);
   }, []);
 
-  return { alerts, setAlerts, loading, isMock };
+  useEffect(() => {
+    let isMounted = true;
+    async function load() {
+      const data = await historyApi.searchHistoricalCyclones('', 'ALL', 'ALL');
+      if (isMounted) {
+        setRecords(data);
+        setIsLoading(false);
+      }
+    }
+    load();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  return { records, isLoading, searchHistory: fetchHistory };
 }
 
 export function useHistoricalData() {
-  const [records, setRecords] = useState<HistoricalRecord[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [isMock, setIsMock] = useState(true);
+  return useHistory();
+}
 
-  useEffect(() => {
-    async function load() {
-      const res = await historyApi.getHistoryRecords();
-      setRecords(res.data || []);
-      setIsMock(res.isMock);
-      setLoading(false);
-    }
-    load();
+export function useSavedCyclones() {
+  const [savedCyclones, setSavedCyclones] = useState<Cyclone[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  const fetchSaved = useCallback(async () => {
+    const all = await cycloneApi.getCyclones();
+    setSavedCyclones(all.filter((c) => c.isSaved));
+    setIsLoading(false);
   }, []);
 
-  return { records, loading, isMock };
+  useEffect(() => {
+    let isMounted = true;
+    async function load() {
+      const all = await cycloneApi.getCyclones();
+      if (isMounted) {
+        setSavedCyclones(all.filter((c) => c.isSaved));
+        setIsLoading(false);
+      }
+    }
+    load();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  const removeSaved = async (id: string) => {
+    await cycloneApi.toggleSaveCyclone(id);
+    setSavedCyclones((prev) => prev.filter((c) => c.id !== id));
+  };
+
+  return { savedCyclones, isLoading, removeSaved, refetch: fetchSaved };
 }
 
 export function useSatelliteLayers() {
   const [layers, setLayers] = useState<SatelliteLayer[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [isMock, setIsMock] = useState(true);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    async function load() {
-      const res = await satelliteApi.getSatelliteLayers();
-      setLayers(res.data || []);
-      setIsMock(res.isMock);
-      setLoading(false);
+    let isMounted = true;
+    async function fetchLayers() {
+      const data = await satelliteApi.getSatelliteLayers();
+      if (isMounted) {
+        setLayers(data);
+        setIsLoading(false);
+      }
     }
-    load();
+    fetchLayers();
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
-  return { layers, loading, isMock };
+  return { layers, isLoading };
 }
 
 export function useNotifications() {
-  const [notifications, setNotifications] = useState<MockNotification[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [isMock, setIsMock] = useState(true);
+  const [notifications, setNotifications] = useState<CycloneNotification[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  useEffect(() => {
-    async function load() {
-      const res = await notificationApi.getNotifications();
-      setNotifications(res.data || []);
-      setIsMock(res.isMock);
-      setLoading(false);
-    }
-    load();
+  const fetchNotifications = useCallback(async () => {
+    const data = await notificationApi.getNotifications();
+    setNotifications(data);
+    setIsLoading(false);
   }, []);
 
-  return { notifications, setNotifications, loading, isMock };
+  useEffect(() => {
+    let isMounted = true;
+    async function load() {
+      const data = await notificationApi.getNotifications();
+      if (isMounted) {
+        setNotifications(data);
+        setIsLoading(false);
+      }
+    }
+    load();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  const markAsRead = async (id: string) => {
+    await notificationApi.markNotificationAsRead(id);
+    setNotifications((prev) => prev.map((n) => (n.id === id ? { ...n, isRead: true } : n)));
+  };
+
+  const markAllAsRead = async () => {
+    await notificationApi.markAllNotificationsAsRead();
+    setNotifications((prev) => prev.map((n) => ({ ...n, isRead: true })));
+  };
+
+  return { notifications, isLoading, markAsRead, markAllAsRead, setNotifications };
 }
 
 export function useReports() {
-  const [reports, setReports] = useState<MockReport[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [isMock, setIsMock] = useState(true);
+  const [reports, setReports] = useState<CycloneReport[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  useEffect(() => {
-    async function load() {
-      const res = await reportApi.getReports();
-      setReports(res.data || []);
-      setIsMock(res.isMock);
-      setLoading(false);
-    }
-    load();
+  const fetchReports = useCallback(async () => {
+    const data = await reportApi.getReports();
+    setReports(data);
+    setIsLoading(false);
   }, []);
 
-  return { reports, loading, isMock };
+  useEffect(() => {
+    let isMounted = true;
+    async function load() {
+      const data = await reportApi.getReports();
+      if (isMounted) {
+        setReports(data);
+        setIsLoading(false);
+      }
+    }
+    load();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  const generateReport = async (type: CycloneReport['type'], cycloneId?: string, cycloneName?: string) => {
+    const newRep = await reportApi.generateReport(type, cycloneId, cycloneName);
+    setReports((prev) => [newRep, ...prev]);
+    return newRep;
+  };
+
+  return { reports, isLoading, generateReport, refetch: fetchReports };
+}
+
+export function useUserProfile() {
+  const [profile, setProfile] = useState<UserProfileData | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    let isMounted = true;
+    async function load() {
+      const data = await userApi.getUserProfile();
+      if (isMounted) {
+        setProfile(data);
+        setIsLoading(false);
+      }
+    }
+    load();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  const updateProfile = async (updates: Partial<UserProfileData>) => {
+    const updated = await userApi.updateUserProfile(updates);
+    setProfile(updated);
+  };
+
+  return { profile, isLoading, updateProfile };
+}
+
+export function useUserSettings() {
+  const [settings, setSettings] = useState<UserSettings | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    let isMounted = true;
+    async function load() {
+      const data = await userApi.getUserSettings();
+      if (isMounted) {
+        setSettings(data);
+        setIsLoading(false);
+      }
+    }
+    load();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  const updateSettings = async (updates: Partial<UserSettings>) => {
+    const updated = await userApi.updateUserSettings(updates);
+    setSettings(updated);
+  };
+
+  return { settings, isLoading, updateSettings };
 }

@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import Topbar from './Topbar';
-import CycloneCursor from '@/components/landing/CycloneCursor';
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
@@ -14,9 +13,6 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 
   return (
     <div className="min-h-screen bg-[#060b19] text-slate-100 flex overflow-hidden">
-      {/* Signature Cyclone Custom Cursor */}
-      <CycloneCursor />
-
       {/* Desktop Fixed Sidebar */}
       <div className="hidden lg:block fixed inset-y-0 left-0 z-50">
         <Sidebar />

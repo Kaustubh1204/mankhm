@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0b132b;
+  --background: #040814;
   --foreground: #f8fafc;
-  --navy-dark: #0b132b;
-  --navy-deep: #1c2541;
+  --navy-dark: #040814;
+  --navy-deep: #091126;
   --ocean-blue: #0077b6;
   --cyan-accent: #00b4d8;
   --cyan-light: #90e0ef;
-  --surface-card: #141e36;
-  --surface-border: #1e2942;
+  --surface-card: #091126;
+  --surface-border: #1e293b;
 }
 
 body {
@@ -19,3 +19,83 @@ body {
   min-height: 100vh;
 }
 
+/* Custom Meteorological Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(6, 11, 25, 0.6);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 180, 216, 0.3);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 180, 216, 0.6);
+}
+
+/* MapLibre Custom Styling & Dark Popups */
+.maplibregl-popup-content {
+  background: #091126 !important;
+  border: 1px solid rgba(0, 180, 216, 0.4) !important;
+  border-radius: 16px !important;
+  padding: 0 !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6) !important;
+  overflow: hidden;
+}
+
+.maplibregl-popup-anchor-top .maplibregl-popup-tip {
+  border-bottom-color: #091126 !important;
+}
+
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip {
+  border-top-color: #091126 !important;
+}
+
+.maplibregl-popup-anchor-left .maplibregl-popup-tip {
+  border-right-color: #091126 !important;
+}
+
+.maplibregl-popup-anchor-right .maplibregl-popup-tip {
+  border-left-color: #091126 !important;
+}
+
+.maplibregl-popup-close-button {
+  color: #94a3b8 !important;
+  padding: 4px 8px !important;
+  font-size: 16px !important;
+}
+
+.maplibregl-popup-close-button:hover {
+  color: #ffffff !important;
+  background: transparent !important;
+}
+
+/* Marker Container Selection Glow */
+.cyclone-marker-container.is-selected {
+  filter: drop-shadow(0 0 12px rgba(0, 180, 216, 0.8));
+  transform: scale(1.1);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Dark Map Tile Filter for Leaflet */
+.map-tiles-dark {
+  filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+}
+
+/* Respect Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

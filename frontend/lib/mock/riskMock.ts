@@ -1,68 +1,89 @@
-export interface RiskRegion {
-  id: string;
-  regionName: string;
-  stateCountry: string;
-  riskLevel: 'CRITICAL' | 'HIGH' | 'MODERATE' | 'LOW';
-  windRiskScore: number; // 0-100
-  rainfallRiskScore: number; // 0-100
-  stormSurgeMeters: number;
-  coastalExposureScore: number; // 0-100
-  populationExposure: string;
-  primaryCycloneId: string;
-  lastUpdated: string;
-}
+import { RiskRegion } from '@/types/cyclone';
 
 export const MOCK_RISK_REGIONS: RiskRegion[] = [
   {
-    id: 'risk_orissa_north',
-    regionName: 'Northern Coastal Odisha (Bhadrak / Balasore)',
+    id: 'risk_odisha_north',
+    regionName: 'Northern Coastal Odisha (Bhadrak / Balasore / Kendrapara)',
     stateCountry: 'Odisha, India',
     riskLevel: 'CRITICAL',
-    windRiskScore: 92,
-    rainfallRiskScore: 88,
-    stormSurgeMeters: 4.2,
-    coastalExposureScore: 95,
-    populationExposure: '2.4 Million',
+    windRiskScore: 94,
+    rainfallRiskScore: 90,
+    stormSurgeMeters: 4.5,
+    coastalExposureScore: 96,
+    populationExposure: '2.8 Million',
     primaryCycloneId: 'cyc_aruna',
-    lastUpdated: '2026-08-31 03:00 UTC',
+    primaryCycloneName: 'Cyclone Aruna',
+    lastUpdated: '08:15 UTC (DEMO)',
+    coordinates: [
+      [21.8, 86.6],
+      [21.9, 87.5],
+      [21.2, 87.8],
+      [20.5, 86.9],
+      [20.8, 86.2],
+    ],
+    summary: 'Extreme wind gusts > 150 km/h and astronomical storm surge peak of 4.5m expected near Dhamra and Chandipur coastal zones.',
   },
   {
     id: 'risk_bengal_south',
-    regionName: 'South 24 Parganas & Sundarbans',
+    regionName: 'South 24 Parganas & Sundarbans Delta',
     stateCountry: 'West Bengal, India',
     riskLevel: 'HIGH',
-    windRiskScore: 78,
-    rainfallRiskScore: 82,
-    stormSurgeMeters: 2.8,
-    coastalExposureScore: 88,
-    populationExposure: '3.1 Million',
+    windRiskScore: 82,
+    rainfallRiskScore: 86,
+    stormSurgeMeters: 3.2,
+    coastalExposureScore: 91,
+    populationExposure: '3.4 Million',
     primaryCycloneId: 'cyc_aruna',
-    lastUpdated: '2026-08-31 03:00 UTC',
+    primaryCycloneName: 'Cyclone Aruna',
+    lastUpdated: '08:15 UTC (DEMO)',
+    coordinates: [
+      [22.4, 88.2],
+      [22.3, 89.4],
+      [21.5, 89.2],
+      [21.6, 88.0],
+    ],
+    summary: 'High coastal embankment breach risk and saline inundation expected across Gosaba, Kakdwip, and Sagar Island.',
   },
   {
     id: 'risk_gujarat_kutch',
     regionName: 'Kutch & Devbhumi Dwarka Coast',
     stateCountry: 'Gujarat, India',
     riskLevel: 'MODERATE',
-    windRiskScore: 58,
-    rainfallRiskScore: 45,
-    stormSurgeMeters: 1.5,
-    coastalExposureScore: 62,
-    populationExposure: '1.2 Million',
+    windRiskScore: 62,
+    rainfallRiskScore: 48,
+    stormSurgeMeters: 1.6,
+    coastalExposureScore: 65,
+    populationExposure: '1.4 Million',
     primaryCycloneId: 'cyc_vayun',
-    lastUpdated: '2026-08-31 02:30 UTC',
+    primaryCycloneName: 'Cyclone Vayun',
+    lastUpdated: '07:45 UTC (DEMO)',
+    coordinates: [
+      [23.2, 68.2],
+      [23.9, 70.4],
+      [22.8, 70.6],
+      [22.1, 68.9],
+    ],
+    summary: 'Squall wind warnings for ports of Kandla, Mundra, and Okha with high wave activity along Gulf of Kutch.',
   },
   {
     id: 'risk_andhra_north',
-    regionName: 'North Andhra Coast (Visakhapatnam)',
+    regionName: 'North Andhra Coast (Visakhapatnam / Srikakulam)',
     stateCountry: 'Andhra Pradesh, India',
     riskLevel: 'LOW',
-    windRiskScore: 32,
-    rainfallRiskScore: 40,
-    stormSurgeMeters: 0.6,
-    coastalExposureScore: 45,
-    populationExposure: '1.8 Million',
+    windRiskScore: 35,
+    rainfallRiskScore: 42,
+    stormSurgeMeters: 0.8,
+    coastalExposureScore: 48,
+    populationExposure: '1.9 Million',
     primaryCycloneId: 'cyc_aruna',
-    lastUpdated: '2026-08-31 03:00 UTC',
+    primaryCycloneName: 'Cyclone Aruna',
+    lastUpdated: '08:15 UTC (DEMO)',
+    coordinates: [
+      [18.5, 84.0],
+      [19.0, 84.8],
+      [18.0, 84.4],
+      [17.6, 83.3],
+    ],
+    summary: 'Outer rainbands producing intermittent moderate showers and rough sea conditions; direct core landfall hazard remains minimal.',
   },
 ];

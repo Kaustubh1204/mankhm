@@ -1,23 +1,25 @@
-import { MOCK_FORECASTS, MockForecast } from '../mock/forecastMock';
-
-const API_URL = process.env.NEXT_PUBLIC_API_URL || '';
-
-export type CycloneForecast = MockForecast;
+import { CycloneForecast } from '@/types/cyclone';
+import { MOCK_FORECASTS } from '@/lib/mock/forecastMock';
 
 export const forecastApi = {
-  async getForecast(cycloneId: string = 'cyc_aruna'): Promise<{ success: boolean; data: CycloneForecast | null; isMock: boolean; error?: string }> {
-    if (!API_URL) {
-      await new Promise((res) => setTimeout(res, 200));
-      const forecast = MOCK_FORECASTS[cycloneId] || MOCK_FORECASTS['cyc_aruna'] || null;
-      return { success: true, data: forecast, isMock: true };
-    }
-    try {
-      const res = await fetch(`${API_URL}/api/forecasts/${cycloneId}`);
-      if (!res.ok) return { success: false, data: MOCK_FORECASTS['cyc_aruna'] || null, isMock: true };
-      const json = await res.json();
-      return { success: true, data: json.data, isMock: false };
-    } catch {
-      return { success: false, data: MOCK_FORECASTS['cyc_aruna'] || null, isMock: true };
-    }
+  async getForecastByCycloneId(cycloneId: string): Promise<CycloneForecast | null> {
+    const fc = MOCK_FORECASTS[cycloneId] || MOCK_FORECASTS['cyc_aruna'];
+    return Promise.resolve(fc ? { ...fc } : null);
+  },
+
+  async getAllForecasts(): Promise<Record<string, CycloneForecast>> {
+    return Promise.resolve({ ...MOCK_FORECASTS });
+  },
+
+  async getModelEnsembleInfo() {
+    return Promise.resolve({
+      modelName: 'CycloneSense Neural Ensemble v1.0',
+      predictionHorizonHours: 72,
+      timeStepHours: 6,
+      modelStatus: 'DEMO' as const,
+      meanConfidencePct: 87,
+      sourcesIngested: ['INSAT-3DS', 'Sentinel-1 SAR', 'Scatterometer Winds', 'Argo Ocean Heat Floats'],
+      lastRunTime: '2026-08-31 08:00 UTC (DEMO)',
+    });
   },
 };

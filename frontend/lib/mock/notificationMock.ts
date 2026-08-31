@@ -1,47 +1,53 @@
-export interface MockNotification {
-  id: string;
-  type: 'CYCLONE_UPDATE' | 'FORECAST_UPDATE' | 'RISK_UPDATE' | 'ALERT' | 'SYSTEM';
-  title: string;
-  message: string;
-  timestamp: string;
-  isRead: boolean;
-  linkHref?: string;
-}
+import { CycloneNotification } from '@/types/cyclone';
 
-export const MOCK_NOTIFICATIONS: MockNotification[] = [
+export const MOCK_NOTIFICATIONS: CycloneNotification[] = [
   {
-    id: 'notif_001',
+    id: 'notif_01',
+    title: 'Rapid Intensification Risk Upgraded',
+    message: 'Cyclone Aruna RI probability increased to 74%. Model ensemble 12h projection upgraded to 168 km/h.',
     type: 'CYCLONE_UPDATE',
-    title: 'Cyclone Aruna Intensity Escalation',
-    message: 'Cyclone Aruna has upgraded to Very Severe Cyclonic Storm (145 km/h max wind).',
-    timestamp: '2026-08-31 03:05 UTC',
+    timestamp: '10 minutes ago',
     isRead: false,
     linkHref: '/user/cyclones/cyc_aruna',
+    cycloneId: 'cyc_aruna',
   },
   {
-    id: 'notif_002',
+    id: 'notif_02',
+    title: '72h Forecast Trajectory Cycle Completed',
+    message: 'Ensemble trajectory updated with high convergence (87%) towards North Odisha coastline.',
     type: 'FORECAST_UPDATE',
-    title: 'Ensemble Track Horizon Update',
-    message: 'New 72h trajectory cone computed for Cyclone Aruna with 87% model agreement.',
-    timestamp: '2026-08-31 02:45 UTC',
+    timestamp: '35 minutes ago',
     isRead: false,
     linkHref: '/user/forecast',
+    cycloneId: 'cyc_aruna',
   },
   {
-    id: 'notif_003',
+    id: 'notif_03',
+    title: 'Storm Surge Inundation Risk Warning',
+    message: 'Northern Coastal Odisha surge height upgraded to 4.5 meters. Critical hazard warning active.',
     type: 'RISK_UPDATE',
-    title: 'North Odisha Coastal Risk Upgrade',
-    message: 'Storm surge assessment upgraded to CRITICAL (4.2m projected max surge).',
-    timestamp: '2026-08-31 02:10 UTC',
-    isRead: true,
+    timestamp: '1 hour ago',
+    isRead: false,
     linkHref: '/user/risk-map',
+    cycloneId: 'cyc_aruna',
   },
   {
-    id: 'notif_004',
-    type: 'SYSTEM',
-    title: 'Demo Data Environment Active',
-    message: 'Frontend is running in demonstration mode consuming high-fidelity mock streams.',
-    timestamp: '2026-08-30 20:00 UTC',
+    id: 'notif_04',
+    title: 'Cyclone Vayun Outer Squall Advisory',
+    message: 'Wind gusts exceeding 60 km/h detected along Saurashtra & Kutch coastal radar stations.',
+    type: 'ALERT',
+    timestamp: '2 hours ago',
     isRead: true,
+    linkHref: '/user/alerts',
+    cycloneId: 'cyc_vayun',
+  },
+  {
+    id: 'notif_05',
+    title: 'System Telemetry Feed Synchronized',
+    message: 'INSAT-3DS and scatterometer sensor channels successfully ingested into AI inference pipeline.',
+    type: 'SYSTEM',
+    timestamp: '4 hours ago',
+    isRead: true,
+    linkHref: '/user/dashboard',
   },
 ];

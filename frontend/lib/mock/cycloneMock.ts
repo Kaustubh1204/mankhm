@@ -1,23 +1,9 @@
-export interface MockCyclone {
-  id: string;
-  name: string;
-  classification: string;
-  categoryNumber: number;
-  maxWindKmH: number;
-  maxWindKt: number;
-  centralPressureHpa: number;
-  latitude: number;
-  longitude: number;
-  movementDirection: string;
-  movementSpeedKmH: number;
-  movementSpeedKt: number;
-  lastObservation: string;
-  status: 'ACTIVE' | 'DEVELOPING' | 'WEAKENING';
-  isSaved?: boolean;
-  region: string;
-}
+import { Cyclone } from '@/types/cyclone';
+import { MOCK_FORECASTS } from './forecastMock';
 
-export const MOCK_CYCLONES: MockCyclone[] = [
+export type MockCyclone = Cyclone;
+
+export const MOCK_CYCLONES: Cyclone[] = [
   {
     id: 'cyc_aruna',
     name: 'Cyclone Aruna',
@@ -26,15 +12,28 @@ export const MOCK_CYCLONES: MockCyclone[] = [
     maxWindKmH: 145,
     maxWindKt: 78,
     centralPressureHpa: 968,
-    latitude: 16.4,
-    longitude: 87.2,
+    latitude: 15.8,
+    longitude: 88.4,
     movementDirection: 'NW',
-    movementSpeedKmH: 16,
-    movementSpeedKt: 9,
-    lastObservation: '2026-08-31 03:00 UTC',
+    movementSpeedKmH: 14,
+    movementSpeedKt: 8,
+    lastObservation: '08:15 UTC (DEMO)',
     status: 'ACTIVE',
+    intensityTrend: 'STRENGTHENING',
+    rapidIntensificationRisk: 'ELEVATED',
+    rapidIntensificationProbPct: 74,
     isSaved: true,
     region: 'Bay of Bengal',
+    basin: 'Bay of Bengal',
+    description: 'Intense cyclonic vortex tracking northwestward across warm Bay of Bengal waters. Rapid intensification flagged prior to coastal approach.',
+    observedTrack: [
+      { timeHorizon: '-24h', timestamp: '2026-08-30 08:00 UTC', latitude: 13.2, longitude: 91.5, windSpeedKmH: 85, windSpeedKt: 46, centralPressureHpa: 990, classification: 'Cyclonic Storm', isObserved: true },
+      { timeHorizon: '-18h', timestamp: '2026-08-30 14:00 UTC', latitude: 13.9, longitude: 90.7, windSpeedKmH: 100, windSpeedKt: 54, centralPressureHpa: 984, classification: 'Severe Cyclonic Storm', isObserved: true },
+      { timeHorizon: '-12h', timestamp: '2026-08-30 20:00 UTC', latitude: 14.6, longitude: 89.9, windSpeedKmH: 118, windSpeedKt: 64, centralPressureHpa: 978, classification: 'Severe Cyclonic Storm', isObserved: true },
+      { timeHorizon: '-6h', timestamp: '2026-08-31 02:00 UTC', latitude: 15.2, longitude: 89.1, windSpeedKmH: 132, windSpeedKt: 71, centralPressureHpa: 973, classification: 'Very Severe Cyclonic Storm', isObserved: true },
+      { timeHorizon: 'NOW', timestamp: '2026-08-31 08:15 UTC', latitude: 15.8, longitude: 88.4, windSpeedKmH: 145, windSpeedKt: 78, centralPressureHpa: 968, classification: 'Very Severe Cyclonic Storm', isObserved: true },
+    ],
+    forecast: null as unknown as Cyclone['forecast'],
   },
   {
     id: 'cyc_vayun',
@@ -49,10 +48,21 @@ export const MOCK_CYCLONES: MockCyclone[] = [
     movementDirection: 'NNE',
     movementSpeedKmH: 12,
     movementSpeedKt: 6,
-    lastObservation: '2026-08-31 02:30 UTC',
+    lastObservation: '07:45 UTC (DEMO)',
     status: 'ACTIVE',
+    intensityTrend: 'STEADY',
+    rapidIntensificationRisk: 'MODERATE',
+    rapidIntensificationProbPct: 42,
     isSaved: true,
     region: 'Arabian Sea',
+    basin: 'Arabian Sea',
+    description: 'Steady cyclonic system over east-central Arabian Sea generating moderate squall lines along the Gujarat coastline.',
+    observedTrack: [
+      { timeHorizon: '-24h', timestamp: '2026-08-30 08:00 UTC', latitude: 17.5, longitude: 64.2, windSpeedKmH: 80, windSpeedKt: 43, centralPressureHpa: 992, classification: 'Cyclonic Storm', isObserved: true },
+      { timeHorizon: '-12h', timestamp: '2026-08-30 20:00 UTC', latitude: 18.6, longitude: 64.9, windSpeedKmH: 98, windSpeedKt: 53, centralPressureHpa: 986, classification: 'Severe Cyclonic Storm', isObserved: true },
+      { timeHorizon: 'NOW', timestamp: '2026-08-31 07:45 UTC', latitude: 19.8, longitude: 65.5, windSpeedKmH: 110, windSpeedKt: 60, centralPressureHpa: 982, classification: 'Severe Cyclonic Storm', isObserved: true },
+    ],
+    forecast: null as unknown as Cyclone['forecast'],
   },
   {
     id: 'cyc_mira',
@@ -67,10 +77,20 @@ export const MOCK_CYCLONES: MockCyclone[] = [
     movementDirection: 'WNW',
     movementSpeedKmH: 20,
     movementSpeedKt: 11,
-    lastObservation: '2026-08-31 01:45 UTC',
+    lastObservation: '06:30 UTC (DEMO)',
     status: 'DEVELOPING',
+    intensityTrend: 'STRENGTHENING',
+    rapidIntensificationRisk: 'LOW',
+    rapidIntensificationProbPct: 28,
     isSaved: false,
     region: 'Bay of Bengal',
+    basin: 'Bay of Bengal',
+    description: 'Newly organized convective cluster in southern Bay of Bengal undergoing cyclogenesis under low vertical wind shear.',
+    observedTrack: [
+      { timeHorizon: '-12h', timestamp: '2026-08-30 18:00 UTC', latitude: 11.2, longitude: 91.2, windSpeedKmH: 50, windSpeedKt: 27, centralPressureHpa: 1002, classification: 'Deep Depression', isObserved: true },
+      { timeHorizon: 'NOW', timestamp: '2026-08-31 06:30 UTC', latitude: 12.1, longitude: 89.6, windSpeedKmH: 75, windSpeedKt: 40, centralPressureHpa: 994, classification: 'Cyclonic Storm', isObserved: true },
+    ],
+    forecast: null as unknown as Cyclone['forecast'],
   },
   {
     id: 'cyc_tara',
@@ -85,9 +105,24 @@ export const MOCK_CYCLONES: MockCyclone[] = [
     movementDirection: 'W',
     movementSpeedKmH: 14,
     movementSpeedKt: 8,
-    lastObservation: '2026-08-30 22:00 UTC',
+    lastObservation: '05:00 UTC (DEMO)',
     status: 'WEAKENING',
+    intensityTrend: 'WEAKENING',
+    rapidIntensificationRisk: 'LOW',
+    rapidIntensificationProbPct: 10,
     isSaved: true,
     region: 'Arabian Sea',
+    basin: 'Arabian Sea',
+    description: 'Decaying tropical system encountering dry mid-level air entrainment and high vertical wind shear.',
+    observedTrack: [
+      { timeHorizon: '-18h', timestamp: '2026-08-30 11:00 UTC', latitude: 9.8, longitude: 70.8, windSpeedKmH: 70, windSpeedKt: 38, centralPressureHpa: 996, classification: 'Cyclonic Storm', isObserved: true },
+      { timeHorizon: 'NOW', timestamp: '2026-08-31 05:00 UTC', latitude: 9.5, longitude: 68.2, windSpeedKmH: 55, windSpeedKt: 30, centralPressureHpa: 1000, classification: 'Deep Depression', isObserved: true },
+    ],
+    forecast: null as unknown as Cyclone['forecast'],
   },
 ];
+
+// Link forecasts
+MOCK_CYCLONES.forEach((c) => {
+  c.forecast = MOCK_FORECASTS[c.id] || MOCK_FORECASTS['cyc_aruna'];
+});

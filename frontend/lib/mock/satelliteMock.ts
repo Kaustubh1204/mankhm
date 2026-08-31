@@ -1,48 +1,40 @@
-export interface SatelliteLayer {
-  type: 'VISIBLE' | 'INFRARED' | 'WATER_VAPOR' | 'MICROWAVE';
-  title: string;
-  sensor: string;
-  timestamp: string;
-  resolutionKm: number;
-  description: string;
-  previewColor: string;
-}
+import { SatelliteLayer } from '@/types/cyclone';
 
 export const MOCK_SATELLITE_LAYERS: SatelliteLayer[] = [
   {
     type: 'VISIBLE',
-    title: 'INSAT-3DS High-Res Visible Channel (0.65 µm)',
-    sensor: 'INSAT-3DS Imager',
-    timestamp: '2026-08-31 03:00 UTC',
-    resolutionKm: 1.0,
-    description: 'Daytime cloud structure & convective cloud top symmetry.',
-    previewColor: '#00b4d8',
+    title: 'High-Resolution Visible (0.65 µm)',
+    satelliteName: 'INSAT-3DS Imager',
+    description: 'Daytime optical imagery capturing convective cloud tops, spiral inflow bands, and central vortex eye structure.',
+    resolutionKm: 0.5,
+    timestamp: '08:00 UTC (DEMO)',
+    colorScale: 'Natural Cloud Reflectance',
   },
   {
     type: 'INFRARED',
-    title: 'Enhanced Thermal IR Channel (10.8 µm)',
-    sensor: 'INSAT-3DS Sounder',
-    timestamp: '2026-08-31 03:00 UTC',
-    resolutionKm: 4.0,
-    description: 'Cloud top temperature mapping & Dvorak T-number estimation.',
-    previewColor: '#0077b6',
+    title: 'Enhanced Infrared (10.8 µm)',
+    satelliteName: 'INSAT-3DS / Sentinel-3',
+    description: 'Cloud-top temperature gradient mapping detecting deep convective towers (temperatures below -75°C).',
+    resolutionKm: 1.0,
+    timestamp: '08:15 UTC (DEMO)',
+    colorScale: 'BD Enhancement (Cold Cloud Tops)',
   },
   {
     type: 'WATER_VAPOR',
-    title: 'Upper-Level Water Vapor Channel (6.7 µm)',
-    sensor: 'INSAT-3DR Imager',
-    timestamp: '2026-08-31 02:45 UTC',
-    resolutionKm: 4.0,
-    description: 'Mid-to-upper tropospheric moisture & environmental outflow channels.',
-    previewColor: '#38bdf8',
+    title: 'Mid-Level Water Vapor (6.7 µm)',
+    satelliteName: 'INSAT-3DS Sounder',
+    description: 'Tropospheric moisture flux and dry-air intrusion analysis diagnosing steering currents and shear boundaries.',
+    resolutionKm: 2.0,
+    timestamp: '07:45 UTC (DEMO)',
+    colorScale: 'Atmospheric Moisture Spectrum',
   },
   {
     type: 'MICROWAVE',
-    title: 'AMSR2 89 GHz Passive Microwave Imager',
-    sensor: 'GCOM-W AMSR2',
-    timestamp: '2026-08-30 23:15 UTC',
-    resolutionKm: 5.0,
-    description: 'Eye-wall rainband structure penetrating upper cirrus shield.',
-    previewColor: '#0284c7',
+    title: 'Microwave 89 GHz Brightness Temperature',
+    satelliteName: 'GPM Core / AMSR-2',
+    description: 'Passive microwave sounding penetrating cirrus canopy to image low-level eyewall concentric rings and rainband organization.',
+    resolutionKm: 4.0,
+    timestamp: '06:30 UTC (DEMO)',
+    colorScale: 'Precipitation Radiance',
   },
 ];

@@ -1,75 +1,79 @@
-const WS_URL = process.env.NEXT_PUBLIC_WS_URL || '';
+type RealtimeEventType = 'CYCLONE_TELEMETRY' | 'FORECAST_UPDATE' | 'ALERT_TRIGGER' | 'RISK_UPDATE';
 
-type MessageCallback = (data: unknown) => void;
+type RealtimeListener = (data: unknown) => void;
 
+/**
+ * Realtime Event Bus Architecture
+ * Ready for WebSocket or Server-Sent Events (SSE) integration without client polling.
+ */
 class RealtimeService {
-  private socket: WebSocket | null = null;
+  private listeners: Map<RealtimeEventType, Set<RealtimeListener>> = new Map();
+  private ws: WebSocket | null = null;
   private isConnected = false;
-  private listeners: Map<string, Set<MessageCallback>> = new Map();
 
-  public getStatus(): { isConnected: boolean; wsUrl: string } {
-    return {
-      isConnected: this.isConnected,
-      wsUrl: WS_URL,
+  constructor() {
+    this.listeners = new Map();
+  }
+
+  public subscribe(eventType: RealtimeEventType, listener: RealtimeListener): () => void {
+    if (!this.listeners.has(eventType)) {
+      this.listeners.set(eventType, new Set());
+    }
+    this.listeners.get(eventType)?.add(listener);
+
+    return () => {
+      this.listeners.get(eventType)?.delete(listener);
     };
   }
 
-  public connect(): void {
-    if (!WS_URL || typeof window === 'undefined' || this.socket) return;
+  public emit(eventType: RealtimeEventType, data: unknown): void {
+    const handlers = this.listeners.get(eventType);
+    if (handlers) {
+      handlers.forEach((fn) => {
+        try {
+          fn(data);
+        } catch (err) {
+          console.error(`[RealtimeService] Error executing listener for ${eventType}:`, err);
+        }
+      });
+    }
+  }
+
+  public connect(wsUrl?: string): void {
+    if (this.isConnected || !wsUrl) {
+      return;
+    }
 
     try {
-      this.socket = new WebSocket(WS_URL);
-
-      this.socket.onopen = () => {
+      this.ws = new WebSocket(wsUrl);
+      this.ws.onopen = () => {
         this.isConnected = true;
       };
-
-      this.socket.onmessage = (event) => {
+      this.ws.onmessage = (event) => {
         try {
           const payload = JSON.parse(event.data);
-          const topic = payload.topic;
-          if (topic && this.listeners.has(topic)) {
-            this.listeners.get(topic)?.forEach((cb) => cb(payload.data));
+          if (payload.type && payload.data) {
+            this.emit(payload.type as RealtimeEventType, payload.data);
           }
         } catch {
-          // Ignore malformed WS frames
+          // Ignore invalid frames
         }
       };
-
-      this.socket.onclose = () => {
+      this.ws.onclose = () => {
         this.isConnected = false;
-        this.socket = null;
-      };
-
-      this.socket.onerror = () => {
-        this.isConnected = false;
+        this.ws = null;
       };
     } catch {
       this.isConnected = false;
     }
   }
 
-  public subscribe(topic: string, callback: MessageCallback): () => void {
-    if (!this.listeners.has(topic)) {
-      this.listeners.set(topic, new Set());
-    }
-    this.listeners.get(topic)?.add(callback);
-
-    if (!this.isConnected && WS_URL) {
-      this.connect();
-    }
-
-    return () => {
-      this.listeners.get(topic)?.delete(callback);
-    };
-  }
-
   public disconnect(): void {
-    if (this.socket) {
-      this.socket.close();
-      this.socket = null;
+    if (this.ws) {
+      this.ws.close();
+      this.ws = null;
+      this.isConnected = false;
     }
-    this.isConnected = false;
   }
 }
 

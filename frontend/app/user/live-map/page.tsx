@@ -1,29 +1,50 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import ProtectedRoute from '@/components/auth/ProtectedRoute';
 import UserDashboardLayout from '@/components/dashboard/UserDashboardLayout';
-import MapPanel from '@/components/map/MapPanel';
+import CycloneMapLibre from '@/components/map/CycloneMapLibre';
+import CurrentCyclonePanel from '@/components/user-dashboard/CurrentCyclonePanel';
+import ForecastTimelineStrip from '@/components/user-dashboard/ForecastTimelineStrip';
+import MapControls from '@/components/map/MapControls';
+import MapLayers from '@/components/map/MapLayers';
+import MapLegend from '@/components/map/MapLegend';
 
 function LiveMapContent() {
+  const [layersOpen, setLayersOpen] = useState(true);
+
   return (
-    <UserDashboardLayout>
-      <div className="space-y-6 select-none">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <div>
-            <h1 className="text-2xl font-extrabold text-white flex items-center gap-2">
-              <span>Live GIS Map Monitor</span>
-              <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold">
-                DEMO DATA
-              </span>
-            </h1>
-            <p className="text-xs font-mono text-slate-400 mt-1">
-              Multi-layered spatial visualization for North Indian Ocean, Bay of Bengal, and Arabian Sea basins.
-            </p>
-          </div>
+    <UserDashboardLayout fullScreenMap={true}>
+      <div className="w-full h-full relative overflow-hidden select-none">
+        {/* Full-Screen GIS Engine */}
+        <CycloneMapLibre className="w-full h-full absolute inset-0 z-0" />
+
+        {/* Floating Top-Left Cyclone Info Panel */}
+        <div className="absolute left-4 lg:left-24 top-20 z-30 pointer-events-none">
+          <CurrentCyclonePanel className="pointer-events-auto shadow-2xl" />
         </div>
 
-        <MapPanel height="h-[calc(100vh-220px)]" showTitle={false} />
+        {/* Floating Layer Control Panel on Right */}
+        {layersOpen && (
+          <div className="hidden sm:block absolute right-4 top-20 z-30 pointer-events-none animate-in fade-in duration-200">
+            <MapLayers onClose={() => setLayersOpen(false)} />
+          </div>
+        )}
+
+        {/* Map Controls */}
+        <div className="absolute right-4 bottom-32 z-30">
+          <MapControls onToggleLayers={() => setLayersOpen(!layersOpen)} />
+        </div>
+
+        {/* Meteorological Map Legend */}
+        <div className="hidden sm:block absolute left-4 lg:left-24 bottom-32 z-30">
+          <MapLegend />
+        </div>
+
+        {/* Floating Bottom Forecast Timeline */}
+        <div className="absolute left-4 lg:left-24 right-4 bottom-4 z-30 pointer-events-none">
+          <ForecastTimelineStrip className="pointer-events-auto shadow-2xl" />
+        </div>
       </div>
     </UserDashboardLayout>
   );

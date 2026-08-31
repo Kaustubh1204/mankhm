@@ -1,22 +1,28 @@
-import { MOCK_HISTORY_RECORDS, HistoricalRecord } from '../mock/historyMock';
-
-const API_URL = process.env.NEXT_PUBLIC_API_URL || '';
-
-export type { HistoricalRecord };
+import { HistoricalCyclone } from '@/types/cyclone';
+import { MOCK_HISTORICAL_CYCLONES } from '@/lib/mock/historyMock';
 
 export const historyApi = {
-  async getHistoryRecords(): Promise<{ success: boolean; data: HistoricalRecord[]; isMock: boolean; error?: string }> {
-    if (!API_URL) {
-      await new Promise((res) => setTimeout(res, 200));
-      return { success: true, data: MOCK_HISTORY_RECORDS, isMock: true };
+  async getHistoricalCyclones(): Promise<HistoricalCyclone[]> {
+    return Promise.resolve([...MOCK_HISTORICAL_CYCLONES]);
+  },
+
+  async getHistoricalCycloneById(id: string): Promise<HistoricalCyclone | null> {
+    const found = MOCK_HISTORICAL_CYCLONES.find((h) => h.id === id);
+    return Promise.resolve(found ? { ...found } : null);
+  },
+
+  async searchHistoricalCyclones(query: string, year?: string, region?: string): Promise<HistoricalCyclone[]> {
+    let result = [...MOCK_HISTORICAL_CYCLONES];
+    if (year && year !== 'ALL') {
+      result = result.filter((r) => String(r.year) === year);
     }
-    try {
-      const res = await fetch(`${API_URL}/api/history/records`);
-      if (!res.ok) return { success: false, data: MOCK_HISTORY_RECORDS, isMock: true };
-      const json = await res.json();
-      return { success: true, data: json.data, isMock: false };
-    } catch {
-      return { success: false, data: MOCK_HISTORY_RECORDS, isMock: true };
+    if (region && region !== 'ALL') {
+      result = result.filter((r) => r.region === region);
     }
+    if (query) {
+      const q = query.toLowerCase().trim();
+      result = result.filter((r) => r.cycloneName.toLowerCase().includes(q) || r.region.toLowerCase().includes(q));
+    }
+    return Promise.resolve(result);
   },
 };

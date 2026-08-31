@@ -1,39 +1,27 @@
-export interface MockUserProfile {
-  id: string;
-  name: string;
-  email: string;
-  organization: string;
-  role: 'USER' | 'ADMIN';
-  createdAt: string;
-  preferences: {
-    windSpeedUnit: 'kmh' | 'kt' | 'mph';
-    pressureUnit: 'hPa' | 'mb';
-    distanceUnit: 'km' | 'miles';
-    timezone: 'UTC' | 'IST' | 'LOCAL';
-    cycloneUpdateAlerts: boolean;
-    forecastChangeAlerts: boolean;
-    riskAlerts: boolean;
-    criticalAlerts: boolean;
-    systemNotifications: boolean;
-  };
-}
+import { UserProfileData, UserSettings } from '@/types/cyclone';
 
-export const MOCK_USER_PROFILE: MockUserProfile = {
-  id: 'user_fixed_master',
+export const MOCK_USER_PROFILE: UserProfileData = {
+  id: 'usr_meteorologist_01',
   name: 'Dr. Alexander Vance',
-  email: 'user@cyclonesense.ai',
-  organization: 'National Meteorological Agency',
+  email: 'alexander.vance@cyclonesense.ai',
+  organization: 'National Meteorological & Marine Intelligence Agency',
   role: 'USER',
-  createdAt: '2026-08-30T00:00:00.000Z',
-  preferences: {
-    windSpeedUnit: 'kmh',
-    pressureUnit: 'hPa',
-    distanceUnit: 'km',
-    timezone: 'UTC',
+  createdAt: '2026-01-15',
+  avatarUrl: '',
+};
+
+export const MOCK_USER_SETTINGS: UserSettings = {
+  windUnit: 'kmh',
+  pressureUnit: 'hPa',
+  distanceUnit: 'km',
+  timezone: 'UTC',
+  notifications: {
     cycloneUpdateAlerts: true,
     forecastChangeAlerts: true,
     riskAlerts: true,
     criticalAlerts: true,
     systemNotifications: true,
   },
+  theme: 'dark-meteorological',
+  mapStyle: 'dark-vector',
 };

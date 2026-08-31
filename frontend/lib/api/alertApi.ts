@@ -1,22 +1,29 @@
-import { MOCK_ALERTS, MockAlert } from '../mock/alertMock';
-
-const API_URL = process.env.NEXT_PUBLIC_API_URL || '';
-
-export type CycloneAlert = MockAlert;
+import { CycloneAlert } from '@/types/cyclone';
+import { MOCK_ALERTS } from '@/lib/mock/alertMock';
 
 export const alertApi = {
-  async getAlerts(): Promise<{ success: boolean; data: CycloneAlert[]; isMock: boolean; error?: string }> {
-    if (!API_URL) {
-      await new Promise((res) => setTimeout(res, 200));
-      return { success: true, data: MOCK_ALERTS, isMock: true };
+  async getAlerts(): Promise<CycloneAlert[]> {
+    return Promise.resolve([...MOCK_ALERTS]);
+  },
+
+  async getAlertsByCycloneId(cycloneId: string): Promise<CycloneAlert[]> {
+    const matched = MOCK_ALERTS.filter((a) => a.cycloneId === cycloneId);
+    return Promise.resolve(matched.length > 0 ? matched : [...MOCK_ALERTS]);
+  },
+
+  async markAlertAsRead(id: string): Promise<CycloneAlert | null> {
+    const alert = MOCK_ALERTS.find((a) => a.id === id);
+    if (alert) {
+      alert.isRead = true;
+      return Promise.resolve({ ...alert });
     }
-    try {
-      const res = await fetch(`${API_URL}/api/alerts`);
-      if (!res.ok) return { success: false, data: MOCK_ALERTS, isMock: true };
-      const json = await res.json();
-      return { success: true, data: json.data, isMock: false };
-    } catch {
-      return { success: false, data: MOCK_ALERTS, isMock: true };
-    }
+    return Promise.resolve(null);
+  },
+
+  async markAllAlertsAsRead(): Promise<boolean> {
+    MOCK_ALERTS.forEach((a) => {
+      a.isRead = true;
+    });
+    return Promise.resolve(true);
   },
 };

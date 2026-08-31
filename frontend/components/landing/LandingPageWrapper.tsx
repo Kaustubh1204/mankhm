@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import { useScrollProgress } from '@/lib/useScrollProgress';
 import HeroTransition from './HeroTransition';
-import CycloneCursor from './CycloneCursor';
 import AtmosphericScene from './AtmosphericScene';
 import Navbar from './Navbar';
 import Hero from './Hero';
@@ -25,9 +24,6 @@ export default function LandingPageWrapper() {
 
   return (
     <div className="relative min-h-screen bg-[#060b19] text-slate-100 selection:bg-cyan-500 selection:text-slate-950 overflow-x-hidden">
-      {/* SIGNATURE 3D CYCLONE CUSTOM CURSOR */}
-      <CycloneCursor />
-
       {/* GSAP SCROLLTRIGGER PROGRESS CONTROLLER */}
       <HeroTransition onScrollProgressUpdate={setScrollProgress} />
 

@@ -1,73 +1,91 @@
-export interface HistoricalRecord {
-  id: string;
-  cycloneName: string;
-  region: string;
-  startDate: string;
-  endDate: string;
-  peakWindKmH: number;
-  peakWindKt: number;
-  minPressureHpa: number;
-  durationDays: number;
-  maxClassification: string;
-  year: number;
-  observationsCount: number;
-}
+import { HistoricalCyclone } from '@/types/cyclone';
 
-export const MOCK_HISTORY_RECORDS: HistoricalRecord[] = [
-  {
-    id: 'hist_amphan_2020',
-    cycloneName: 'Super Cyclone Amphan',
-    region: 'Bay of Bengal',
-    startDate: '2020-05-16',
-    endDate: '2020-05-21',
-    peakWindKmH: 260,
-    peakWindKt: 140,
-    minPressureHpa: 920,
-    durationDays: 5,
-    maxClassification: 'Super Cyclonic Storm',
-    year: 2020,
-    observationsCount: 142,
-  },
-  {
-    id: 'hist_tauktae_2021',
-    cycloneName: 'Extremely Severe Cyclone Tauktae',
-    region: 'Arabian Sea',
-    startDate: '2021-05-14',
-    endDate: '2021-05-19',
-    peakWindKmH: 220,
-    peakWindKt: 120,
-    minPressureHpa: 950,
-    durationDays: 5,
-    maxClassification: 'Extremely Severe Cyclonic Storm',
-    year: 2021,
-    observationsCount: 118,
-  },
+export type HistoryRecord = HistoricalCyclone;
+export type MockHistoricalCyclone = HistoricalCyclone;
+
+export const MOCK_HISTORICAL_CYCLONES: HistoricalCyclone[] = [
   {
     id: 'hist_biparjoy_2023',
-    cycloneName: 'Very Severe Cyclone Biparjoy',
+    cycloneName: 'Extremely Severe Cyclone Biparjoy',
+    year: 2023,
     region: 'Arabian Sea',
     startDate: '2023-06-06',
     endDate: '2023-06-19',
     peakWindKmH: 165,
     peakWindKt: 90,
-    minPressureHpa: 966,
-    durationDays: 13,
-    maxClassification: 'Very Severe Cyclonic Storm',
-    year: 2023,
-    observationsCount: 260,
+    minPressureHpa: 958,
+    durationDays: 13.2,
+    maxClassification: 'Extremely Severe Cyclonic Storm',
+    landfallLocation: 'Naliya, Kutch, Gujarat',
+    observationsCount: 52,
+    trackSummary: [
+      { timeHorizon: 'Day 1', timestamp: '2023-06-06 06:00 UTC', latitude: 11.8, longitude: 66.0, windSpeedKmH: 65, windSpeedKt: 35, centralPressureHpa: 998, classification: 'Cyclonic Storm' },
+      { timeHorizon: 'Peak', timestamp: '2023-06-11 12:00 UTC', latitude: 18.7, longitude: 67.8, windSpeedKmH: 165, windSpeedKt: 90, centralPressureHpa: 958, classification: 'Extremely Severe Cyclonic Storm' },
+      { timeHorizon: 'Landfall', timestamp: '2023-06-15 18:00 UTC', latitude: 23.2, longitude: 68.6, windSpeedKmH: 125, windSpeedKt: 68, centralPressureHpa: 974, classification: 'Very Severe Cyclonic Storm' },
+    ],
+    aiAnalysisSummary: 'Unusually long-lived Arabian Sea system with rapid steering current reorientations and persistent deep convective core.',
   },
   {
-    id: 'hist_midhili_2023',
-    cycloneName: 'Cyclonic Storm Midhili',
-    region: 'Bay of Bengal',
-    startDate: '2023-11-15',
-    endDate: '2023-11-18',
-    peakWindKmH: 85,
-    peakWindKt: 45,
-    minPressureHpa: 998,
-    durationDays: 3,
-    maxClassification: 'Cyclonic Storm',
+    id: 'hist_mocha_2023',
+    cycloneName: 'Super Cyclonic Storm Mocha',
     year: 2023,
-    observationsCount: 54,
+    region: 'Bay of Bengal',
+    startDate: '2023-05-09',
+    endDate: '2023-05-15',
+    peakWindKmH: 250,
+    peakWindKt: 135,
+    minPressureHpa: 918,
+    durationDays: 6.5,
+    maxClassification: 'Super Cyclonic Storm',
+    landfallLocation: 'Sittwe, Rakhine State, Myanmar',
+    observationsCount: 38,
+    trackSummary: [
+      { timeHorizon: 'Day 1', timestamp: '2023-05-09 00:00 UTC', latitude: 8.5, longitude: 88.5, windSpeedKmH: 55, windSpeedKt: 30, centralPressureHpa: 1002, classification: 'Deep Depression' },
+      { timeHorizon: 'Peak', timestamp: '2023-05-14 00:00 UTC', latitude: 18.5, longitude: 91.5, windSpeedKmH: 250, windSpeedKt: 135, centralPressureHpa: 918, classification: 'Super Cyclonic Storm' },
+      { timeHorizon: 'Landfall', timestamp: '2023-05-14 12:00 UTC', latitude: 20.1, longitude: 92.8, windSpeedKmH: 215, windSpeedKt: 115, centralPressureHpa: 938, classification: 'Extremely Severe Cyclonic Storm' },
+    ],
+    aiAnalysisSummary: 'Catastrophic intensification over central Bay of Bengal driven by exceptional Ocean Heat Content exceeding 120 kJ/cm².',
+  },
+  {
+    id: 'hist_tauktae_2021',
+    cycloneName: 'Extremely Severe Cyclone Tauktae',
+    year: 2021,
+    region: 'Arabian Sea',
+    startDate: '2021-05-14',
+    endDate: '2021-05-19',
+    peakWindKmH: 185,
+    peakWindKt: 100,
+    minPressureHpa: 950,
+    durationDays: 5.8,
+    maxClassification: 'Extremely Severe Cyclonic Storm',
+    landfallLocation: 'Saurashtra Coast, Gujarat',
+    observationsCount: 44,
+    trackSummary: [
+      { timeHorizon: 'Day 1', timestamp: '2021-05-14 06:00 UTC', latitude: 10.5, longitude: 72.5, windSpeedKmH: 75, windSpeedKt: 40, centralPressureHpa: 994, classification: 'Cyclonic Storm' },
+      { timeHorizon: 'Peak', timestamp: '2021-05-17 06:00 UTC', latitude: 19.2, longitude: 71.4, windSpeedKmH: 185, windSpeedKt: 100, centralPressureHpa: 950, classification: 'Extremely Severe Cyclonic Storm' },
+    ],
+    aiAnalysisSummary: 'Rapid coastal parallel tracking along entire Western Ghats with severe gale-force wind impacts across Goa, Maharashtra, and Gujarat.',
+  },
+  {
+    id: 'hist_amphan_2020',
+    cycloneName: 'Super Cyclonic Storm Amphan',
+    year: 2020,
+    region: 'Bay of Bengal',
+    startDate: '2020-05-16',
+    endDate: '2020-05-21',
+    peakWindKmH: 260,
+    peakWindKt: 140,
+    minPressureHpa: 907,
+    durationDays: 5.5,
+    maxClassification: 'Super Cyclonic Storm',
+    landfallLocation: 'Bakkhali, West Bengal & Sundarbans',
+    observationsCount: 40,
+    trackSummary: [
+      { timeHorizon: 'Day 1', timestamp: '2020-05-16 12:00 UTC', latitude: 10.4, longitude: 87.0, windSpeedKmH: 65, windSpeedKt: 35, centralPressureHpa: 998, classification: 'Cyclonic Storm' },
+      { timeHorizon: 'Peak', timestamp: '2020-05-18 18:00 UTC', latitude: 14.0, longitude: 86.3, windSpeedKmH: 260, windSpeedKt: 140, centralPressureHpa: 907, classification: 'Super Cyclonic Storm' },
+    ],
+    aiAnalysisSummary: 'First Super Cyclone in Bay of Bengal since 1999; demonstrated historical rapid intensification within 24 hours.',
   },
 ];
+
+export const MOCK_HISTORY_RECORDS = MOCK_HISTORICAL_CYCLONES;
