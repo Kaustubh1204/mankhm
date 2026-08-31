@@ -1,0 +1,19 @@
+{
+  "dataset_key": "ocean:oceansat3",
+  "dataset_id": "OS3_OSCAT_L2B",
+  "appended_at": "2026-08-30T12:08:07.713Z",
+  "records_count": 1,
+  "payload": {
+    "dynamic_mode": "HISTORICAL_METADATA_FALLBACK",
+    "fetch_ms": "859.65",
+    "dataset_id": "OS3_OSCAT_L2B",
+    "granules": [
+      {
+        "granule_id": "OS3_OSCAT_L2B_20260829T120806",
+        "timestamp": "2026-08-29T12:08:06.853Z",
+        "status": "MOSDAC_ARCHIVE_INDEXED",
+        "download_url": "https://mosdac.gov.in/download/OS3_OSCAT_L2B"
+      }
+    ]
+  }
+}
