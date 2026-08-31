@@ -22,20 +22,23 @@ function UserDashboardOverview() {
         {/* Prominent System Status Header Banner */}
         <div className="p-4 rounded-2xl bg-[#091024] border border-cyan-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-lg">
           <div className="flex items-center gap-3">
-            <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping" />
+            <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
             <div>
-              <h2 className="text-sm font-bold text-white flex items-center gap-2">
-                <span>Active Tropical Cyclone Intelligence Engine Live</span>
-                <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold">
-                  LIVE CLOUDFLARE R2 DATA ACTIVE
+              <h2 className="text-sm font-bold text-white flex items-center gap-2 flex-wrap">
+                <span>North Indian Ocean Realtime Scan:</span>
+                <span className="px-2.5 py-0.5 rounded text-[10px] font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold">
+                  🟢 REAL-WORLD STATUS: CLEAR (0 ACTIVE CYCLONES)
+                </span>
+                <span className="px-2.5 py-0.5 rounded text-[10px] font-mono bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-bold">
+                  🔬 SIMULATION MODE: ACTIVE (BOB_01_2026)
                 </span>
               </h2>
               <p className="text-xs text-slate-400 mt-0.5">
-                Multi-Sensor Fusion: INSAT-3D/3DR/3DS, NASA GPM IMERG, OceanSat-3 | Cloudflare Edge Stream
+                INSAT-3D/3DR/3DS, NASA GPM IMERG, OceanSat-3 | Realtime Speed & Batch Synoptic Lanes Synchronized
               </p>
             </div>
           </div>
-          <StatusBadge status="ONLINE" label="LIVE STREAM ACTIVE" />
+          <StatusBadge status="ONLINE" label="SATELLITE SCAN LIVE" />
         </div>
 
         {/* 4 Summary Cards */}

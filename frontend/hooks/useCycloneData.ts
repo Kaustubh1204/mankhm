@@ -10,22 +10,24 @@ import { satelliteApi, SatelliteLayer } from '@/lib/api/satelliteApi';
 import { notificationApi, MockNotification } from '@/lib/api/notificationApi';
 import { reportApi, MockReport } from '@/lib/api/reportApi';
 
-export function useCyclones() {
+export function useCyclones(simulationMode: boolean = true) {
   const [cyclones, setCyclones] = useState<CycloneSystem[]>([]);
+  const [hasActiveCyclone, setHasActiveCyclone] = useState(false);
   const [loading, setLoading] = useState(true);
   const [isMock, setIsMock] = useState(true);
 
   useEffect(() => {
     async function load() {
-      const res = await cycloneApi.getActiveCyclones();
+      const res = await cycloneApi.getActiveCyclones(simulationMode);
       setCyclones(res.data || []);
+      setHasActiveCyclone(res.hasActiveCyclone);
       setIsMock(res.isMock);
       setLoading(false);
     }
     load();
-  }, []);
+  }, [simulationMode]);
 
-  return { cyclones, loading, isMock };
+  return { cyclones, hasActiveCyclone, loading, isMock };
 }
 
 export function useCyclone(id: string) {
