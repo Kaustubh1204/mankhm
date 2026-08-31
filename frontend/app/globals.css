@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0b132b;
+  --foreground: #f8fafc;
+  --navy-dark: #0b132b;
+  --navy-deep: #1c2541;
+  --ocean-blue: #0077b6;
+  --cyan-accent: #00b4d8;
+  --cyan-light: #90e0ef;
+  --surface-card: #141e36;
+  --surface-border: #1e2942;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  min-height: 100vh;
+}
+

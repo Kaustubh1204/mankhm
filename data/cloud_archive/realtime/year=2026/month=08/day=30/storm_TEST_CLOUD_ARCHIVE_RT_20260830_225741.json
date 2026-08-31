@@ -1,0 +1,57 @@
+{
+  "archived_at_utc": "2026-08-30T22:57:41.739370+00:00",
+  "storage_partition": "realtime/year=2026/month=08/day=30/storm_TEST_CLOUD_ARCHIVE_RT_20260830_225741.json",
+  "data": {
+    "status": "SUCCESS",
+    "storm_id": "TEST_CLOUD_ARCHIVE_RT",
+    "lane": "REALTIME_SPEED_LANE",
+    "cadence_minutes": 15,
+    "latency_ms": 1139.046,
+    "sle_pass": false,
+    "detection_obb": {
+      "eye_center_lat": 16.8851,
+      "eye_center_lon": 87.5528,
+      "vortex_width_km": 124.5,
+      "vortex_height_km": 118.44,
+      "orientation_angle_deg": 4.64
+    },
+    "intensity": {
+      "msw_knots": 0.1,
+      "msw_kmh": 0.1,
+      "central_pressure_hpa": 980.0,
+      "imd_category": "Cyclonic Storm (34-47 kts)"
+    },
+    "short_term_track_6h": [
+      {
+        "hour": 1,
+        "lat": 16.4798,
+        "lon": 87.2011
+      },
+      {
+        "hour": 2,
+        "lat": 16.4596,
+        "lon": 87.2022
+      },
+      {
+        "hour": 3,
+        "lat": 16.4394,
+        "lon": 87.2033
+      },
+      {
+        "hour": 4,
+        "lat": 16.4192,
+        "lon": 87.2044
+      },
+      {
+        "hour": 5,
+        "lat": 16.399,
+        "lon": 87.2055
+      },
+      {
+        "hour": 6,
+        "lat": 16.3788,
+        "lon": 87.2066
+      }
+    ]
+  }
+}
