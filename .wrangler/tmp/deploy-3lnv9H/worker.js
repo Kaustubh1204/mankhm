@@ -10,26 +10,8 @@ var worker_default = {
     if (request.method === "OPTIONS") {
       return new Response(null, { headers: corsHeaders });
     }
-    if (env.ASSETS) {
-      try {
-        let assetRequest = request;
-        if (url.pathname === "/") {
-          assetRequest = new Request(new URL("/index.html", request.url), request);
-        }
-        let assetResponse = await env.ASSETS.fetch(assetRequest);
-        if (assetResponse.status === 404 && !url.pathname.startsWith("/api/")) {
-          assetRequest = new Request(new URL(`${url.pathname}.html`, request.url), request);
-          assetResponse = await env.ASSETS.fetch(assetRequest);
-          if (assetResponse.status === 404) {
-            assetRequest = new Request(new URL("/index.html", request.url), request);
-            assetResponse = await env.ASSETS.fetch(assetRequest);
-          }
-        }
-        if (assetResponse.status !== 404) {
-          return assetResponse;
-        }
-      } catch {
-      }
+    if (env.ASSETS && !url.pathname.startsWith("/api/") && url.pathname !== "/health") {
+      return env.ASSETS.fetch(request);
     }
     if (url.pathname === "/health" || url.pathname === "/api/health") {
       return new Response(

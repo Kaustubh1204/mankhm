@@ -5,5 +5,5 @@ compatibility_date = "2024-01-01"
 [vars]
 AI_INFERENCE_URL = "https://huggingface.co/spaces/YOUR_USERNAME/mankhm-cyclone-ai"
 
-[site]
-bucket = "./frontend/out"
+[assets]
+directory = "./frontend/out"

@@ -17,34 +17,9 @@ export default {
       return new Response(null, { headers: corsHeaders });
     }
 
-    // Try serving static assets (Next.js HTML/JS/CSS) first if available
-    if (env.ASSETS) {
-      try {
-        let assetRequest = request;
-        if (url.pathname === "/") {
-          assetRequest = new Request(new URL("/index.html", request.url), request);
-        }
-
-        let assetResponse = await env.ASSETS.fetch(assetRequest);
-
-        if (assetResponse.status === 404 && !url.pathname.startsWith("/api/")) {
-          // Try appending .html (e.g. /user/dashboard -> /user/dashboard.html)
-          assetRequest = new Request(new URL(`${url.pathname}.html`, request.url), request);
-          assetResponse = await env.ASSETS.fetch(assetRequest);
-          
-          if (assetResponse.status === 404) {
-            // Fallback to main index.html for SPA client-side routing
-            assetRequest = new Request(new URL("/index.html", request.url), request);
-            assetResponse = await env.ASSETS.fetch(assetRequest);
-          }
-        }
-
-        if (assetResponse.status !== 404) {
-          return assetResponse;
-        }
-      } catch {
-        // Fall through to API handlers below
-      }
+    // Route static frontend assets (Next.js visual app)
+    if (env.ASSETS && !url.pathname.startsWith("/api/") && url.pathname !== "/health") {
+      return env.ASSETS.fetch(request);
     }
 
     // Dedicated API Health Check Endpoint
