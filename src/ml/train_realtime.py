@@ -6,10 +6,14 @@ Saves checkpoints strictly to `checkpoints/realtime/`.
 """
 
 import os
+import sys
 import torch
 import torch.nn as nn
 import torch.optim as optim
 from pathlib import Path
+
+# Add project root directory to sys.path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from src.ml.config import REALTIME_CONFIG, REALTIME_CHECKPOINT_DIR
 from src.ml.dataset_builder import RealtimeCycloneDataset, build_dataloaders
