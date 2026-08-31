@@ -1,0 +1,209 @@
+{
+    "dataset": "GPM IMERG Early Run",
+    "source": "NASA PPS",
+    "region": "Bay of Bengal",
+    "temporal_resolution_minutes": 30,
+    "sequence_length": 12,
+    "spatial_shape": [
+        200,
+        250
+    ],
+    "sequence_count": 13,
+    "sequences": [
+        {
+            "sequence_id": 1,
+            "file": "data\\ml\\sequences\\sequence_001.npy",
+            "observation_count": 12,
+            "shape": [
+                12,
+                200,
+                250
+            ],
+            "start_file": "batch_imerg_20260830_030000.npy",
+            "end_file": "batch_imerg_20260830_083000.npy",
+            "min": 0.0,
+            "max": 23.100000381469727,
+            "mean": 0.14323684573173523
+        },
+        {
+            "sequence_id": 2,
+            "file": "data\\ml\\sequences\\sequence_002.npy",
+            "observation_count": 12,
+            "shape": [
+                12,
+                200,
+                250
+            ],
+            "start_file": "batch_imerg_20260830_033000.npy",
+            "end_file": "batch_imerg_20260830_090000.npy",
+            "min": 0.0,
+            "max": 19.700000762939453,
+            "mean": 0.13822683691978455
+        },
+        {
+            "sequence_id": 3,
+            "file": "data\\ml\\sequences\\sequence_003.npy",
+            "observation_count": 12,
+            "shape": [
+                12,
+                200,
+                250
+            ],
+            "start_file": "batch_imerg_20260830_040000.npy",
+            "end_file": "batch_imerg_20260830_093000.npy",
+            "min": 0.0,
+            "max": 19.700000762939453,
+            "mean": 0.13596166670322418
+        },
+        {
+            "sequence_id": 4,
+            "file": "data\\ml\\sequences\\sequence_004.npy",
+            "observation_count": 12,
+            "shape": [
+                12,
+                200,
+                250
+            ],
+            "start_file": "batch_imerg_20260830_043000.npy",
+            "end_file": "batch_imerg_20260830_100000.npy",
+            "min": 0.0,
+            "max": 19.700000762939453,
+            "mean": 0.13584566116333008
+        },
+        {
+            "sequence_id": 5,
+            "file": "data\\ml\\sequences\\sequence_005.npy",
+            "observation_count": 12,
+            "shape": [
+                12,
+                200,
+                250
+            ],
+            "start_file": "batch_imerg_20260830_050000.npy",
+            "end_file": "batch_imerg_20260830_103000.npy",
+            "min": 0.0,
+            "max": 19.700000762939453,
+            "mean": 0.13722798228263855
+        },
+        {
+            "sequence_id": 6,
+            "file": "data\\ml\\sequences\\sequence_006.npy",
+            "observation_count": 12,
+            "shape": [
+                12,
+                200,
+                250
+            ],
+            "start_file": "batch_imerg_20260830_053000.npy",
+            "end_file": "batch_imerg_20260830_110000.npy",
+            "min": 0.0,
+            "max": 19.700000762939453,
+            "mean": 0.13833968341350555
+        },
+        {
+            "sequence_id": 7,
+            "file": "data\\ml\\sequences\\sequence_007.npy",
+            "observation_count": 12,
+            "shape": [
+                12,
+                200,
+                250
+            ],
+            "start_file": "batch_imerg_20260830_060000.npy",
+            "end_file": "batch_imerg_20260830_113000.npy",
+            "min": 0.0,
+            "max": 19.700000762939453,
+            "mean": 0.13750635087490082
+        },
+        {
+            "sequence_id": 8,
+            "file": "data\\ml\\sequences\\sequence_008.npy",
+            "observation_count": 12,
+            "shape": [
+                12,
+                200,
+                250
+            ],
+            "start_file": "batch_imerg_20260830_063000.npy",
+            "end_file": "batch_imerg_20260830_120000.npy",
+            "min": 0.0,
+            "max": 19.700000762939453,
+            "mean": 0.13581497967243195
+        },
+        {
+            "sequence_id": 9,
+            "file": "data\\ml\\sequences\\sequence_009.npy",
+            "observation_count": 12,
+            "shape": [
+                12,
+                200,
+                250
+            ],
+            "start_file": "batch_imerg_20260830_070000.npy",
+            "end_file": "batch_imerg_20260830_123000.npy",
+            "min": 0.0,
+            "max": 19.700000762939453,
+            "mean": 0.13416369259357452
+        },
+        {
+            "sequence_id": 10,
+            "file": "data\\ml\\sequences\\sequence_010.npy",
+            "observation_count": 12,
+            "shape": [
+                12,
+                200,
+                250
+            ],
+            "start_file": "batch_imerg_20260830_073000.npy",
+            "end_file": "batch_imerg_20260830_130000.npy",
+            "min": 0.0,
+            "max": 19.700000762939453,
+            "mean": 0.1331733614206314
+        },
+        {
+            "sequence_id": 11,
+            "file": "data\\ml\\sequences\\sequence_011.npy",
+            "observation_count": 12,
+            "shape": [
+                12,
+                200,
+                250
+            ],
+            "start_file": "batch_imerg_20260830_080000.npy",
+            "end_file": "batch_imerg_20260830_133000.npy",
+            "min": 0.0,
+            "max": 19.700000762939453,
+            "mean": 0.13275353610515594
+        },
+        {
+            "sequence_id": 12,
+            "file": "data\\ml\\sequences\\sequence_012.npy",
+            "observation_count": 12,
+            "shape": [
+                12,
+                200,
+                250
+            ],
+            "start_file": "batch_imerg_20260830_083000.npy",
+            "end_file": "batch_imerg_20260830_140000.npy",
+            "min": 0.0,
+            "max": 19.700000762939453,
+            "mean": 0.13182349503040314
+        },
+        {
+            "sequence_id": 13,
+            "file": "data\\ml\\sequences\\sequence_013.npy",
+            "observation_count": 12,
+            "shape": [
+                12,
+                200,
+                250
+            ],
+            "start_file": "batch_imerg_20260830_090000.npy",
+            "end_file": "batch_imerg_20260830_143000.npy",
+            "min": 0.0,
+            "max": 19.700000762939453,
+            "mean": 0.1317906528711319
+        }
+    ]
+}
