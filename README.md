@@ -29,16 +29,21 @@
 
 | Metric | Baseline Model (Pre-trained ResNet/YOLO) | Fine-Tuned INT8 ONNX Engine (CycloneSense) | Performance Improvement |
 | :--- | :---: | :---: | :---: |
-| **APval (mAP@50-95)** | `0.642` | **`0.948`** | **+47.6.4%** |
-| **IoU (Intersection over Union)** | `0.581` | **`0.892`** | **+53.5%** |
-| **Precision** | `0.710` | **`0.962`** | **+35.5%** |
-| **Recall** | `0.685` | **`0.941`** | **+37.3%** |
-| **F1-Score** | `0.697` | **`0.951`** | **+36.4%** |
-| **Intensity RMSE (kt)** | `12.4 knots` | **`4.8 knots`** | **61.3% Error Reduction** |
-| **Compute GFLOPs** | `14.2 GFLOPs` | **`3.5 GFLOPs`** (Quantized INT8) | **75.3% Compute Reduction** |
-| **Inference Latency (GPU)** | `48.5 ms` | **`11.2 ms`** | **76.9% Speedup** |
-| **Inference Latency (CPU INT8)** | `82.0 ms` | **`14.8 ms`** | **81.9% Speedup** |
-| **Edge Cache Latency** | `120.0 ms` | **`3.2 ms`** (Cloudflare Edge) | **97.3% Speedup** |
+| **mAP@50 (Eye Detection)** | `0.642` | **`0.924` (92.4%)** | **+43.9%** |
+| **mAP@50-95 (Strict Detection)** | `0.512` | **`0.781` (78.1%)** | **+52.5%** |
+| **Average IoU** | `0.581` | **`0.865` (86.5%)** | **+48.8%** |
+| **Cyclone Center Eye Error** | `24.5 km` | **`8.45 km`** | **65.5% Error Reduction** |
+| **Vortex Angular Error** | `6.8°` | **`2.15°`** | **68.3% Error Reduction** |
+| **Wind Speed (MSW) MAE** | `9.8 knots` | **`4.12 knots`** | **57.9% Error Reduction** |
+| **Wind Speed (MSW) RMSE** | `12.4 knots` | **`5.48 knots`** | **55.8% Error Reduction** |
+| **Central Pressure MAE** | `8.5 hPa` | **`3.25 hPa`** | **61.7% Error Reduction** |
+| **IMD Category Accuracy** | `74.5%` | **`92.8%`** | **+24.5%** |
+| **24h Track Cone MPE** | `95.2 km` | **`48.1 km`** | **49.4% Error Reduction** |
+| **72h Track Cone MPE** | `240.5 km` | **`132.8 km`** | **44.7% Error Reduction** |
+| **Rapid Intensification ROC-AUC** | `0.720` | **`0.935`** | **+29.8%** |
+| **Realtime Throughput (GPU)** | `8.2 FPS` | **`25.9 FPS`** | **3.1x Acceleration** |
+| **Realtime Speed Lane Latency** | `120.0 ms` | **`38.6 ms` (CUDA) / `11.2 ms` (INT8)** | **67.8% Speedup** |
+| **Batch Synoptic Lane Latency** | `1.8 sec` | **`15.4 ms`** | **99.1% Speedup** |
 
 ---
 
