@@ -20,12 +20,11 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
 
       - name: Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pip install uvicorn fastapi onnxruntime numpy pytest python-dotenv boto3
 
       - name: Run Model Export & INT8 Quantization Verification
