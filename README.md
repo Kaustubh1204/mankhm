@@ -180,5 +180,57 @@ npx wrangler deploy
 
 ---
 
+## 🔄 Core End-to-End Workflow (Concise)
+
+```mermaid
+flowchart TD
+  A((Start)) --> B[User opens app and session restore starts]
+  B --> C{Authenticated?}
+  C -- No --> D[Sign-in form validates input and attempts auth]
+  D --> E{Backend auth/API URL available?}
+  E -- Yes --> F[Call auth endpoint and store session/token]
+  E -- No --> G[Use local dev-adapter auth fallback]
+  F --> H{Auth success?}
+  G --> H
+  H -- No --> I[Show auth/validation error and retry]
+  I --> D
+  H -- Yes --> J[Route by role to Admin/User dashboard]
+
+  J --> K[Frontend requests realtime, batch, and storage data]
+  K --> L{Cloudflare Worker path?}
+  L -- Yes --> M[Worker applies CORS and routes API]
+  M --> N{Known endpoint?}
+  N -- Yes --> O[Return health/auth/predict/storage payload]
+  N -- No --> P[Return 404]
+
+  L -- No --> Q[Node server validates env, hydrates storage, starts scheduler]
+  Q --> R[Serve satellite/ocean/atmospheric/cyclone routes]
+  R --> S{StateBuffer has data?}
+  S -- Yes --> T[Return cached real payload with telemetry]
+  S -- No --> U[Return initializing/ingestion status]
+  Q --> V[FastAPI runs realtime or batch inference]
+  V --> W{Model loaded?}
+  W -- No --> X[Return 503 model initializing]
+  W -- Yes --> Y[Generate prediction and attempt archive]
+  Y --> Z{Archive success?}
+  Z -- Yes --> AA[Return prediction plus archive path]
+  Z -- No --> AB[Log warning and return prediction]
+
+  O --> AC{Frontend fetch success?}
+  AC -- Yes --> AD[Render live dashboard/map/forecast/quota]
+  AC -- No --> AE[Use mock/default fallback data]
+
+  AD --> AF((End))
+  AE --> AF
+  P --> AF
+  T --> AF
+  U --> AF
+  X --> AF
+  AA --> AF
+  AB --> AF
+```
+
+---
+
 ## 🤝 Contributing & License
 Maintained for **ISRO SIH 2026 Challenge**. Distributed under the MIT License.
